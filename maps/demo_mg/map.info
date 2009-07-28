@@ -1,0 +1,78 @@
+§§ polygon 12 Poly main Elfenwald
+§ coords -46.8,22.6,0.0 -55.3,22.6,0.0 -55.6,-3.1,0.0 -38.8,-3.1,0.0 -36.2,8.9,0.0 -24.6,12.7,0.0 -25.9,23.3,0.0 -39.1,22.5,0.0 -39.0,17.8,0.0 -41.7,15.6,0.0 -44.2,15.6,0.0 -46.8,17.6,0.0
+§ text Elfenwald
+§ color (mittleres seegruen)
+§ level_from -2147483648
+§ center -41.166668,14.416668
+§ level_to 2147483647
+§ map 0
+§§ polygon 10 Poly main Elfendorf
+§ coords -46.7,22.5,0.0 -46.8,19.2,0.0 -46.7,17.5,0.0 -44.3,15.4,0.0 -41.7,15.4,0.0 -39.1,17.6,0.0 -39.0,22.4,0.0 -41.7,24.6,0.0 -44.1,25.0,0.0 -47.1,22.5,0.0
+§ text Elfendorf
+§ color fruehlingsgruen
+§ level_from -2147483648
+§ center -43.72,20.210001
+§ level_to 2147483647
+§ map 0
+§§ polygon 9 Poly main
+§ coords -42.1,-3.1,0.0 -21.1,-3.2,0.0 -21.3,-4.9,0.0 -41.5,-4.7,0.0
+§ color hellgrau
+§ level_from 0
+§ center -31.5,-3.9750001
+§ level_to 0
+§ map 0
+§§ polygon 8 Poly main
+§ coords -9.9,-8.7,0.0 -13.0,-8.5,0.0 -12.7,-4.9,0.0 -18.6,-4.6,0.0 -18.8,-3.1,0.0 -11.3,-3.0,0.0 -11.5,-7.3,0.0 -9.7,-7.6,0.0
+§ color hellgrau
+§ level_from 0
+§ center -13.1875,-5.9625
+§ level_to 0
+§ map 0
+§§ polygon 6 Poly main Nabla
+§ coords -21.0,1.2,0.0 -21.4,-12.7,0.0 -17.8,-12.7,0.0 -19.2,0.7,0.0
+§ text Nabla
+§ color blau
+§ level_from -2147483648
+§ center -19.85,-5.875
+§ level_to 2147483647
+§ map 0
+§§ polygon 5 Poly main Port Vain
+§ coords -9.7,-7.9,0.0 -9.1,-3.4,0.0 -8.4,1.1,0.0 -3.1,2.1,0.0 4.1,2.1,0.0 6.4,-4.9,0.0 14.0,-6.3,0.0 15.2,-9.4,0.0 14.9,-11.2,0.0 -2.9,-12.2,0.0 -10.9,-11.6,0.0
+§ text Port Vain
+§ color hellgelb
+§ level_from 0
+§ center 0.95454544,-5.6
+§ level_to 1
+§ map 0
+§§ polygon 4 Poly main Drachensee
+§ coords 11.9,22.7,0.0 9.0,22.6,0.0 8.2,24.5,0.0 10.1,24.9,0.0 13.7,25.2,0.0 13.8,23.1,0.0
+§ text Drachensee
+§ color blau
+§ level_from 0
+§ center 11.116666,23.833336
+§ level_to 0
+§ map 0
+§§ polygon 3 Poly main Meer
+§ coords 24.4,29.9,0.0 24.6,24.2,0.0 24.6,20.1,0.0 20.5,15.7,0.0 20.8,12.4,0.0 22.5,10.2,0.0 22.4,6.0,0.0 18.5,1.4,0.0 16.5,1.5,0.0 16.7,0.0,0.0 16.7,-8.2,0.0 16.7,-11.3,0.0 33.9,-11.2,0.0 33.8,33.7,0.0 23.4,33.7,0.0
+§ text Meer
+§ color blau
+§ level_from -2147483648
+§ center 30,10.539999
+§ level_to 2147483647
+§ map 0
+§§ polygon 1 Poly main Zwergenstadt
+§ coords -10.9,12.8,0.0 -10.7,7.0,0.0 -14.0,4.5,0.0 -20.3,6.9,0.0 -20.8,10.1,0.0 -19.0,13.4,0.0 -11.8,13.2,0.0
+§ text Zwergenstadt
+§ color papaya
+§ level_from -2147483648
+§ center -15.357142,9.699999
+§ level_to 2147483647
+§ map 0
+§§ polygon 0 Poly main Hochebene
+§ coords -19.4,22.8,0.0 -11.4,22.9,0.0 -9.1,20.7,0.0 -8.9,15.6,0.0 -11.7,13.2,0.0 -21.0,13.4,0.0 -20.7,16.0,0.0 -18.9,19.4,0.0
+§ text Hochebene
+§ color hellgruen
+§ level_from 0
+§ center -15.1375,17.999998
+§ level_to 0
+§ map 0

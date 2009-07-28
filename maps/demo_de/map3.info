@@ -1,0 +1,35 @@
+0
+name keypad
+short die nummertasten (Navigationstasten)
+WICHTIG !!Die Tasten funktionieren nur, wenn die Zeichenflaeche aktiviert ist, wenn das TextField aktiv ist, werden die Zeichen dort eingefuegt.
+long wie Keypad 1-sw, 2-s, 3-so, 4-w, 6-o, 7-nw, 8-n, 9-no fuer die Himmelsrichtungen, + fuer oben, - fuer unten
+5
+name Ansicht
+short Ctrl+Naviationstasten
+long Verschieben der Map in X/Y oder Z-Richtung
+12
+name zoom
+short Ctrl+z
+long Zoom
+10
+name unzoom
+short Ctrl+u
+long Unzoom
+11
+name center
+short Ctrl+c, Ctrl+m
+long Zentrieren des aktuellen Punktes
+13
+name neu
+short Alt+Navigationstasten
+long neuer Ausgang in der angegebenen Richtung (wenn dort schon ein Punkt existiert wird eine Verbindung geschaffen, ansonsten wird ein neuer Punkt erzeugt)
+14
+name einbahnstrasse
+short alt+#
+long naechster Ausgang wird als Einbahnstrasse erzeugt
+15
+name markierungen weg
+short Shift+u
+long loescht alle Markierungen in der aktuellen Map
+
+

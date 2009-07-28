@@ -1,0 +1,35 @@
+0
+name keypad
+short the keypad keys (navigation keys)
+IMPORTANT All immediate keys does only work if you select the drawing area. If the input field is selected the characters are inserted!
+long like keypad 1-sw, 2-s, 3-se, 4-w, 6-e, 7-nw, 8-n, 9-ne for the directions, + for up, - for down
+5
+name view
+short Ctrl+navigation keys
+long Moving the map in x/y/z direction
+12
+name zoom
+short Ctrl+z
+long zoom
+10
+name unzoom
+short Ctrl+u
+long unzoom
+11
+name center
+short Ctrl+c, Ctrl+m
+long center the map around the actual point
+13
+name creation
+short Alt+navigation keys
+long new exit in the given direction is crated (if there's a node a connection is made otherwise a new node is also created)
+14
+name one way exit
+short alt+#
+long next single exit creation is oneway only
+15
+name remove markings
+short Shift+u
+long removes all markings in the actual map
+
+

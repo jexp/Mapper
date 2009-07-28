@@ -1,0 +1,38 @@
+5
+name sm
+short sm main
+syntax sm (mapname|id)
+long (switchMap) switches to the given map, the last aktive node of that map is activated.
+0
+name cgrid1
+short cgrid 2 3 -sx 2 -sy 7 -di
+syntax cgrid xpos ypos -sx width (-sy height)? (-di)?
+long creates a grid within the map, the actual node has the given position in the grid (e.g. (0,0) bottom left, (width-1,height-1) top,right). If height is not given a quadratic grid is created. Givin -di also creates diagonal connection between the nodes.<br>
+7
+name DE
+syntax DE  ((-d#?(directionid|-name|0) ((-m(mapid|-name))? -p(nodeid|-name))? (name of the exit)?)|(#?(directionid|-name) )+)
+long (deleteExit) deletes exits of the actual node for the given directions, a # before a direction causes only the exit from the actual node to be deleted otherwise both exits are deleted
+8
+name DE2
+example0 DE n s e : deletes the exits n s e
+example1 DE -ds : deletes the exit s
+example2 DE -d0 jump : deletes the special exit named "jump"
+example3 DE -ds -m1: deletes the exit s which switches to the map number 1
+example4 DE -d0 -mtown teleport: deletes the special exit named "teleport" which switches to the map named "town"
+long the destination nodes may be given, but if they have to be correct
+18
+name DP
+syntax DP ((PunktId/-name|marked) )?
+long (deletePoint) deletes the given nodes (if none given the actual node) or the marked nodes and all exits which go from this node(s) and to this node(s) (in all maps). The number of the node(s) is reused if new nodes are created later.
+9
+name si
+syntax si (nodename|-id)?
+long shows the information for the given or if none given the actual node
+2
+name asp3
+short asp -d0 -m0 -p4 jump down
+syntax see (si asp0)
+1
+name asp4
+short asp -dnw -p24 shout
+syntax see (si asp0)

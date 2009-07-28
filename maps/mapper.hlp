@@ -1,0 +1,28 @@
+allgemeines§ wichtiges (JDK, Mac)
+features§ enthaltene Funktionen
+syntax§ generelle Kommandosyntax
+grafik§ Darstellung der Karte (Legende)
+maus§ Mausaktionen
+tasten§ Hotkeys (nach Anklicken der Karte)
+ausgaenge§ Alle Standardausgaenge
+g§ (Go) zu Knoten in Map springen
+go§ (GoOther) zu Knoten (auch in anderen Karten) springe
+sm§ (SwitchMap) Umschalten der Karten
+asp§ (AddSpecialExit) Erzeugen spezieller Ausgaenge
+ae§ (AddExit) Standardausgaenge erzeugen
+ar§ (AddReverse) einfach Ausgang aus Gebaeuden erzeugen/ueberschreiben
+am§ (AddMap) neue leere Karte erzeugen
+cgrid§ (CreateGrid) Netzstruktur erzeugen
+an§ (AddNode) Knoten beliebig erzeugen
+MP§ (MovePoint) Knoten(menge) verschieben
+sn§ (SplitNode) Knoten aufsplitten (nach Ausgaengen)
+DE§ (DeleteExit) Ausgaenge loeschen
+DP§ (DeletePoint) Knoten loeschen
+Q§ (Quit) verlassen ohne speicher
+lpc§ (LPC-Code) LPC-Code generieren
+opt§ (Options) Optionen setzen
+ai§ (AddInfo) zu Knoten Informationen hinzufuegen
+si§ (ShowInfo) Informationen zu Knoten anzeigen
+lna§ (ListNodesbyAttribute) Alle Knoten mit bestimmten Informationen zeigen
+
+

@@ -1,0 +1,768 @@
+210
+short Obergeschoss des Kramladens
+shop Lager
+long Das Obergeschoss unterscheidet sich von dem unterem Raum doch erheblich. Hier gibt es keine Theke oder Bedienung. In dem Raum stehen einfach nur Warenregale, die voll mit unterschiedlichsten Gegenstaenden sind. An jedem zweiten steht 'IMPORTIERT' dran. Es stehen Dir folgende Befehle zur Verfuegung. zeige                    kaufe <gegenstand> (oder nummer) zeige rue(stungen)       verkaufe <gegenstand> zeige waf(fen)           verkaufe alles zeige ver(schiedenes)    schaetze <gegenstand> Du kannst nur nach unten gehen.
+author Quasimodo
+209
+short Der Kramladen der Elfensiedlung
+shop Kramladen
+long Du befindest Dich im kleinen Kramladen der Elfensiedlung. Hier kann man verschiedene Sachen kaufen. Neben Haushaltsartikeln kann man hier auch diverse Ausruestungsgegenstaende fuer Reisen kaufen. Hinter einer Ver- kaufstheke befinden sich jede Menge Regale, die zu Hauptgeschaeftszeiten randvoll sind. In diesem Laden herrscht naemlich ein florierender An- und Verkaufshandel. Es stehen Dir folgende Befehle zu verfuegung. zeige                    kaufe <gegenstand> (oder nummer) zeige rue(stungen)       verkaufe <gegenstand> zeige waf(fen)           verkaufe alles zeige ver(schiedenes)    schaetze <gegenstand> Eine Treppe fuehrt in das Obergeschoss. Der Ausgang des Ladens liegt im Sueden.
+author Quasimodo
+208
+icon Picture icons/other/wisdom/QUILL01C.gif
+short Die Schreibstube der Elfen.
+long Dies hier ist die Schreibstube der Elfen. Es ist ein drei mal fuenf Meter grosser Raum, dessen gesamten Waende von Buecherregalen eingenommen werden. In dem Raum stehen zwei Tische, ein grosser Schreibtisch hintem im Raum und ein hoher Stehtisch nahe dem Eingang. Momentan ist der Elf Fondil Farin der Dorfschreiber.
+npc Fondil Farin
+author Quasimodo
+207
+short Elfenpost
+post elfenpost
+long Dies hier ist die Poststelle der Elfen. Es ist ein fuenf mal fuenf Meter grosser Raum, dessen Waende voll mit Regalen sind. Du kannst von hier aus Briefe an andere Spieler schicken oder Deine Post lesen. Wenn dies Deine Absicht ist, tippe 'post'. Im Westen kannst du die Post verlassen.
+author Quasimodo
+204
+pub Elfenkneipe
+short Die Gaststaette der Elfsiedlung
+long Dies ist der Schankraum der Gaststaette der Elfensiedlung. Es ist ein 5m mal 10m grosser Raum, dessen Rueckwand von einer Theke eingenommen wird. Vier sehr stabil aussehende, runde Tische stehen hier rum. Um jeden Tisch stehen sechs Hocker. Insgesamt sieht hier alles etwas ein- facher aus, aber keineswegs unkultiviert. Auf jedem Tisch liegt eine Menuekarte, die Du mit 'menue' lesen kannst.
+npc Gastwirt, Uial
+author Quasimodo
+203
+short Vor einem grossen Baum
+long Du stehst vor einem riesigen grossen Baum. Er ist wohl an die sechs- oder siebentausend Jahre alt. Du kannst es nicht so genau schaetzen. Der Baum ist sehr hoch, so dass Du seine Spitze nicht sehen kannst. In dem Baum ist ein Portal, durch das man ihn betreten kann. Um ihn herum wachsen viele Pflanzen, Blumen und Buesche.
+author einem Wald-Magier
+202
+short Auf einer Strasse im Elfendorf
+long Du bist auf dem Dorfweg der Elfensiedlung. Der Weg fuehrt von Westen, vom Eingang der Siedlung, nach Osten, bis an die Palisade heran. Am noerdlichem Wegesrand steht ein Gasthaus, aus dem verschiedene Stimmen zu hoeren sind. Im Sueden fuehrt ein Weg zu einem unuebersehbar hohen Baum.
+author Quasimodo
+201
+short Eine kurze Geschaeftsgasse
+long Hier ist eine kurze, schmale Gasse, von der aus man drei Haeuser betre- ten kann. Im Norden ist ein Geschaeft, im Westen der Dorfschreiber und im Osten die dorfeigene Poststation. Im Sueden befindet sich die Dorf- strasse.
+author Quasimodo
+200
+icon Picture icons/places/house/HOUSE07B.gif
+short Im Garten der Villa
+long Du bist im Garten einer grossen Villa. Ein Weg fuehrt von der Strasse im Norden zur Eingangstuer der Villa. Links und rechts vom Weg sind grosse mit Blumen, Hecken und Baeumen bewachsene Rasenflaechen und eine stabile Bank. Neben dem Eingang ist eine grosse Glocke angebracht und darueber ein hoelzernes Schild.
+author Quasimodo
+199
+short Auf einer Strasse im Elfendorf
+long Du bist auf dem Dorfweg der Elfensiedlung. Der Weg fuehrt von Westen, vom Eingang der Siedlung, nach Osten, bis an die Palisade heran. Im Norden ist eine Haeuserwand und im Sueden ist der Garten einer grossen Villa.
+author Quasimodo
+198
+short Wachgang
+long Du befindest Dich auf einem Wachweg, der entlang der Palisade einmal rund um die Elfensiedlung fuehrt. An dieser Stelle befindet sich die Palisade suedlich von Dir. Im Norden ist ein Garten in dessen Mitte eine grosse, praechtige Villa steht.
+author Quasimodo
+197
+short Wachgang
+long Du befindest Dich auf einem Wachweg, der entlang der Palisade einmal rund um die Elfensiedlung fuehrt. An dieser Stelle befindet sich die Palisade im Sueden. Der ganze Norden ist eingenommen durch den groessten Baum der Welt. Er ist so hoch, dass Du kaum seine Spitze erkennen kannst.
+author Quasimodo
+196
+icon Picture icons/landscape/forest/ICON_154.GIF
+short In einem grossen Baum
+long Du stehst in einem riesengrossen, hohlen Baum. Er ist wohl an die sechs oder sieben Tausend Jahre alt. Du kannst es nicht so genau schaetzen. Es ist duester in diesem riesigen Loch. Nur hochoben kannst Du einen Lichtschimmer sehen. Der Baum scheint oben offen zu sein. An der Innenwand kannst Du einige Fackeln sehen. In die gesamte Innenwand des Baumes ist eine Treppe gehauen. An der Wand sind einige Briefkaesten, ein grosses Poster und ein Stammbaum aller Magier aufgehaengt. Vielleicht solltest Du diesen Baum mal genauer erkunden! Durch ein Portal kannst Du den Baum wieder verlassen.
+author einem Wald-Magier
+item Stammbaum
+195
+short Die Gaertnerin geht nach Suedwesten.
+long Du befindest Dich auf einem Wachweg, der entlang der Palisade einmal rund um die Elfensiedlung fuehrt. An dieser Stelle befindet sich die Palisade suedlich von Dir. Im Westen befindet sich der Welt groesster Baum. Er ist beinahe beaengstigend hoch.
+author Quasimodo
+194
+short Geborgener Ort
+long Du befindest Dich in dem heiligen Hain der Elfen. Sieben uralte Baeume stehen hier kreisfoermig um einen grossen, alten, schweren Altar. Elfen koennen hier beten, um ihre koerperliche Gestalt wieder- zuerlangen, oder darum, dass ihre Suenden vergeben werden. Hier wer- den auch neue Elfen geboren, wenn sie die Welt betreten. Ein eigen- tuemliches Gefuehl der Geborgenheit ergreift Besitz von Dir. Dieser Ort ist von einer unnachahmlichen Schoenheit. Die oestliche Seite des Hains wird von der Palisade begrenzt. An der Palisade haengt eine Steintafel.
+author einem Wald-Magier
+item Zeitung,Partybrett, Opferstock
+193
+short Wachgang
+long Du befindest Dich auf einem Wachweg, der entlang der Palisade einmal rund um die Elfensiedlung fuehrt. An dieser Stelle befindet sich die Palisade oestlich von Dir. Im Westen befinden sich jeweils Hauswaende. Laute Stim- men aus dem Westen deuten auf eine Kneipe hin.
+author Quasimodo
+192
+short Wachgang
+long Du befindest Dich auf einem Wachweg, der entlang der Palisade einmal rund um die Elfensiedlung fuehrt. An dieser Stelle befindet sich die Palisade nordoestlich von Dir. Im Sueden und im Suedwesten befinden sich jeweils Hauswaende. Laute Stimmen aus dem Sueden deuten auf eine Kneipe hin.
+npc Elfenwaechter
+author Quasimodo
+191
+short Wachgang
+long Du befindest Dich auf einem Wachweg, der entlang der Palisade einmal rund um die Elfensiedlung fuehrt. An dieser Stelle befindet sich die Palisade nordwestlich von Dir. Im Sueden und im Suedosten befinden sich jeweils Hauswaende. Allerdings ist in keiner der beiden ein Eingang.
+author Quasimodo
+190
+short Wachgang
+long Du befindest Dich auf einem Wachweg, der entlang der Palisade einmal rund um die Elfensiedlung fuehrt. An dieser Stelle befindet sich die Palisade westlich von Dir. Auf der Ostseite ist die Rueckseite eines Hauses.
+author Quasimodo
+189
+short Wachgang
+long Du befindest Dich auf einem Wachweg, der entlang der Palisade einmal rund um die Elfensiedlung fuehrt. An dieser Stelle befindet sich die Palisade westlich von Dir. Auf der Ostseite ist ein Garten in dessen Mitte eine grosse, praechtige Villa steht.
+author Quasimodo
+188
+short Auf einem Wachturm
+long Du befindest Dich oben auf dem Wachturm am Eingang der Elfensiedlung. Es ist eine schlichte Holzplattform von 3 mal 2 Meter Groesse, die von einem Gelaender umzaeunt wird. Auf dem Boden steht eine kleine Bank fuer den Wachhabenden zum Sitzen. Von hier oben hast Du einen prima Ueberblick ueber den gesamten Wald, aber Dienst moechtest Du hier trotzdem nicht schieben muessen, denn es ist sehr windig.
+npc Elfenwaechter
+author Quasimodo
+187
+short Auf einer Strasse im Elfendorf
+long Du bist auf dem Dorfweg der Elfensiedlung. Der Weg fuehrt von Westen, vom Eingang der Siedlung, nach Osten, bis an die Palisade heran. Im Norden fuehrt ein kurzer Seitenweg zu einigen Haeusern. Im Sueden beginnt der Garten einer grossen Villa. Ein Wegweiser deutet nach Sueden.
+author Quasimodo
+186
+icon Picture icons/other/light/CANDL01C.gif
+short Ein Fackelspezialgeschaeft
+shop Fackelladen
+long Vorsichtig betrittst Du den hell erleuchteten Laden. Von allen Seiten scheint Dir ein angenehm warmes, nicht zu grelles Licht ins Gesicht. An jeder der sechs Waende kannst Du Unmengen von Fackeln, Lampen und Leuchtstaeben erkennen. Einige davon brennen oder leuchten lodernd vor sich hin, andere bieten eine geradezu stehende Flamme. Dem Eingang gegenueber ist eine hoelzerne Theke gezimmert, hinter der ein feuerrothaariger Elf mittleren Alters mit einer offenen Flamme herumspielt. Komisch, dass das Holz der Theke kein Feuer faengt... Oder besser: Gut, dass es nicht brennen kann, denn der Rest des Ladens besteht ebenfalls aus Holz. Es stehen Dir folgende Befehle zur Verfuegung: zeige                    kaufe <gegenstand> (oder nummer) verkaufe <fackel> Der Ausgang des Ladens liegt im Sueden.
+npc Fackelexperte
+author Freund
+184
+icon Picture icons/places/castle/TOWER.GIF
+short Auf einer Strasse im Elfendorf
+long Du befindest Dich am Eingang zum Elfendorf. Hier ist die einzige Luecke in der das Dorf umgebenden Palisade. An diesem Durchgang beginnt ein Weg, der von Suedwesten nach Osten durch das Dorf fuehrt. Am noerdlichem Wegesrand steht ein hoelzerner Wachturm, den man ueber eine Leiter ersteigen kann. Nach Norden fuehrt ein schmaler Weg an der Palisade entlang. Suedwestlich kannst Du die neue Elfensiedlung verlassen.
+npc Gaertnerin
+author Quasimodo
+182
+color gelbbraun
+short Waldweg
+long Der Waldweg fuehrt nach Westen und Osten durch den sich in alle Richtungen erstreckenden Wald. Im Norden ist der Eingang zu einem Fackelspezialgeschaeft.
+author einem Wald-Magier
+181
+short Port Vainer Landstrasse
+long Die Port Vainer Landstrasse knickt hier von Norden nach Osten ab und laeuft weiter an der Ruine der Akademie der Wissenschaften vorbei. Im Osten sind die Stadttore von Port Vain zu sehen.
+house Lelldorin
+author einem Ebenen-Magier
+180
+short Port Vainer Landstrasse
+long Die Port Vainer Landstrasse fuehrt in Nord-Sued Richtung weiter. Im Osten ist die Ruine der Akademie der Wissenschaften zu sehen und im Westen befinden sich die Auen des Dunkelwassers.
+npc Schmetterling
+author einem Ebenen-Magier
+179
+short Ruine der Akademie
+long Du befindest dich in der Ruine der Akademie der Wissenschaften. Diese Staette der Wissenschaft wurde durch ein grosses Feuer total vernichtet, und es fehlt das Geld fuer den Wiederaufbau. Im Westen liegt eine Strassenkreuzung.
+house Steinhaufen (Magirus)
+author einem Ebenen-Magier
+178
+short Akademiestrasse
+long Hier geht die Port Vainer Landstrasse nach Sueden ab. Im Osten liegt die Ruine der Akademie der Wissenschaften. Sie gab der Strasse ihren Namen. Die Akademiestrasse beginnt hier und fuehrt Richtung Westen.
+author einem Ebenen-Magier
+177
+short Akademiestrasse
+long Die Akademiestrasse fuehrt weiter in Ost-West Richtung. Weit im Norden beginnt die Gebirgsregion der Zwerge. Im Sueden liegen die Auen des Dunkelwassers, wo zahlreiche Bauernhoefe stehen.
+npc Weisskehlchen
+author einem Ebenen-Magier
+174
+icon Picture icons/landscape/road/SPAN00D.gif
+short Rumatabruecke
+long Du erreichst die Rumatabruecke, die nach einem der Schoepfer dieser Welt benannt ist. Sie ueberquert hier das Dunkelwasser, einen der beiden grossen Fluesse der Ebene, der in Nord-Sued Richtung fliesst. Nach Osten und Westen verlaeuft die Akademiestrasse, eine der wichtigsten Strassen der Ebene.
+author einem Ebenen-Magier
+172
+short Kreuzung Ostwall-Akademiestrasse
+long Hier trifft der Ostwall auf die Akademiestrasse. Der Ostwall fuehrt nach Sueden bis zur Nablafurt. Beide Strassen sind Hauptverbindungsstrassen der Ebene. Nach Norden geht ein Weg weiter.
+author einem Ebenen-Magier
+171
+short Akademiestrasse
+long Die Akademiestrasse fuehrt von Westen nach Osten weiter. Die Strasse fuehrt hier schnurgerade durch die Ebene.
+author einem Ebenen-Magier
+169
+short Akademiestrasse
+long Die Akademiestrasse fuehrt von Westen nach Osten weiter. Im Westen ist eine Abzweigung zu erkennen.
+author einem Ebenen-Magier
+168
+short Dashel teilt Dir mit: nein
+long Die Akademiestrasse fuehrt weiter in Ost-West-Richtung durch die Ebene. Im Norden siehst Du ausgedehnte Waelder, und am Horizont kannst Du hohe Berge im Dunst sehen. Dort liegt die Heimat der Zwerge, waehrend der Wald eher den Elfen gehoert. Nach Sueden fuehrt ein schmaler Weg ueber eine Wiese, waehrend Du weiter im Suedosten schon die Auslaeufer eines dunklen Waldes sehen kannst. Ein gammliger Wegweiser steht am Strassenrand.
+author einem Ebenen-Magier
+166
+short Auf der Akademiestrasse
+long Die Akademiestrasse fuehrt weiter in Ost-West-Richtung durch die Ebene. Im Norden siehst Du ausgedehnte Waelder, und am Horizont beschraenken Berge Deine Sicht. Dort liegt die Heimat der Zwerge, waehrend der Wald eher den Elfen gehoert. Suedlich von Dir liegt ein dichter Wald, der Grimmswald. Von ihm geht eine etwas duestere Atmosphaere aus. Weit im Osten siehst Du eine Abzweigung.
+author einem Ebenen-Magier
+164
+short Auf der Akademiestrasse vor "Werith's Inn"
+long Die Akademiestrasse schlaengelt sich weiter in oestlicher bzw. westlicher Richtung durch den Wald. Suedlich der Strasse liegt eine Lichtung, auf der ein recht grosses Blockhaus steht.
+author einem Ebenen-Magier
+161
+short Auf der Akademiestrasse
+long Die Akademiestrasse windet sich hier zwischen den Baeumen hindurch, behaelt aber ihre grobe Ost-West-Ausrichtung bei. Sie ist gepflastert und recht breit, da es sich um eine grosse Verbindungsstrasse handelt. Durch die Baeume schimmert weit westlich eine Kreuzung durch. Nach Osten verschwindet die Strasse im Wald. Noerdlich scheint sich ein groesseres Gebaeude zu befinden, zu dem sich eine kleine Allee hinzieht. Es herrscht ein reges Kommen und Gehen an seltsam gekleideten Gestalten.
+author einem Ebenen-Magier
+160
+short Akademiestrasse
+long Du erreichst eine Wegkreuzung. Hier verlaeuft die Akademiestrasse, die eine der wichtigsten Hauptverbindungsstrassen darstellt. Sie fuehrt nach Westen und Osten weiter. Im Norden schlaengelt sich ein kleiner Pfad in eine huegelige und bewaldete Region hinein. Ein schmaler Weg fuehrt hier nach Sueden in einen Wald. Du kannst ein Hinweisschild sehen.
+author einem Ebenen-Magier
+159
+color gelbbraun
+short Ein Pfad in Nord-Sued Richtung
+long Du laeufst einen schmalen Pfad entlang, der von Norden nach Sueden fuehrt. Weiter im Norden scheint der Pfad an einer tiefen Schlucht zu enden.
+author einem Ebenen-Magier
+158
+color gelbbraun
+short Ein Pfad nach Sueden
+long Der Pfad endet im Norden an einer tiefen Schlucht. An der Nordseite der Schlucht befindet sich ein riesiges Waldgebiet, das sowohl nach Westen als auch nach Osten weiter reicht als man sehen kann. Aus den Tiefen der Schlucht hoerst Du ein donnerndes Geraeusch. Nach Norden fuehrt eine Bruecke ueber die Schlucht, und nach Sueden ein Weg.
+author einem Ebenen-Magier
+156
+color gelbbraun
+icon Picture icons/landscape/road/SPAN01D.gif
+short Eine Kutsche donnert vorbei.
+long Die Haengebruecke schwankt ein wenig im Wind, so dass du dich an den Seilen festhalten musst. Du willst schnell wieder herunter von dieser Bruecke, entweder nach Norden in den Wald oder nach Sueden in die Huegel.
+author einem Wald-Magier
+155
+color gelbbraun
+short Waldrand an der Schlucht
+long Der Wald endet hier abrupt an einer Schlucht, die von einer Haenge- bruecke ueberspannt wird. Aus den Tiefen der Schlucht hoerst du ein donnerndes Geraeusch. Ansonsten wirkt alles, als waerst du noch mitten im Wald. Ein schmaler Waldweg fuehrt nach Norden. Im Westen kannst Du einen Weg ausmachen, der in eine andere Art von Wald zu fuehren scheint. Ein Wegweiser.
+house Landhaus (Bernhard)
+author einem Wald-Magier
+154
+color gelbbraun
+short Waldweg
+long Der Waldweg fuehrt nach Norden und Sueden durch den sich in alle Richtungen erstreckenden Wald.
+house Meditationstempel (MagicOlli)
+author einem Wald-Magier
+153
+color gelbbraun
+short Waldweg
+long Der Waldweg fuehrt nach Norden und Sueden durch den sich in alle Richtungen erstreckenden Wald.
+author einem Wald-Magier
+152
+color gelbbraun
+short Dashel teilt Dir mit: irgendwie bin ich von der Bibliothek enttaeuscht ...
+long Der Waldweg fuehrt nach Nordwesten und Sueden durch den sich in alle Richtungen erstreckenden Wald. Ab und zu hoerst du Voegel singen.
+house Waldhaus (Jurry,Tennety)
+author einem Wald-Magier
+151
+color gelbbraun
+short Waldweg
+long Der Waldweg fuehrt nach Nordwesten und Suedosten durch den sich in alle Richtungen erstreckenden Wald.
+house MorgenGrauen-Museum
+author einem Wald-Magier
+150
+color gelbbraun
+short Waldweg
+long Der Waldweg fuehrt nach Nordwesten und Suedosten durch den sich in alle Richtungen erstreckenden Wald. Im Nordosten verlaeuft eine Palisade.
+house Olymp (Hercules)
+author einem Wald-Magier
+148
+color gelbbraun
+short Kreuzung
+long Der in Nordwest-Suedostrichtung verlaufende Waldweg wird hier von einem Trampelpfad von Osten nach Westen gekreuzt. Der Verursacher des Trampelpfads ist (zum Glueck) gerade nicht hier. Ein Wegweiser steht vor Dir.
+author einem Wald-Magier
+146
+short Trampelpfad
+long Du befindest Dich auf einem Trampelpfad, der sich in Ost-West-Richtung durch den Wald schlaengelt. Im Westen fuehrt er auf eine Kreuzung, nach Osten scheint es tiefer in den Wald zu gehen. Im Sueden siehst Du eine Lichtung.
+house Bambel
+author einem Wald-Magier
+145
+short Trampelpfad
+long Du stehst mitten im Wald auf einem Trampelpfad der in Ost-West-Richtung verlaeuft. Rings um Dich herum siehst Du nichts als Eichen, was diese Gegend nicht gerade abwechslungsreich erscheinen laesst.
+house Fahnder
+author einem Wald-Magier
+144
+short Trampelpfad
+long Der Trampelpfad fuehrt nach Suedosten und Westen durch den Wald. Etwas abseits des Weges kannst Du einen Hexenring erkennen.
+house Hexenring (Blackmoor)
+npc Luchs
+author einem Wald-Magier
+142
+short Trampelpfad
+long Der Trampelpfad fuehrt nach Nordosten und Nordwesten durch den Wald, wobei er in Richtung Osten immer mehr in einen Mischwald uebergeht, waehrend er in westlicher Richtung zu einem reinen Eichenwald wird. Im Osten siehst Du eine Lichtung mit einem Baum in der Mitte.
+house Hoehle (Hanshansen)
+author einem Wald-Magier
+140
+short Trampelpfad
+long Der Trampelpfad fuehrt nach Nordosten und Suedwesten durch den Wald. Nach Nordosten hin geht es leicht bergauf, waehrend Du im Osten den Eindruck gewinnst, als wuerde der Wald etwas lichter werden.
+author einem Wald-Magier
+139
+short Trampelpfad
+long Der Trampelpfad fuehrt nach Osten und Suedwesten durch den Wald. Nach Osten geht es spuerbar bergauf. Nach Norden fuehrt von hier eine Abzweigung, welche noch nicht ganz so zertrampelt ist wie der Rest des Pfades.
+author einem Wald-Magier
+137
+short Trampelpfad
+long Der Trampelpfad fuehrt nach Nordosten und Westen durch den Wald. Nach Osten hin geht es bergauf, und der Mischwald geht dort in Nadelwald ueber.
+author einem Wald-Magier
+135
+short Trampelpfad
+long Der Trampelpfad fuehrt nach Osten und Suedwesten durch den Wald. Nach Osten wird der Nadelwald mit zunehmender Hoehe lichter, waehrend sich weiter westlich Mischwald erstreckt. Nach Nordwesten fuehrt ein laendlicher Weg.
+author einem Wald-Magier
+134
+short Beginn eines Trampelpfades
+long Von einer Hoehle hier im Hang geht ein Trampelpfad nach Westen in den Wald hinein. Im Osten ist der Waldrand zu sehen; ein kaum erkennbarer Fusspfad fuehrt nach Osten den Hang hinauf, ein weiterer Pfad fuehrt nach Nordosten. Auf dem Boden zwischen den Wegen faellt Dir eine rostige Eisenklappe auf.
+author einem Wald-Magier
+133
+icon Picture icons/npc/animal/DOG.gif
+short Waldrand
+long Du stehst am Rand eines riesigen Waldes im Westen. Ein kaum erkennbarer Fusspfad fuehrt in den Wald hinein. Eigentlich sollte er auch in die Berge hinauffuehren, aber da ist der Weg durch Lawinen unbegehbar.
+npc Bernhardiner
+author einem Wald-Magier
+131
+icon Picture icons/npc/insect/SPIDR00A.gif
+short Rand der Hochebene
+long Du bist unterhalb riesiger Felsmassive, die sich noerdlich von Dir auf- tuermen. Steile scharfe Felsen ragen wie gewaltige Finger in den Himmel. Es sind die Schreckensberge, ueber die mehr schreckliche Geruechte kur- sieren, als ueber sonst irgend etwas. Die Hochebene erstreckt sich weit nach Sueden und Osten und noch ein kleines Stueck nach Westen, wo sie von den Bergen von Tingan abgegrenzt wird. Unterhalb der Felswand noerdlich von dir siehst Du ein scheinbar ganz normales Gebuesch.
+npc Hase,Spinne,Hornisse
+author einem Gebirgs-Magier
+130
+icon Picture icons/npc/dragon/dino2b.gif
+short Rand der Hochebene
+long Im Norden und Westen tuermen sich gewaltige Felsmassive vor Dir auf. Die Waende sind so steil, dass an ein Erklettern nicht zu denken ist. Nur im Nordwesten ist ein winziger Durchlass, der Pfad zur Schreckens- spitze, dem hoechsten Berg der Umgebung, wenn nicht sogar dem hoechs- ten Berg der Welt. Wilde Geruechte kursieren um diesen Berg, zu schrecklich, um hier wiedergegeben zu werden. Im Sueden und Osten fuehren Wege unterhalb der Felswaende entlang.
+npc Drachenbaby
+author einem Gebirgs-Magier
+128
+short Rand der Hochebene
+long Westlich von Dir ragen riesige Felsmassive in den Himmel auf, es sind die heiligen Berge von Tingan, in denen sich das heilige Orakel befinden soll. Allerdings besteht von hier keinerlei Moeglichkeit, die Berge zu erklimmen. Im Norden geht die Bergkette in die Schreckensberge ueber, und Du erkennst die Schreckensspitze, hoeher als alles andere hier. Ein Weg fuehrt oestlich in die Ebene hinein, und ein Weg geht in Nord-Sued- Richtung, entlang der Berge. Bei genauerem Hinsehen erkennst Du zudem einen schmalen Pfad, der sich zwischen zwei grossen Felsen nach Westen windet.
+npc Wolf
+author einem Gebirgs-Magier
+127
+short Auf der Hochebene
+long Die Hochebene erstreckt sich von hier in alle Richtungen, begrenzt im Norden durch die Schreckensberge und im Westen durch die Berge von Tingan. Die Hochebene scheint ausserordentlich fruchtbar zu sein, ueberall sind Blumen, Wiesen, Buesche und Baeume zu sehen.
+npc Schmetterling(2), Kakerlake
+author einem Gebirgs-Magier
+126
+icon Picture icons/places/house/HOUSE02G.gif
+short Auf der Hochebene
+long Du befindest Dich auf der Hochebene, die sich in alle Richtungen erstreckt. Im Norden siehst Du die Schreckensberge, und auch in den anderen Richtungen sind im Dunst hohe Berge zu erkennen. Die Ebene wimmelt von Voegeln, Insekten und kleinen Tieren, und ueberall bluehen Blumen und wachsen Pflanzen. Ein kleines Haeuschen steht auf der Wiese, an dem ein hoelzernes Schild. haengt.
+author einem Gebirgs-Magier
+123
+short Rand der Hochebene
+long Noerdlich von Dir ragen die maechtigen Bergriesen der Schreckensberge auf, die ihren Namen nicht zu Unrecht tragen. Schon viele wackere Abenteurer stuerzten in den Tod oder wurden von schrecklichen Ungeheuern verschleppt und getoetet. Im schroffen Gegensatz dazu steht die Ebene, die sich bunt bluehend weit nach Sueden erstreckt.
+npc Wespe
+author einem Gebirgs-Magier
+122
+short Rand der Hochebene
+long Du bist am noerdlichen Rand der Hochebene, wo die Schreckensberge drohend vor Dir aufragen. Viele schreckliche Geschichten werden von diesen Bergen erzaehlt und Scharen von Abenteurern sind beim Versuch, sie zu ueberqueren, ums Leben gekommen. Hier ist gluecklicherweise nicht an ein Ersteigen der Berge zu denken, aber immerhin kann man ueber einen kleinen Pass im Nord- osten in das dahinterliegende Tal gelangen. Ausserdem oeffnet sich dunkel und drohend eine kleine Hoehle tief in den Berg. Ein Weg fuehrt nach Norden in die Hoehle und unterhalb der steilen Klippen entlang von Westen nach Suedosten. Es gibt fuenf sichtbare Ausgaenge: sueden, westen, norden, nordosten und
+author einem Gebirgs-Magier
+121
+short Auf der Hochebene
+long Die Kette der Schreckensberge naehert sich von Norden her, bis zu einem Punkt suedoestlich von hier, in dem sie sich mit den Silberbergen, deren Kette sich im Sueden erstreckt, trifft. Die Hochebene erstreckt sich weit in Richtung Sueden und Westen.
+npc Ameise(2), Blattlaus(3)
+author einem Gebirgs-Magier
+120
+short Auf der Hochebene
+long Du stehst auf der Hochebene und hoerst dem Gezwitscher der Voegel und dem Plaetschern des kleinen Baches suedlich von hier zu. In allen Rich- tungen kannst du am Horizont hohe Gebirgsmassive erkennen, die die Hoch- ebene einschliessen. Die Hochebene verdankt ihre Fruchtbarkeit dem Schutz dieser Gebirgsmassive. Ein grosser Felsblock faellt Dir auf, der hier auf der Wiese liegt.
+npc Meise, Kakerlake
+author einem Gebirgs-Magier
+119
+icon Picture icons/npc/animal/BEAR2.gif
+short Auf der Hochebene
+long Du befindest Dich auf einer grossen, herrlich bluehenden Hochebene, auf der sich Kleintiere, Voegel und Insekten nur so tummeln. Alles ist fried- lich, nur das Zwitschern der Voegel und das Rauschen eines kleinen Baches im Sueden ist zu hoeren. Im Westen erheben sich die schneebedeckten Berge von Tingan und im Norden und Sueden kannst du weiter weg zwei Gebirgsketten sehen.
+npc Baer
+author einem Gebirgs-Magier
+118
+short Rand der Hochebene
+long Westlich von dir liegen die schneebedeckten Berge von Tingan, in denen sich das heilige Orakel befinden soll. Ein Erklimmen der Berge von hier ist jedoch unmoeglich, toedliche Ueberhaenge und Felsspitzen verurteilen jeden Versuch zum Scheitern. Im Norden kannst Du gerade noch die Schreckens- berge erkennen, im Sueden siehst Du die weniger rauhen, schon fast lieb- lichen Silberberge. Ein Weg verbindet die zwei Gebirgsmassive in Nord- Sued-Richtung und ein anderer fuehrt nach Osten in die Hochebene.
+author einem Gebirgs-Magier
+117
+icon Picture icons/landscape/sea/WAVE00A.gif
+short Quelle
+long Du stehst direkt an der Quelle des Osterbaches, der gurgelnd und spritzend aus einer kleinen Oeffnung in den Bergen westlich von Dir herauskommt. Die Berge von Tingan ragen unersteigbar westlich vor Dir auf, an Hoehe nur noch von den Schreckensbergen weit im Norden uebertroffen. Die Hochebene breitet sich weit nach Osten aus, als wolle sie dem noch jungen Bach keine Hindernisse in den Weg legen. Ein weiterer Weg fuehrt nach Sueden in Rich- tung der Silberberge. Neben dem Bach steht ein sehr hoher, silberner Turm.
+npc Ameise (2)
+author einem Gebirgs-Magier
+113
+color blau
+short Am Bach
+long Die Berge von Tingan sind westlich zu sehen, von denen der Osterbach, hier noch ein kleines Baechlein, seinen Ausgang nimmt. Ein Weg fuehrt entlang des Baches in Ost-West-Richtung. Die Silberberge im Sueden sind deutlich zu erkennen, nur ein kurzes Stueck von hier. Der Weg fuehrt entlang der Berge in Nord-Sued-Richtung.
+author einem Gebirgs-Magier
+112
+icon Picture icons/npc/animal/DOG.gif
+short Rand der Hochebene
+long Du befindest Dich am suedwestlichsten Teil der Hochebene inmitten von hohen Bergen. Die Berge von Tingan westlich vereinigen sich hier mit den Silber- bergen im Sueden. Ein Weg fuehrt entlang der Berge von Norden nach Osten und ein anderer im Suedwesten in die Berge hoch. Dieser Weg ist allerdings momentan nicht begehbar, da er erst kuerzlich von einer Lawine verschuettet wurde. Ein anderer Weg fuehrt direkt auf eine Anhoehe im Sueden.
+npc Bernhardiner
+author einem Gebirgs-Magier
+111
+color blau
+short Am Bach
+long Der Osterbach fliesst mit leichtem Plaetschern von Westen nach Osten. Er ist hier noch sehr seicht und problemlos zu ueberqueren. Gruenes Gras und Buesche, in denen du Voegel zwitschern hoerst, wachsen an seinem Rand. Die Hochebene erstreckt sich in alle Richtungen, begrenzt durch maechtige Gebirgszuege. Ein kleines Haus steht auf der Wiese.
+author einem Gebirgs-Magier
+110
+short Rand der Hochebene
+long Suedlich von Dir erheben sich die Silberberge, die Heimat der Zwerge. Die Silberberge sind hoch, doch lange nicht so bedrohlich wie die Schreckens- berge, die die Ebene im Norden begrenzen. Westlich von Dir, etwas weiter entfernt, siehst du die Berge von Tingan, zu denen ein Weg hinfuehrt. Zwei weitere Wege fuehren entlang der Berge nach Norden und Osten.
+author einem Gebirgs-Magier
+109
+icon Picture icons/places/craft/HAMMR04A.gif
+short Beim Waffenschmied
+long Dies scheint der Arbeitsplatz eines Waffenschmieds zu sein, ein staehlerner Amboss steht neben einem flackernden Feuer. Der Schmied fertigt hier seine Waffen an, und bietet sie auch zum Verkauf an. Auf einem Schild an der Wand kannst Du die Preise ablesen. Der Ausgang des Raums befindet sich im Sueden.
+npc Waffenschmied
+author einem Gebirgs-Magier
+107
+icon Picture icons/inventory/RING00A.gif
+short Alarins Juwelierladen
+long Du befindest dich in einem kleinen duesteren Laden, der von einer einzigen leuchtenden Kristallkugel beleuchtet wird. Die Ablagen sind dick verglast und geben den Blick frei auf die schoensten Juwelen. Auf der Theke steht eine grosse Glocke neben einem Buch und an der Wand haengt eine Tafel. Ausserdem steht jetzt neben der Theke ein Flugblattautomat.
+author Alarin
+106
+pub Diamantbar
+short Die Diamantbar
+long Du befindest Dich in der Diamantbar. Die Diamantbar ist der Ort, an dem sich die Zwerge zum Plaudern und Trinken treffen. Er ist auch vorzueglich dazu geeignet, denn es gibt hier prima Getraenke. Wenn Du sehen moechtest, was es genau gibt, dann tippe einfach 'menue' ein. Zwerge bekommen selbstverstaendlich ermaessigte Preise. Der Ausgang der Bar ist im Sueden.
+npc fetter Zwerg
+author einem Gebirgs-Magier
+105
+short Gang
+long Du bist in einem unterirdischen Gang in der Zwergenstadt, der durch Fackeln an der Wand hell erleuchtet ist. Im Westen ist der Eingang des Bergwerks. Noerdlich ist der Eingang zum Arbeitsraum eines Waffenschmieds, waehrend suedlich ein Juwelier seinen Laden errichtet hat. Der Gang fuehrt nach Osten zum Zentrum der Stadt.
+author einem Gebirgs-Magier
+104
+short Zwergenladen
+shop Zwergenladen
+long Dies ist ein kleiner Laden in der Zwergenstadt. Du hast folgende Moeglichkeiten: zeige                    kaufe <gegenstand> (oder nummer) zeige rue(stungen)       verkaufe <gegenstand> zeige waf(fen)           verkaufe alles zeige ver(schiedenes)    schaetze <gegenstand> Der Ausgang liegt im Norden.
+author einem Gebirgs-Magier
+103
+short Thronsaal
+long Wenn Dich die Lichterpracht des Vorraums nur beeindruckt hat, so bist Du jetzt schlichtweg ueberwaeltigt. Du stehst in einer riesigen Kuppelhalle, die von einer unglaublichen Anzahl von Fackeln erleuchtet wird. Eine weitere Lichtquelle ist das Loch weit oben in der Decke, durch das bei Tag das helle Sonnenlicht hereinstrahlt. Das Licht wird gebrochen und reflektiert von hell glitzernden Kristallen und Edelsteinen, die sorgfaeltig in die Wand eingelassen sind. Am suedlichen Ende der Halle steht ein grosser Thron, auf dem frueher der Koenig der Zwerge sass. Daneben haengt eine Tafel. Ueber dem Thron haengt das Banner der Zwerge neben einer Streitaxt und einem Schild. Der Ausgang der Halle liegt im Norden.
+npc Waechter des Koenigs (2)
+author einem Gebirgs-Magier
+102
+post Zwergenpost
+101
+icon Picture icons/places/church/CHURC00A.gif
+npc Zwergenpriester
+100
+short Gang
+long Du bist in einem Gang der Zwergenstadt, der mit Fackeln hell erleuchtet ist. Im Sueden ist der Eingang zu einem Laden und noerdlich liegt die Diamantbar, der liebste Treffpunkt aller Zwerge. Oestlich ist gerade noch eine Kreuzung zu erkennen, waehrend der Gang ausserdem auch noch nach Westen weiterfuehrt.
+author einem Gebirgs-Magier
+99
+short Gang
+long Direkt vor Dir im Sueden siehst Du ein maechtiges Metalltor, das weit ge- oeffnet ist. Es fuehrt direkt in den Thronsaal des Koenigs der Zwerge und Du solltest Dich an Deine guten Manieren erinnern, wenn Du ihn betrittst. Die Waende sind mit kostbaren Schilden geschmueckt, die im Licht der vielen Fackeln schimmern. Noerdlich fuehrt der Gang zu einer Kreuzung.
+npc Waechter des Koenigs (2)
+author einem Gebirgs-Magier
+98
+short Gang
+long Der Gang, den die Zwerge in den Berg gehauen haben, fuehrt hier nach Westen, vorbei an einer Art Felskapelle im Sueden und der Post im Norden. Der Gang ist durch einige Fackeln hell erleuchtet.
+author einem Gebirgs-Magier
+97
+short Kreuzung
+long Du stehst am Kreuzungspunkt zweier Gaenge in der Zwergenstadt. Der eine fuehrt nach Norden zum Ausgang und nach Sueden zum Thronsaal, waehrend der in Ost-West-Richtung laufende Gang zu einigen Geschaeften und aehnlichen Dingen fuehrt. Wie ueberall wird auch hier der Gang durch Fackeln beleuchtet.
+author einem Gebirgs-Magier
+96
+color blau
+short Am Bach
+long Auch hier ist der Osterbach so schmal und seicht, dass man ihn problemlos durchwaten kann, auch wenn das Gebirgswasser eiskalt ist. Rundherum sind gruene Wiesen, vereinzelt Baeume und Buesche, und es wimmelt von Leben. Schmetterlinge schwirren herum, und Voegel zwitschern sich ihre Lieder zu. Die Ebene erstreckt sich in alle Richtungen, umrahmt von hohen Gebirgs- massiven.
+npc Robin
+author einem Gebirgs-Magier
+95
+short Rand der Hochebene
+long Du bist am suedlichen Rand der Hochebene, die hier von den wunderschoenen Silberbergen begrenzt wird. Vor langer Zeit entdeckten die Zwerge riesige Silbervorkommen, und seitdem sind diese Berge ihre liebste Heimat. Die Hochebene erstreckt sich weit nach Norden und Osten und noch ein kleines Stueck in Richtung Westen. Im Norden hoerst du das Plaetschern eines kleinen Baches. Ein kleines Haus steht suedlich von Dir.
+author einem Gebirgs-Magier
+94
+short Eingang zur Zwergenstadt
+long Du befindest Dich in der Eingangshalle der Zwergenstadt. Die Zwerge haben sich hier tief in die Silberberge hineingegraben und sich eine Heimat ge- schaffen. Die Waende sind kunstvoll behauen und spiegelglatt poliert. Ueberall haengen Fackeln, die den Raum taghell beleuchten. Im Sueden fuehrt ein Gang tiefer in den Berg und im Norden ist der Ausgang auf die Hochebene.
+npc Zwergenwaechter (2)
+author einem Gebirgs-Magier
+93
+short Eingang zur Zwergenstadt
+long Du befindest Dich vor dem Eingang der Zwergenstadt. Ein hohes Felsentor, das weit geoeffnet ist, ist suedlich in die senkrechte Felswand eingelassen, und fuehrt in die Stadt. Die Ebene erstreckt sich weit in alle anderen Rich- tungen.
+npc Wolf
+author einem Gebirgs-Magier
+92
+short Rand der Hochebene
+long Du bist am suedoestlichen Rand der Hochebene, die hier von den Silberbergen begrenzt wird. Die Bergkette macht hier einen Knick von Westen nach Nord- osten, dem ein Pfad folgt. Trotz steiler und schroffer Felswaende, wirken die Silberberge richtig friedlich im Gegensatz zu ihrem noerdlichen Gegen- part, der gerade noch am Horizont zu erkennen ist. Die Hochebene breitet sich weit nach Westen und Norden aus. Eine kleine Hoehle fuehrt in die Felswand.
+npc Spinne (2), Kakerlake
+author einem Gebirgs-Magier
+91
+icon Picture icons/npc/insect/BEE01B.gif
+short Am Bach
+long Du bist im Suedosten einer grossen Hochebene. Von Norden naehert sich die zerklueftete Felskette der Schreckensberge und von Sueden kommen die Silberberge, benannt nach grossen Silbervorkommen, naeher. Beide Gebirgs- ketten treffen sich leicht nordoestlich von hier und lassen nur eine schmale Schlucht frei, durch die sich der Osterbach gen Osten schlaengelt. Der Bach fliesst nordwestlich vorbei, du kannst gerade noch ein leichtes Glucksen und Plaetschern vernehmen. Die Hochebene erstreckt sich weit nach Norden und Westen und noch ein kleines Stueckchen nach Sueden und Osten.
+npc Wespe, Hornisse
+author einem Gebirgs-Magier
+90
+icon Picture icons/npc/animal/hase.gif
+short Rand der Hochebene
+long Du befindest Dich unterhalb der hoch aufragenden Schreckensberge, die sued- oestlich von hier mit den Silberbergen zusammentreffen. Ein kleiner Bach hat sich seinen Weg zwischen den Bergriesen gegraben und stuerzt sich durch eine Schlucht in die Tiefe. Ein Weg fuehrt nach Sueden zum Eingang der Schlucht hin. Eine grosse Hochebene liegt westlich von hier, die sehr fruchtbar zu sein scheint.
+npc Hase, Amsel
+author einem Gebirgs-Magier
+89
+color blau
+short Am Bach
+long Der Osterbach fliesst hier froehlich glucksend von Suedwesten nach Osten, seicht genug, um durchwatet zu werden. Die Gebirgsketten der Schreckens- berge im Norden und der Silberberge im Sueden, treffen sich oestlich und lassen dem Bach nur einen schmalen Durchgang. Rundherum tummeln sich Voegel, Schmetterlinge und anderes Getier auf den gruenen Wiesen der Hoch- ebene, die sich in alle Richtungen fortsetzt.
+npc Kroete
+author einem Gebirgs-Magier
+88
+icon Picture icons/npc/animal/FROG.gif
+short Rand der Hochebene
+long Du bist fast am Treffpunkt der Silberberge mit den Schreckensbergen im Norden angelangt. Noerdlich von hier siehst du den Osterbach in einer schmalen Schlucht nach Osten verschwinden. Die Ebene breitet sich weit in Richtung Westen aus und ein Pfad folgt den Silberbergen nach Sued- westen.
+npc Frosch
+author einem Gebirgs-Magier
+87
+color blau
+short Am Bach
+long Der Osterbach fliesst hier schon deutlich schneller als im Westen, ist aber immer noch gefahrlos zu ueberqueren. Er fliesst oestlich in eine schmale Schlucht hinein, die die Schreckensberge im Norden von den Sil- berbergen im Sueden trennt. Die zwei maechtigen Gebirgsketten umrahmen die westlich gelegene Hochebene, wie zwei gewaltige Mauern, die sich in nord- bzw. suedwestlicher Richtung dahinziehen. Wege fuehren westlich in die Hochebene, oestlich in die Schlucht hinein und noerdlich und sued- lich zu den Gebirgsketten.
+author einem Gebirgs-Magier
+86
+short Schlucht
+long Du befindest Dich in einer schmalen Schlucht, die der Osterbach zwischen den Schreckensbergen im Norden und den Silberbergen im Sueden geformt hat. Der Bach stuerzt sich oestlich von Dir in einem hohen Wasserfall in die Tiefe. Die Berge um Dich herum sind so hoch, dass nur ein schummeriges Licht den Weg, der oestlich nach unten fuehrt, beleuchtet. Im Westen oeffnen sich die Berge in eine Hochebene.
+author einem Gebirgs-Magier
+85
+icon Picture icons/landscape/sea/WAVE00D.gif
+short Schlucht
+long Du bist in der Schlucht der sieben Faelle, benannt nach den sieben Wasser- faellen, in denen sich der Osterbach Richtung Meer stuerzt. Du stehst unter- halb eines davon, des Talin-Falles. Von den hohen Bergen im Norden und Sueden fliessen weitere Baeche herunter, die sich mit dem Osterbach vereinigen und ihm mehr Wasser geben. Ein schmaler Pfad fuehrt westlich neben dem Wasser- fall nach oben und oestlich nach unten.
+author einem Gebirgs-Magier
+84
+short Schlucht
+long Der Osterbach rauscht in wahnwitzigem Tempo durch die schmale Schlucht, gespeist von weiteren Baechen, die sich von den hohen Bergen in ihn er- giessen. Ein schmaler Pfad fuehrt entlang des Baches von Westen nach Nordosten.
+author einem Gebirgs-Magier
+83
+short Schlucht
+long Der Osterbach bewegt sich in mehreren kleinen Kaskaden auf den naechsten grossen Wasserfall zu, den Unfall. Der Bach macht hier einen Knick von Suedwesten nach Norden, bevor er sich in den Abgrund stuerzt. Hohe Fels- waende ragen rund um Dich auf, und Du fuehlst Dich ziemlich klein. Ein schmaler, schluepfriger Pfad fuehrt entlang des Baches.
+author einem Gebirgs-Magier
+item Messer
+82
+icon Picture icons/landscape/sea/WAVE00D.gif
+short Schlucht
+long Du stehst unterhalb des Wasserfalls, der den seltsamen Namen Unfall traegt. Der Osterbach stuerzt hier von Sueden herab und fliesst dann in nordoest- licher Richtung weiter. Das Rauschen des Wasserfalls uebertoent alle an- deren Geraeusche mit seinem dumpfen Grollen. Entlang des Baches fuehrt ein sehr schmaler und glitschiger Pfad.
+author einem Gebirgs-Magier
+81
+short Schlucht
+long Die Schlucht der sieben Faelle macht hier einen Knick von Suedwesten nach Suedosten. Der Bach gurgelt und spritzt neben Dir, Du fuehlst Dich wie nach einem Regenguss. Um Dich herum ragen riesige Steilwaende auf, die unbe- zwingbar zu sein scheinen. Ein kleiner Pfad fuehrt am Bach entlang.
+author einem Gebirgs-Magier
+80
+short Schlucht
+long Der Osterbach, der durch viele Nebenzufluesse schon viel groesser als weiter oben ist, rauscht durch die enge Schlucht von Nordwesten nach Suedosten auf einen weiteren grossen Wasserfall zu. Die hohen Felswaende um Dich herum lassen kaum noch Tageslicht bis hier unten vordringen, und Du hast alle Muehe, auf dem gefaehrlichen Pfad nicht auszurutschen.
+author einem Gebirgs-Magier
+78
+icon Picture icons/landscape/sea/WAVE00D.gif
+short Schlucht
+long Du stehst unterhalb eines gewaltigen Wasserfalls, des Nachtfalls, der sich im Nordwesten ueber eine Felskante stuerzt. Der Bach macht hier einen Bogen in Richtung Sueden, dem der schmale Weg folgt. Das Rauschen des Wasserfalls uebertoent alle Geraeusche, und seine Gischt durchnaesst Dich bis auf die Haut.
+author einem Gebirgs-Magier
+77
+icon Picture icons/landscape/sea/WAVE00D.gif
+short Schlucht
+long Der reissende Osterbach macht hier einen scharfen Knick von Norden nach Osten, dem der schmale Pfad folgt. Rundherum tuermen sich riesige Fels- waende auf, die sich bedrohlich auf Dich zu stuerzen scheinen. Nur ein daemmeriges Licht dringt bis hier unten durch. Ein schmaler Weg zweigt hier nach Suedwesten ab und verschwindet schnell hinter einer Felswand. Auf der gegenueberliegenden Seite stuerzt ein breiter, aber duenner Wasser- fall ueber die Felsen herab in den Osterbach. Das aufspritzende Wasser huellt die Schlucht in dichten Nebel.
+author einem Gebirgs-Magier
+76
+short Schlucht
+long Von allen Seiten stuerzen kleine Zufluesse die Felswaende herunter und vereinigen sich mit dem Osterbach, der immer mehr an Groesse gewinnt. Der Bach fliesst in einem atemberaubenden Tempo von Westen nach Osten, ein Fehltritt wuerde mit Sicherheit das Ende bedeuten. Weiter im Osten hoerst du ein dumpfes Grollen, das von einem gigantischen Wasserfall zu kommen scheint.
+author einem Gebirgs-Magier
+75
+short Schlucht
+long Ein ohrenbetaeubender Laerm, der von dem gigantischen Wasserfall nordoestlich von hier kommt, uebertoent alles und verursacht ein flaues Gefuehl in deinem Magen. Der Bach und der ihm folgende Weg macht einen leichten Bogen von Westen nach Nordosten und stuerzt sich dann Hunderte von Metern in die Tiefe.
+author einem Gebirgs-Magier
+74
+icon Picture icons/landscape/sea/WAVE00D.gif
+short Schlucht
+long Du stehst unterhalb eines riesigen Wasserfalles und wuerdest Dir am liebsten die Ohren zuhalten, wegen des Laerms, den er erzeugt. Der Drachenfall stuerzt hier mehrere hundert Meter tief in den Drachensee, der sich nach Norden aus- breitet. Ein Weg fuehrt neben dem Wasserfall im Suedwesten nach oben und am See entlang nach Nordosten. Am Rand des Sees siehst Du eine kleine Huette.
+house Huette (Horschd)
+npc Libelle
+author einem Gebirgs-Magier
+72
+icon Picture icons/places/ICON_143.GIF
+short Schlucht
+long Das Tal ist hier weiter als an den anderen Stellen und fast vollstaendig vom Drachensee ausgefuellt. Der Abfluss des Sees im Osten bildet einen weiteren Wasserfall, den Reinfall. Eine gefaehrliche Stroemung macht den See zur Todesfalle, wer dort hineinfaellt, fuer den gibt es kein Entrinnen mehr. Der Weg fuehrt am Wasserfall nach unten und am See entlang nach Suedwesten. Am Seeufer steht eine Glocke.
+author einem Gebirgs-Magier
+71
+icon Picture icons/landscape/sea/WAVE00D.gif
+short Schlucht
+long Im Westen kommt der Osterbach den Reinfall donnernd heruntergestuerzt, und fliesst dann zuegig nach Nordosten weiter. Die Berge erheben sich rund um Dich und lassen kaum noch Licht nach unten in die Schlucht dringen. Der schmale und glitschige Pfad fuehrt weiter am Bach entlang. Im Sueden fuehrt eine noch engere Schlucht direkt in den Berg hinein, aus der ein ekliger Schwefelgestank dringt.
+author einem Gebirgs-Magier
+69
+short Schlucht
+long Der Osterbach fliesst mit atemberaubender Geschwindigkeit von Suedwesten nach Osten auf einen weiteren Wasserfall zu. Steile Felswaende ragen rund- herum auf und es dringt kaum Licht bis nach unten durch. Im Suedosten ist der Eingang zu einer kleinen Hoehle, die weit in den Berg hineinzufuehren scheint.
+author einem Gebirgs-Magier
+68
+icon Picture icons/landscape/sea/WAVE00D.gif
+short Schlucht
+long Du stehst unterhalb des vorletzten grossen Wasserfalls, den der Osterbach auf seinem Weg zum Meer zu ueberwinden hat. Durch staendige Zufluesse von den hohen Bergen ringsherum ist der Bach zu einer beachtlichen Groesse angewachsen und eher als Fluss zu bezeichnen. Entsprechend ist das Tal im Osten auch schon deutlich weiter als weiter oben. Der Weg fuehrt entlang des Wassers von Osten nach Westen.
+author einem Gebirgs-Magier
+67
+short Schlucht
+long Der Osterbach rauscht spritzend und gurgelnd durch das inzwischen stark erweiterte Tal von Westen nach Osten. Hier in das schaeumende, wilde Wasser zu fallen, waere mit absoluter Sicherheit toedlich. Aus dem Osten hoerst du ein dumpfes Grollen, wie von einem Gewitter in der Ferne, nur anhaltend. Der Weg fuehrt entlang des Flusses.
+author einem Gebirgs-Magier
+66
+short Schlucht
+long Das Tal des Osterbaches ist hier ziemlich weit, doch die Felswaende rund- herum ragen trotzdem senkrecht in schaurige Hoehen hinauf. Der Bach schiesst von Westen nach Osten auf das Meer zu, das nur wenige Kilometer entfernt ist. Das dumpfe Grollen im Osten laesst auf einen gigantischen Wasserfall schliessen. Der schmale Pfad fuehrt weiter am Bach entlang.
+author einem Gebirgs-Magier
+65
+icon Picture icons/landscape/sea/WAVE00D.gif
+short Schlucht
+long Der Osterbach kommt von Westen mit einer atemberaubenden Geschwindigkeit aus einer Schlucht heraus und stuerzt sich in einem gigantischen Wasserfall Hunderte von Metern tief ins Meer. Der Blick nach Osten zeigt eine endlose Wasserflaeche, ueber der Moewen und andere Seevoegel ihre Kreise ziehen. Das Grollen des Wasserfalls uebertoent das Geraeusch der Brandung, die unten an die Klippen der Steilkueste rollt. Der Weg fuehrt nach Westen in die Schlucht hinein und suedlich an der Steilkueste entlang.
+author einem Gebirgs-Magier
+63
+short Kueste
+long Die Kuestenlinie laeuft hier von Sueden nach Norden in ein Tal hinein, das aber immer noch sehr hoch ueber dem Meeresspiegel liegt. Im Norden kannst Du die Quelle des gewaltigen Tosens erkennen, das hier ueberall herrscht, ein gewaltiger Wasserfall, der sich ueber Hunderte von Metern ins Meer stuerzt. Hinter einem Pflanzenvorhang erkennst Du eine daemmrige Hoehle.
+author einem Gebirgs-Magier
+62
+short Kueste
+long Der Weg an den Klippen entlang macht hier eine Biegung von Suedwesten nach Norden, wo er in ein Tal hineinfuehrt. Aus dem Tal dringt ein dumpfes Tosen hervor, das die Geraeusche der Brandung weit unter Dir uebertoent. Im Westen erheben sich die steilen Felsen der Silberberge, die spaerlich mit Gestruepp bewachsen sind.
+author einem Gebirgs-Magier
+61
+short Kueste
+long Der Weg fuehrt entlang der zerkluefteten Steilkueste von Suedwesten nach Nordosten. Tief unten rauscht die Brandung des endlosen Meeres gegen die Klippen, und durch die Bewegung in der Tiefe wird Dir beinahe schwindelig.
+house Drachenweyr (Warlord)
+author einem Gebirgs-Magier
+60
+short Kueste
+long Du stehst auf einem schmalen Pfad an der Steilkueste. Die Silberberge fallen hier schroff ins Meer ab, dessen Getoese Du weit aus der Tiefe hoeren kannst. Zerklueftete Felsen bilden die wildesten Formationen, in denen Du alles moegliche erkennen kannst. Der Weg fuehrt von Sueden nach Nordosten.
+author einem Gebirgs-Magier
+59
+short Kueste
+long Du bist mitten in den Klippen an der Kueste. Ein sehr schmaler Pfad schlaengelt sich in Nord-Sued-Richtung von oben nach unten. Tief unter Dir siehst Du maechtige Brecher an die Steilkueste schlagen. Neben Dir ragen Felswaende fast senkrecht nach oben und tiefe Abgruende oeffnen sich. Ein Fehltritt waere ziemlich fatal.
+author einem Gebirgs-Magier
+56
+short Strand
+long Du bist am Ende (oder Anfang) eines Strandes. Noerdlich wird er durch steil aufragende Klippen begrenzt, durch die ein schmaler Weg nach oben fuehrt. Die Klippen sind die suedlichen Auslaeufer des Silbergebirges, das sich weit nach Westen erstreckt. Im Sueden liegt ein leichtes Huegelland, in das suedwestlich ein Weg hineinfuehrt. Der Strand fuehrt nach Suedosten, wo er sich hinter einer Biegung Deinem Blick entzieht. Eine dunkle Hoehle fuehrt nordwestlich in die Berge. Es gibt vier sichtbare Ausgaenge: suedwesten, nordwesten, norden und
+house Leuchtturm (Rasya)
+port Eisscholle
+author einem Gebirgs-Magier
+55
+short Strand
+long Du befindest Dich am Strand, nahe eines grossen Gebirges im Norden. Der Strand fuehrt noch ein gutes Stueck weiter nach Nordwesten, doch ein Ende ist abzusehen, im Gegensatz zum Sueden, wo sich der Strand bis zum Horizont erstreckt. Im Westen ist ein huegeliges Land, doch dichtes Gestruepp ver- hindert ein Eindringen.
+house Dreimaster (Bleelumpe)
+author einem Gebirgs-Magier
+53
+short Strand
+long Ein weiter Kieselstrand erstreckt sich von Norden nach Sueden, an den die Brandung des grossen Meeres im Osten rollt. Hinter dem Strand, im Westen, erstreckt sich ein huegeliges Land, in das ein kleiner Pfad hineinfuehrt.
+author einem Gebirgs-Magier
+52
+short Strand
+long Du befindest Dich an einem Kieselstarnd, der sich im Norden in Richtung Gebirge erstreckt, waehrend er im Suedwesten in eine Bucht hinein fuehrt. Das offene Meer rauscht hier gegen den Strand und hat im Laufe der Jahre die Huegel und Duenen dahinter erschaffen. Ein kleiner Pfad fuehrt westlich in diese Huegel hinein.
+author einem Gebirgs-Magier
+47
+short Strand
+long Du befindest Dich an einem Strand, der hier langsam von reinem Sandstrand im Suedwesten zu Kieselstrand im Nordosten uebergeht. Das Meer stroemt ohne grosse Brandung gegen den Strand, da er in einer kleinen Bucht liegt. Hinter dem Strand beginnt ein huegeliges Land, in das kleine Trampelpfade nach Norden und Nordwesten hinein fuehren. Es gibt vier sichtbare Ausgaenge: suedwesten, nordwesten, norden und
+house Strandvilla (Rxtech), Drachenschiff (Norweger)
+author einem Gebirgs-Magier
+46
+short Im Huegelland
+long Du befindest Dich am Rand einer Huegelkette. Nach Sueden kommst Du zur Kueste, in den anderen Richtungen steigen die Huegel sanft an.
+house Vanir, Ruine (Cancor), Wochenendvilla (Rimus)
+author Kassandra
+45
+short Strand
+long Du befindest Dich am herrlichen Strand von Port Vain, einer kleinen Hafen- stadt am Rande der grossen Ebene. Suedlich von Dir rauscht leise das Meer, nur kleine Wellen dringen bis hier in die Bucht hinein. Hinter dem Strand, im Norden, beginnt ein huegeliges Grasland. Der Strand fuehrt von Westen nach Nordosten.
+npc Max (Rettungsschwimmer)
+author einem Gebirgs-Magier
+44
+short Strand
+long Du hast den Strand von Port Vain erreicht. Die Bewohner kommen hier her, um im warmen Wasser zu baden und die Sonne zu geniessen. Suedlich kannst Du den Hafen der Stadt erkennen, waehrend sich der Strand nach Osten fort- setzt.
+author einem Gebirgs-Magier
+42
+port Port Vain
+41
+short Eine kleine Huette
+long Du bist in einer kleinen aber urgemuetlichen Huette des Fremdenverkehrs- vereins von Port Vain. Du siehst hier einige mit Sitzkissen bezogene Holzbaenke, auf denen Du Dich niederlassen kannst, um die Prospekte, die hier auf kleinen Tischen herumliegen, zu studieren.
+author Fraggle
+item Tisch
+40
+icon Picture icons/places/stop/Button4.gif
+short In der Galerie im Stadthaus
+long Du befindest Dich in der einzigartigen Galerie von Morgengrauen. Ihre Kunst- sammlung hat einen unschaetzbaren Wert und stellt die verschiedenen Stilepochen von Morgengrauen und Portraets von beruehmten und bekannten Magiern zusammen. In dem grossen, schlichten weissen Raum sind unzaehlige Bilder und Gemaelde ausgestellt. Du kannst diesen grossen Saal ueber die Eingangstreppe hinaus nach Sueden verlassen oder ueber eine der beiden Seitentreppen nach oben in die Amtsraeume des Stadthauses gelangen.
+author Ketos
+38
+post Hauptpostamt
+long Dies ist das Hauptpostamt von MorgenGrauen. Von hier aus kannst Du Briefe an Deine Mitspieler schicken und Briefe von ihnen lesen. Wenn Du das willst, tippe "post". Der einzige sichtbare Ausgang fuehrt nach Sueden auf den Marktplatz von Port Vain.
+36
+icon Picture icons/places/church/CHURC02B.gif
+short Kapelle
+long Du befindest Dich in einer kleinen Kapelle, in der Du beten kannst, um wieder Deine natuerliche Gestalt zu erhalten. Am noerdlichen Ende steht ein Altar, auf dem sich ein grosses Kreuz befindet. In den Waenden siehst Du herrliche Fenster, durch die tagsueber das Licht bunt hereinscheint. Im Sueden befindet sich eine Tuer, die zur Strasse fuehrt.
+author einem Ebenen-Magier
+35
+icon Picture icons/other/EASEL.GIF
+short In der Galerie im Stadthaus
+long Du befindest Dich in der einzigartigen Galerie von Morgengrauen. Ihre Kunst- sammlung hat einen unschaetzbaren Wert und stellt die verschiedenen Stilepochen von Morgengrauen und Portraets von beruehmten und bekannten Magiern zusammen. In dem grossen, schlichten weissen Raum sind unzaehlige Bilder und Gemaelde ausgestellt. Du kannst diesen grossen Saal ueber die Eingangstreppe hinaus nach Sueden verlassen oder ueber eine der beiden Seitentreppen nach oben in die Amtsraeume des Stadthauses gelangen.
+author Ketos
+33
+short Die beruehmte Abenteurergilde
+long Der grosse Raum mit seiner niedrigen Decke und den grob geschnittenen Querbalken hat Platz fuer sehr viele Personen. Knarrende Dielen erzaehlen ueber Heldentaten laengst vergessener Abenteurer, beruehmter als mancher Weise unserer Zeit. Abenteurer, aber auch andere Bewohner dieser Welt kommen hierher, um sich zu informieren, ihre Erfahrungen auszutauschen oder sich in den verschiedensten Wissenschaften zu verbessern. Durch die immer offene Tuer scheint die aufgehende Sonne herein und fuellt den Raum mit ihrem goldenen Licht. Sonst gibt es hier nur noch den Ausgang im Norden, welcher auf die Hafenstrasse fuehrt und Bilder an den Waenden, mit Zeichnungen und Gemaelden von MorgenGrauen. Eins der Bilder erlaeutert die Funktion der Gilde und eine grosse Uhr an der Wand zeigt, was die Stunde schlaegt. An einer anderen Wand haengt eine steinerne Tafel. Nach oben fuehrt eine Treppe in das Buero des Foerdervereins Projekt MorgenGrauen e.V., das Du unbedingt besuchen solltest.
+guild Abenteurer
+32
+icon Picture icons/other/wisdom/ENCYC00A.gif
+short Das Buero des Foerdervereins Projekt MorgenGrauen e.V.
+long Das Buero des Foerdervereins Projekt MorgenGrauen e.V. ist schlicht, aber funk- tionell eingerichtet, denn das Geld der Mitglieder soll ja nicht fuer unnoe- tigen Luxus ausgegeben werden. In einem Regal liegt ein Ordner, in dem wohl die wichtigsten Vereins-Dokumente gesammelt werden. Auf dem Schreibtisch steht ein Rechner, dessen Monitor ein- geschaltet ist. An der Wand hinter dem Schreibtisch haengt ein Bild des Ver- einsvorstands, daneben ein grosses Poster. Ausserdem siehst Du noch eine ge- muetliche Sitzecke, die zum Diskutieren einlaedt. An der Wand ueber der Sitzecke haengt eine grosse Tafel.
+author Viper
+31
+short Hafenstrasse
+30
+pub Franks Abenteurer-Kneipe
+29
+short Hafenstrasse
+long Der oestliche Teil der Hafenstrasse, knapp oberhalb des Hafens im Osten. Im Westen fuehrt sie hinauf zur Stadtmitte von Port Vain.
+author einem Ebenen-Magier
+28
+icon Picture icons/npc/fish/fish2.gif
+short Ein Anglerladen
+shop Anglerladen
+long Du befindest Dich in Samuel Harkwind's Anglerladen. Du stehst vor einer hoelzernen Ladentheke mit einer Glasplatte. Dahinter befindet sich ein grosser Schrank mit vielen kleinen Schubladen und einem grossen Aquarium. Rechts daneben siehst Du ein altes Holzfass, in dem mehrere Angelruten stehen. An der Theke haengt eine grosse Preistafel.
+npc Sam Harkwind
+author Fraggle
+27
+short Hafenstrasse
+long Hier ist die Mitte der Hafenstrasse, die in Ost-West Richtung zum Hafen hinabfuehrt, der oestlich liegt. Im Westen liegt der Ortskern von Port Vain, im Norden ein Anglerladen und im Sueden siehst Du eine kleine Huette. Es gibt sechs sichtbare Ausgaenge: osten, unten, oben, sueden, westen und
+author einem Ebenen-Magier
+26
+short Hafenstrasse
+long Die Hafenstrasse fuehrt in Ost-West Richtung zum Hafen hinab, der oestlich liegt. Der Weg fuehrt an Frank's Abenteurer-Kneipe im Sueden vorbei. Nach Norden hin zweigt die Brunnenstrasse ab. Es gibt sechs sichtbare Ausgaenge: osten, unten, oben, sueden, westen und
+npc Marvin
+author einem Ebenen-Magier
+25
+short Brunnenstrasse
+24
+icon Picture icons/places/TTT1A.gif
+short In der 4Gewinnt- Turnierhalle
+long Du stehst in einer riesigen Halle aus hellblauen Marmor. Genau in der Mitte schwebt eine merkwuerdige Scheibe frei in der Luft. In der dem Eingangsportal gegenueberliegenden Wand ist ein Fenster eingelassen.
+npc Vertreter
+23
+pub Pizzaria
+icon Picture icons/places/pub/food48.gif
+short Eine Pizzeria
+long Du befindest Dich hier in einer Pizzeria. Die Auswahl an Pizzen hier ist einfach gigantisch, Du solltest Dir wirklich unbedingt mal das Menue ansehen! Die komplette Speisekarte bekommst Du mit 'menue', einzelne Seiten mit 'menue seite nr'. An einer der Waende ist ein Schild angebracht.
+npc Silvano
+22
+short Brunnenstrasse
+long Du kommst hier zu dem grossen Brunnen, der dieser Strasse, die weiterhin in Nord-Sued-Richtung verlaeuft, ihren Namen gab. Im Westen ist ein halbfertiges Haus zu sehen und im Osten befindet sich die 4-Gewinnt-Turnierhalle.
+21
+icon Picture icons/places/door/door03.gif
+short Der Kriegerweg endet in einer Sackgasse.
+long Du stehst in einer duesteren, stillen Sackgasse. Der Kriegerweg endet hier am Rande eines Waldgebiets. Vor Dir ragt eine hohe, rosenberankte Mauer auf. Durch ein riesiges schmiedeeisernes Tor erkennst Du ein verwildertes Grundstueck, dessen auffaelligster Blickfang in einer schwarze Villa besteht.
+author Cymonk
+20
+icon Picture icons/landscape/forest/TREE2.GIF
+short Ein Platz
+long Auf diesem Platz war wohl mal eine Baustelle, aber die wurde, wie es aussieht, durch einen Platz mit Baeumen und einer Fontaene ersetzt. Ausserdem findet man hier, was es sonst kaum noch auf der Welt gibt: eine Bank!
+author Highlander
+item Bank
+19
+icon Picture icons/inventory/weapon/SWORD00J.gif
+short Eine Rekrutierungsstelle der Trves
+long Du befindest Dich hier in einer Rekrutierungsstelle der Trves. In diesem grossen, mit Sichtschutzen unterteilte Raum wird offensichtlich die Ueber- pruefung der Bewerber auf ihre allgemeine Tauglichkeit hin vorgenommen. Tat- saechlich siehst Du an einigen Ecken die kritischen Gesichter erfahrener Kaempfer, und auch das angestrengte Schnaufen, das Du ab und zu vernimmst, zeugt von den Pruefungen, denen sich Trves-Anwaerter hier offenbar zu unterziehen haben. In einer Ecke des Raumes befindet sich ein Pult.
+npc Log Kylmor
+18
+short Brunnenstrasse
+long Hier endet die Brunnenstrasse vor einem grossen Restaurant, aus dem Du den angenehmen Geruch von Pizza vernimmst. In westlicher Richtung fuehrt der Kriegerweg zur Bergstrasse.
+17
+icon Picture icons/landscape/forest/ICON_156.GIF
+16
+icon Picture icons/places/stop/const1.gif
+14
+short Die naechsten 612 Chaosbaelle sind: fluessige Messerschnitte
+long Du befindest Dich auf dem Kriegerweg. Waehrend im Norden gerade ein Haus in der Entstehung zu sein scheint, ragt im Sueden ein grosses Gebaeude vor Dir auf, bei dem es sich zweifellos um die Rekrutierungsstelle der Trves handelt.
+13
+short Laden
+shop Braddon
+long Du befindest Dich hier in Braddon's Laden, einem der groessten Geschaefte in Port Vain. Owen und Margie Braddon waren selber einmal aktive Abenteurer und kennen daher die Wuensche ihrer Kunden sehr gut. Wenn Du zum ersten Mal hier bist, solltest Du das Schild lesen. Der Ausgang des Ladens befindet sich im Sueden.
+npc Owen Braddon, Margie Braddon
+12
+short Laden
+shop Kareem
+long Dies ist ein kleiner Laden, in dem Du Ausruestungsgegenstaende fuer Deine Abenteuer kaufen kannst. Der Laden ist nicht gerade in dem besten Zustand, der Inhaber, Kareem Fekesh, hat ihn ziemlich verwahrlosen lassen. Wenn Du zum ersten Mal hier bist, solltest Du das Schild lesen. An der Wand haengt ein grosses Werbeplakat: ``Neu: Tamahorny, nur 10.000!'' Der Ausgang des Ladens befindet sich im Norden.
+npc Kareem Fekesh
+11
+short Kriegerweg
+long Der Kriegerweg verlaeuft hier weiter in Ost-West-Richtung zwischen zwei Haeusern. Es scheint an der unheimlichen Ausstrahlung des noerdlichen Hauses zu liegen, dass es bisher keiner wagt, das suedliche zu bewohnen.
+8
+short Bergstrasse
+long Hier zweigt der Kriegerweg nach Osten hin von der Bergstrasse, die weiterhin in Nord-Sued-Richtung verlaeuft, ab. Westlich der Strasse sind noch einige Ueberreste der alten Akademie zu erkennen.
+7
+short Bergstrasse
+long Die Bergstrasse fuehrt hier zwischen den Ueberresten der alten Akademie im Westen und einem kleinen Laden im Osten durch.
+6
+short Bergstrasse
+long Die Bergstrasse verlaeuft hier weiter in Nord-Sued-Richtung. Im Osten befindet sich das Hauptpostamt und bei den Mauerstuecken westlich der Strasse scheint es sich um die Ueberreste der alten Akademie zu handeln.
+5
+pub Lachende Schildkroete
+icon Picture icons/places/pub/CHEF00A.gif
+short 'Die lachende Schildkroete'
+long Du befindest Dich in der lachenden Schildkroete. Dieses Fischrestaurant ist das beliebteste Restaurant weit und breit, vor allem bei den Schildkroeten, denn die gibt es hier nicht zu essen. Neben der ausfuehrlichen Speisekarte kann man hier auch sehr gepflegt einen heben. Der Ausgang befindet sich im Norden. Die Speisekarte laesst sich mit 'menue' ansehen.
+npc Koch
+4
+icon Picture icons/npc/knight/miscA69.gif
+short Port Vainer Marktplatz
+long Die naechsten 612 Chaosbaelle sind: fluessige Messerschnitte Die Hafenstrasse fuehrt im Osten zum Hafen von Port Vain, im Westen befindet sich der Marktplatz. Im Norden siehst Du eine kleine Kapelle.
+author einem Ebenen-Magier
+3
+color gelbbraun
+icon Picture icons/places/signpost/SIGNP01A.gif
+short Waldweg
+ways elf
+long Der Waldweg fuehrt nach Westen und Suedosten durch den sich in alle Richtungen erstreckenden Wald. Im Nordosten fuehrt eine Strasse in die neue Elfensiedlung. Ein Wegweiser.
+name elf
+author einem Wald-Magier
+1
+short Port Vainer Landstrasse
+long Du befindest dich in Port Vain, der Hauptstadt der Ebene. Im Westen liegt das Stadttor, im Osten der Markt. Im Sueden befindet sich ein Fischrestaurant, nach Norden hin zweigt die Bergstrasse ab.
+0
+icon Picture icons/npc/animal/cat14.gif
+short Am Port Vainer Stadttor
+long Du bist am Stadttor von Port Vain angekommen, das unmittelbar vor Dir liegt. In westlicher Richtung fuehrt die Port Vainer Landstrasse in die grosse, weite Welt hinaus und in oestlicher Richtung zum grossen Stadtzentrum der Hafenstadt. Unmittelbar suedlich von Dir, direkt neben dem Stadttor siehst Du die riesige Pforte eines noch riesigeren Wettpalastes vor Dir aufragen. Du legst Deinen Kopf in den Nacken, um ihn ganz betrachten zu koennen. Ein grosses Schild haengt ueber der Eingangspforte.
+npc Sandtiger

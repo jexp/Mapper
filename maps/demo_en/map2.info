@@ -1,0 +1,24 @@
+1
+name right
+short right button
+long jumpt to the clicked node
+2
+name left
+short left button
+long intended for interactive commands meanwhile output of information (screen coordinates, map coordinates, if found the node)
+4
+name ctrl+drag-left
+short Ctrl+drag with left button pressed
+long draw a zoom rectangle (zoom)
+5
+name ctrl+right
+short Ctrl+right button
+long one zoom level back (Unzoom)
+7
+name shift+left
+short Shift+left button
+long mark/unmark of nodes
+8
+name shift+drag-left
+short Shift+drag left button
+long mark the nodes contained in the rectangle

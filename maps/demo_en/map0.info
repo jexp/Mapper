@@ -1,0 +1,102 @@
+0
+name ae0
+short ae no sw so nw ob u
+syntax ae ((#?(directionid|-name)|marked) )+
+long (addExit) exits are created for all given directions, if neccesary connected to existing nodes or nodes which were just created, with the option marked given all marked nodes are connected with the restriction that one node can only have one exit with the same name (direction)
+8
+name npc
+short ai npc Mapper (#A#B#L30)
+npc Mapper (#A#B#L30)
+syntax ai (name|short|long|exa|ways|npc|house|port|tport|pub|shop|selfchoosenkeyword) (text)?
+long (addInfo) adds the given information to the actual node, the text ist directly used as string for display, if no text is given the acutal value of the attribute ist deleted. The named keywords are also used <a href="grafik">otherwise</a>, the self choosen keywords (lots of them) not.
+9
+name asp0
+short asp -ds -m1 -p0
+syntax asp -d#?(directionid|-name|0) ((-m(mapid|-name))? -p(nodeid|-name))? (special name of the exit)?
+long (addSpecial) adds the special exit using the given direction (or none if -d0), if no direction is given (-d0) it is required to supply a destination (node and/or map), that special exit gets the command given as last thing (e.g. go upstairs), if # is supplied the exit is created only from the actual node to the destination node not back, it can also be used to create an normal exit to a node which is more than one unit away (asp -ddirection -pnodeid) will do it
+10
+name ae1
+short ae #so
+ae syntax see (si ae0)
+52
+name asp1
+short asp -d#w -p9
+syntax see (si asp0)
+51
+name asp2
+short asp -dsw -p10
+syntax see (si asp0)
+11
+name cgrid0
+short cgrid 0 0 -sx 5
+syntax cgrid xpos ypos -sx width (-sy height)? (-di)?
+long creates a grid within the map, the actual node has the given position in the grid (e.g. (0,0) bottom left, (width-1,height-1) top,right). If height is not given a quadratic grid is created. Givin -di also creates diagonal connection between the nodes.
+23
+name shop
+short ai shop Here's a shop
+shop Here's a shop
+syntax (see si npc)
+37
+name ae2
+short ae nu
+syntax see (si ae0)
+6
+name ae3
+short ae nou ob swu nu sob
+ae syntax see (si ae0)
+47
+name am
+short am second
+syntax am mapname
+long (addMap) a new map with the given name (single word) is created (if it does not already exist), it already contains the node 0
+20
+name tank
+short ai tank Fill Up here
+tank Hier ist ne Tankstelle
+syntax see (si npc)
+14
+name pub
+short ai pub Irish Pub
+pub Irish Pub
+syntax see (si npc)
+26
+name tport
+short ai tport Portal Seven
+tport Portal Seven
+syntax see (si npc)
+55
+name exits
+short sp, sw, ssw, s, sse, se, ese, e, ene, ne, nne, n, nnw, nw, wnw, w, wsw, u, d, swd, sswd, sd, ssed, sed, esed, ed, ened, ned, nned, ne, nnwd, nwd, wnwd, wd, wswd, swu, sswu, su, sseu, seu, eseu, eu, eneu, neu, nneu, nu, nnwu, nwu, wnwu, wu, wswu
+long special, southwest, southsouthwest, south, southsoutheast, southeast, eastsoutheast, east, eastnortheast, northeast, northnortheast, north, northnorthwest, northwest, westnorthwest, west, westsouthwest, up, down, southwestdown, southsouthwestdown, southdown, southsoutheastdown, southeastdown, eastsoutheastdown, eastdown, eastnortheastdown, northeastdown, northnortheastdown, northdown, northnorthwestdown, northwestdown, westnorthwestdown, westdown, westsouthwestdown, southwestup, southsouthwestup, southup, southsoutheastup, southeastup, eastsoutheastup, eastup, eastnortheastup, northeastup, northnortheastup, northup, northnorthwestup, northwestup, westnorthwestup, westup, westsouthwestup
+71
+name exits1
+short see (si exits)
+72
+name ar
+short ar leave
+syntax ar special exit name
+long if the current room has only one exit or one connection from another room the connection is created/replaced with one bearing the given special exit name (e.g. out, leave)
+1
+name g
+syntax g (nodename|id)
+long jumps to the given node
+3
+name command syntax
+short like regexp
+syn0 -d#?(name|id): directionname (s e sw single word) or ID (special 0 for exits without a direction e.g. telporter or exits reaching over multiple nodes), if # is given the direction is only used in oneway (from the (actual) node to the other node) (otherwise both directions are used), when giving -d0 oneway is the default
+syn1 -m(name|id) name of the map (single word) or id (listed in title bar)
+syn2 -p(name|id) name of the node (single word) or id (is shown in the map)
+syn3 if a node of another map is given the -m option is required
+syn4 for exits without a direction -d0 has to be used otherwise the direction can be given like -dse (southeast)
+syn5 if the arguments are given without the mentioned options, than these arguments containing references to exits or nodes do just work for the actual map and no special exists can be used. but even there ids or names are possible (e.g. ae n nw s se u -> addExit north northwest ...)<p>
+syn6 when using the commands ae, DP, DE, MP the substring of "marked" necessary for identification can be used to have the command work on the marked nodes<br>
+2
+name asp5
+short asp -d0 -mmouse -p0 catch mouse
+syntax see (si asp)
+4
+name asp6
+short asp -d0 -mkeys -p0 hit
+syntax see (si asp)
+
+

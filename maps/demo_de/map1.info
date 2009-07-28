@@ -1,0 +1,39 @@
+5
+name sm
+short sm main
+syntax sm (mapname|id)
+long (switchMap) schaltet zur angegebenen Map um. Es wird zum zuletzt aktiven Punkt in der Map gesprungen
+0
+name cgrid1
+short cgrid 2 3 -sx 2 -sy 7 -di
+syntax cgrid xpos ypos -sx Breite (-sy Hoehe)? (-di)?
+long Erzeugt ein Netz in der Map, in dem der aktuelle Punkt die Position (xpos,ypos) hat (z.B. (0,0) links unten oder (Breite-1,Hoehe-1) rechts oben). Wenn die Hoehe nicht angegeben wird, wird ein quadratisches Netz erzeugt. Mit der Angabe von -di werden auch die Diagonalen erzeugt.
+7
+name DE
+syntax DE  ((-d#?(Richtungsid|-name|0) ((-m(Mapid|-name))? -p(Punktid|-name))? (Name des Ausgangs)?)|((#?(Richtungsid|-name)|marked) )+)
+long (deleteExit) loescht die Ausgaenge in den angegebenen Richtungen. Wenn ein # vor der Richtung steht, dann wird nur der Ausgang in Hinrichtung geloescht. Die Angabe von marked bewirkt das Entfernen aller Verbindungen zwischen den markierten Punkten
+8
+name DE2
+Beispiel1 DE n s o : loescht die Ausgaenge n s o 
+Beispiel2 DE marked : loescht die Verbindungen zwischen allen markierten Punkten
+Beispiel3 DE -ds : loescht den Ausgang nach so
+Beispiel4 DE -d0 springe : loescht den SpezialAusgang springe
+Beispiel5 DE -ds -m1: loescht den Ausgang nach s, der zu einer anderen Map schaltet
+Beispiel5 DE -d0 -m1 teleportiere: loescht den Spezialausgang teleportiere, der zur Map 1 schaltet
+long die Zielpunkte koennen angegeben werden, muessen aber nicht, aber sie muessen korrekt sein.
+18
+name DP
+syntax DP ((PunktId/-name|marked) )?
+long (deletePoint) loescht die angegebenen Punkte, wenn keiner angeben dann den aktuellen Punkt, und bei marked alle markierten Punkte, alle Wege die von ihm weg- und zu ihm hinfuehren (in allen Maps). Die Punktnummer kann spaeter beim Erzeugen neuer Punkte wiederverwendet werden.
+9
+name si
+syntax si (Punktname|-id)?
+long Zeigt das Info des angebenen bzw. des aktuellen Punktes an.
+2
+name asp3
+short asp -d0 -m0 -p4 springe von abgrund
+syntax siehe (si asp0)
+1
+name asp4
+short asp -dnw -p24 rufe laut
+syntax siehe (si asp0)

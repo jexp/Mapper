@@ -1,0 +1,24 @@
+1
+name rechts
+short rechte Maustaste
+long es wird zum angeklickten Punkt gesprungen
+2
+name links
+short linke Maustaste
+long vorgesehen fuer interaktive Kommandos, z.Zt. Ausgabe von Bildschirm-/Mapkoordinaten ggf. gefundener Punkt
+4
+name ctrl+drag-links
+short ctrl+linke Maustaste ziehen
+long Aufziehen eines Zoomfensters (Zoom)
+5
+name ctrl+rechts
+short Ctrl+rechte Maustaste
+long eine Zoomstufe zurueck (Unzoom)
+7
+name shift+links
+short Shift+linke Maustaste
+long Markieren/Demarkieren von Punkten
+8
+name shift+drag-links
+short Shift+linke Maustaste ziehn
+long Markieren der Punkte im Rechteck

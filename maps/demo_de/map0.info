@@ -1,0 +1,101 @@
+0
+name ae0
+short ae no sw so nw ob u
+syntax ae ((#?(Richtungsid|-name)|marked) )+
+long (addExit) in den angegebenen Richtungen werden Ausgaenge erzeugt, ggf. mit Punkten verbunden oder neue Punkte erzeugt, bei der Angabe von marked zwischen allen markierten Knoten Verbindungen erzeugt, wobei aber ein Knoten in einer Richtung nur einen Ausgang haben darf.
+8
+name npc
+short ai npc Mapper (#A#B#L30)
+npc Mapper (#A#B#L30)
+syntax ai (name|short|long|exa|ways|npc|house|port|tport|pub|shop|Schluesselwort) (text)?
+long (addInfo) fuegt dem aktuellen Punkt die angegebenen Informationen hinzu, der Text wird direkt als String fuer die Anzeige uebernommen. Wenn kein Text angegeben wird, dann wird der aktuelle Wert des Attributs geloescht. Die benannten Schluesselworte werden auch noch <a href="grafik">anderweitig</a> ausgewertet, bei selbstgewaehlten Schluesselworten (beliebig viele) ist das nicht der Fall.
+9
+name asp0
+short asp -ds -m1 -p0
+syntax asp -d#?(Richtungsid|-name|0) ((-m(Mapid|-name))? -p(Punktid|-name))? (Name des Ausgangs)?
+long (addSpecial) Hinzufuegen des speziellen Ausgangs in der Richtung [wenn Richtung 0 zum Punkt Map/Punkt] mit dem angegebenen Namen, geht auch fuer Verbindungen zu Punkten, die mehr als eine Einheit weg liegen (asp -drichtung -ppunktid)
+10
+name ae1
+short ae #so
+ae syntax siehe (si ae0)
+52
+name asp1
+short asp -d#w -p9
+syntax siehe (si asp0)
+51
+name asp2
+short asp -dsw -p10
+syntax siehe (si asp0)
+11
+name cgrid0
+short cgrid 0 0 -sx 5
+syntax cgrid xpos ypos -sx Breite (-sy Hoehe)? (-di)?
+long Erzeugt ein Netz in der Map, in dem der aktuelle Punkt die Position (xpos,ypos) hat (z.B. (0,0) links unten oder (Breite-1,Hoehe-1) rechts oben). Wenn die Hoehe nicht angegeben wird, wird ein quadratisches Netz erzeugt. Mit der Angabe von -di werden auch die Diagonalen erzeugt.
+23
+name shop
+short ai shop Hier ist ein Laden
+shop Hier ist ein Laden
+syntax (siehe si npc)
+37
+name ae2
+short ae nu
+syntax siehe (si ae0)
+6
+name ae3
+short ae nou ob swu nu sob
+ae syntax see (si ae0)
+47
+name am
+short am second
+syntax am mapname
+long (addMap) es wird eine neue Map mit dem angegebenen Namen erzeugt, wenn dieser noch nicht existiert. Diese enthaelt schon den Punkt 0.
+20
+name tank
+short ai tank Hier ist ne Tankstelle
+tank Hier ist ne Tankstelle
+syntax siehe (si npc)
+14
+name pub
+short ai pub Ich habe Hunger.
+pub Ich habe Hunger.
+syntax siehe (si npc)
+26
+name tport
+short ai tport Huch ein Teleporter
+tport Huch ein Teleporter
+syntax siehe (si npc)
+55
+name exits
+short sp, sw, ssw, s, sso, so, oso, o, ono, no, nno, n, nnw, nw, wnw, w, wsw, ob, u, swu, sswu, su, ssou, sou, osou, ou, onou, nou, nnou, nu, nnwu, nwu, wnwu, wu, wswu, swob, sswob, sob, ssoob, soob, osoob, oob, onoob, noob, nnoob, nob, nnwob, nwob, wnwob, wob, wswob
+long special, suedwesten, suedsuedwesten, sueden, suedsuedosten, suedosten, ostsuedosten, osten, ostnordosten, nordosten, nordnordosten, norden, nordnordwesten, nordwesten, westnordwesten, westen, westsuedwesten, oben, unten, suedwestunten, suedsuedwestunten, suedunten, suedsuedostunten, suedostunten, ostsuedostunten, ostunten, ostnordostunten, nordostunten, nordnordostunten, nordunten, nordnordwestunten, nordwestunten, westnordwestunten, westunten, westsuedwestunten, suedwestoben, suedsuedwestoben, suedoben, suedsuedostoben, suedostoben, ostsuedostoben, ostoben, ostnordostoben, nordostoben, nordnordostoben, nordoben, nordnordwestoben, nordwestoben, westnordwestoben, westoben, westsuedwestoben
+
+71
+name exits1
+short siehe (si exits)
+72
+name ar
+short ar raus
+syntax ar special exit name
+long wenn der aktuelle raum nur einen Ausgang bzw. einen Zugang hat, wird ein/der Ausgang mit dem angegebenen Spezialausgang erzeugt/ueberschrieben (praktisch fuer: raus, verlasse xxx)
+1
+name g
+syntax g (Punktname|id)
+long Springt zu dem angegebenen Punkt
+3
+name kommandosyntax
+short wie Regexp
+syn0 -d#?(name|id) Richtungsname (s o sw) oder ID (besonders 0 fuer richtungslos z.b. Teleports oder ueber mehrere Knoten hinweg), bei der Angabe von # wird die Richtung nur in der Hinrichtung bearbeitet (ansonsten beide Richtungen) bei -d0 ist das der Standard
+syn1 -m(name|id) Name der Map (ein Wort) oder ID (steht in Titelzeile)
+syn2 -p(name|id) Name des Punktes (ein Wort) oder ID (wird angezeigt)
+syn3 wenn ein Punkt auf einer anderen Map angegeben wird, dann muss auch -m angegeben werden
+syn4 fuer richtungslose Spezialausgaenge -d0 ansonsten kann die Richtung angegeben werden -dso
+syn5 wenn ohne die o.a. Optionen mehrere Richtungen bzw. Punkte angegeben werden gelten diese nur fuer die aktuelle Map und keine SpezialAusgaenge es koennen aber auch dort IDs oder Namen benutzt werden
+syn6 bei den Kommandos ae, DP, DE kann auch der zur Identifikation notwendige Teilstring von marked benutzt werden, um das Kommando ueber alle markierten Punkte arbeiten zu lassen
+2
+name asp5
+short asp -d0 -mmaus -p0 mause
+syntax siehe (si asp)
+4
+name asp6
+short asp -d0 -mtasten -p0 kloppe
+syntax siehe (si asp)

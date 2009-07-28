@@ -1,0 +1,27 @@
+§§ NPC 4 lpertinger
+§ weapon -4
+§ armor 0
+§ weapon_type seinem Schnabel
+§ strength -2
+§ align 6
+§ name wolpertinger
+§ damage_type Schlaege
+§§ Knoten 3 us von Mesirii
+§ pub nein
+§ exa ja
+§ author Mesirii der Zwerg
+§§ Knoten 2 stknoten
+§ testatt 23415345
+§ exa ja
+§ short Eine Short
+§§ polygon 1 ly main
+§ coords 3.0,1.0,0.0
+§ text TestText
+§ color weiss
+§ level_from -2147483648
+§ center 3.0,1.0
+§ level_to 2147483647
+§ map 0
+§§ Knoten 0 stknoten
+§ testatt 23415345
+§ exa ja

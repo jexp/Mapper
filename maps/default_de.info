@@ -1,0 +1,26 @@
+Knoten§
+short Kurzbeschreibung
+long Langbeschreibung
+npc NPCs
+name Name
+ways WegeKnoten
+exa komplett untersucht
+house Häuser
+tport Teleporter
+port Hafen
+shop Laden
+pub Kneipe
+tank Tanke
+NPC§
+name Bezeichnung
+hp Lebenspunkte
+armor Ruestungsklasse
+polygon§
+map Karte
+coords Koordinaten
+color Farbe
+level_from sichtbar von
+level_to sichtbar bis
+text Text
+center Textmitte
+image Bild

@@ -1,0 +1,183 @@
+73
+long As you start down the main corridor to the Juggernauts' guild you are awestruck by the the high-tech wizardy that adorns the walls of this passageway. Among some of the more noteworthy attractions are the holographic images depicting the mighty Juggernauts in action. In the center of this room is a statue of a juggernaut in main battle armour. Overall the whole room seems very impressive.  There are two obvious exits: south, north
+npc Statue of the Famed Juggernaut.
+72
+long A freeway overpass swings up to a decrepit interstate highway just to your south.  To your north you see an awe-inspiring tower.  There is a small door in its base. A vast wasteland stretches out in all directions as far as your eyes can see.
+71
+long Huge double doors made of carbon steel stand to the north, leading to the outside of this massive bunker.  A small metal ladder leads into the bunker below.  The rest of the room looks like it has been through a direct nuclear strike.  Looks like one of the grunts left the doors open again...
+70
+long A freeway overpass swings up to a decrepit interstate highway just to your north.  To your south there is nought but a vast wasteland with a massive concrete bunker upthrust from the sand.  The entrance to the bunker is open!
+npc A large green metal sign.
+69
+ways pp2
+long Looming above you are the tall cliffs that hide the Cave of the Ridges from view. A tiny opening in the cliff face seems to lead further into the cliff. Above you is the sky, shining bright blue in a thin sliver as your vision is twisted by the extremely narrow passageway. Watchful eyes make your skin crawl although you cannot tell where the ever present guards are hidden. Type 'recover' to get yourself a new stillsuit.
+name pp2
+npc A large green metal sign.
+68
+ways pp1
+long You are moving along a strange, incredibly hot asphalt road which runs east into a haze and west towards the fantastic city of Pinnacle.  Through the intense smog, you can vaguely make out offramps to north and south.  To the east, the road comes to an abrupt end in a malevolent and terrible desert.  An odd oval gateway hovers about a foot off the ground in the middle of the road.
+name pp1
+npc A large green metal sign.
+67
+long This is 3-Kingdom's cryogenics control center.  This is where people come to have their bodies frozen until a specific date, when they will be revived.  The place is filled with huge refrigeration units and tanks of liquid nitrogen. Along one wall is a huge computer console that controls the whole operation.  Set in to the other wall is a large chamber, with transparent housing, that is used to store the bodies.  The entire freezing and revival process is totally automated and somewhat safe. There is a SIGN on the wall. READ THE SIGN before you attempt anything.
+npc A large green metal sign.
+66
+long You are moving along a strange, incredibly hot asphalt road which runs east into a haze and west towards the fantastic city of Pinnacle.  You can see the side of a large abandoned ruin to the north and of a startlingly modern laboratory to the south!  A large sign with no visible supports, is hanging in the air, just out of your reach.  There are three obvious exits: east, west, south
+npc A large green metal sign.
+65
+long Your feet slip slightly in the tarry, oil-specked road that leads off into a strange, stench-ridden and eye-hurting haze. To the north, an odd waver in the air causes the hair to stand up on the back of your neck, but all you can see is a pleasant country lane.  An old building lies to the west and a pleasant cobble-stoned path heads off to the south.  An odd looking statue graces the center of the intersection.  There are three obvious exits: east, south, north
+npc A Statue of a Cad.
+64
+long House of Lockers What you first thought was a tiny shed turns out to be a solid granite building. The walls, floor and ceiling of the house of lockers are made of solid granite. The house is very sparsely furnished with only a wooden desk in the east end of the room and a row of lockers along the north and south sides of the room. To the west a huge granite door allows passage to the street. There's a sign on the wall behind the desk.  There is one obvious exit: west
+npc A Long row of Lockers.
+63
+long You are standing in the examination room of the Disease Control Center. The room is clean and dust-free.  Nurses and doctors scurry around wearing light green uniforms and face masks. Two-way mirrors line the walls and no windows are here at all. Test tubes of undetermined substances are neatly stacked on the work surfaces. There is a sign posted on the wall. There is one obvious exit: down
+62
+long This is the hall of records.  Stored here are the old 3k mortal kill lists.
+61
+long This is Pinnacle Hospital's only Operating Room.  Within these walls, the hospital's only surgeon uses his surgical skills to mend the many denizens of Pinnacle.  He is quite good at fixing people up, but he's also very expensive.  He should be used as a last resort, only if there are no priests available in the hospital's upstairs emergency room.  There is a list of medical procedures on the wall.  To view them, type 'read list'.  There are two obvious exits: down, up
+60
+long This is the Pinnacle Hospital.  The room, though not lavishly decorated, is aesthetically pleasing.  The floor and walls are made of an impeccably clean white marble, void of any stains or blemishes.  A small sitting area in the northeast corner of the room offers patients a place to sit and rest while they wait for a courteous priest to offer their divine healing.  If there are no priests presently available, please try back again later.  If it is an EMERGENCY, you may 'page' to see if there are any priests in the vicinity, but please do NOT abuse this.  If you have the ability and are willing to heal others, you may 'announce' yourself to the those who may be in need of healing. There are three obvious exits: south, down, up
+57
+long You are on a narrow country lane which runs north and south. Moebius Street and the center of Pinnacle are to the west.  A low, tin-roofed shed lies to the east.  The sky to the north and east comes together in a spectacular color clash.  To the south you see a strange, tarry road heading off to the east. Your nose hurts and your eyes water.  You sneeze!
+npc A Trashcan. The Gypsy Comment Board containing 64 messages (64 unread messages). A services offered sign.
+56
+long Lair of the Gypsy You have entered the mystical dwelling of The Gypsy.  For years, she has used her mysterious powers to benefit the citizens of Pinnacle. Of course, her services are accompanied by a substantial fee.  To see a list of the services provided by The Gypsy, just read the sign found within the shop. There is one obvious exit: west
+npc A Trashcan. The Gypsy Comment Board containing 64 messages (64 unread messages). A services offered sign.
+55
+long You are walking along a grassy country lane which runs north to south.  Empty and strangely blurry fields lie to the east.  A small white building lies to the west and a strange little hut is in the grassy field to the east.  An angry and mottled sky glowers down upon you.
+npc House discussion board containing 97 messages (97 unread messages).
+54
+long The boom in the economy of Pinnacle has created a number of new markets for the newfound wealth of its citizens.  You are standing in the center of one of them.  The wood paneled walls are lined with dimly lit lanterns which cast a somber light across the room. Plush leather couches circle the center of the room except for the far end of the room which are dominated by a polished mahogany desk. Neatly stacked papers are piled on the desk.  A middle aged man sits behind the desk.  He looks up at you and smiles.  This is where you may buy a house, if you have the funds.  Sensing your hesitation the elderly clerk gestures to a plaque on the wall behind him.  You should probably read it. There are three obvious exits: east, west, up
+npc House discussion board containing 97 messages (97 unread messages).
+53
+long Strange greenish red bricks head into a weird and miasmic haze to the west but give way to a gentle, lush green path to the south.  A small and pleasantly melting white building is to the east.  Towering clouds shaped like nothing you have ever seen before rear high into the air to north and south. Massive flashes of black lightning tear through the air.  How odd.  There seems to be a manhole here now!
+52
+long You are on a strange, undulating path that runs east to west and is floored with greenish red bricks.  A thick, miasmal haze blocks your view of Pinnacle and distorts your vision.  There are two obvious exits: east, west
+51
+long This is a small candy store and candy is everywhere in sight.  There is a lot of candy and it is hard to decide on what to get.  The walls are filled with different types of candy.  The counter is to the north and behind the counter is Ho-San and the backroom. There are two obvious exits: north, southeast
+npc A sign.
+50
+long The immediate area is extremely blurry and hard to focus on. Just ahead of you is a raging, swirling vortex.  It extends as far up into the sky as you can see with no end in sight. The vortex itself is a swirling mass of dark clouds, with occasional flashes of heat lightning.  A road leads out of the vortex to the south.
+49
+long The haze gives way and you can see the Pinnacle Bank and the Pinnacle Hospital to the south, beyond a rolling flat grassy field.  The greenish red bricks of Elana's Run continues to the east.  Chilly's Cut is to the west.  To the north the haze becomes absolutely impenetrable.  The meteorite-black paving stones beneath your feet throb with repressed power.  There are three obvious exits: east, west, north
+48
+long A narrow pebbled country lane heads south here, cutting through a strange, blurry smog.  Horrible clouds rear up into an angry sky to the south.  Odd greenish red bricks undulate off to the east.  A strange, oddly twisted looking stone building lies in a clearing to the west.  While a brightly colored shop lies to the northwest.  There are four obvious exits: east, west, south, northwest
+47
+long You are in the Pinnacle Law Office. Here a lawyer waits to help you with your various law problems. There is a sign above his head, listing services you can purchase here, and their cost. There is one obvious exit: east
+npc Tom Sharpee, Lawyer of Pinnacle.
+46
+long You are walking along a narrow, pebbled country lane running north to south.  You can see the side of the Pinnacle Bank off to your east.  An ornate stone edifice towers to your west, casting the lane into shadow.  An absent-minded wizard stares sightlessly at the odd sky! There are three obvious exits: west, south, north
+45
+long Weird undulating tiles give way to the north to gleaming pebbles and to the west to a small dirt path.  To the south the looming bulk of the Lodestone Building arches toward the mottled angry sky of Pinnacle.  Light drops of rain fall.  An absent-minded wizard stares sightlessly at the odd sky! There are three obvious exits: east, west, north
+44
+long You are standing in the Surreal Spirits Tavern.  Herein you can purchase beverages to ease your troubles and sooth your mind. Type 'list' to see a list of consumables. There is one obvious exit: north
+43
+long Welcome to the Pinnacle Magic Shop. As you step inside the Magic Shop, your olfactory nerves are assaulted by a highly offensive stench.  As you carefully scan the dimly lit room, your eyes affix upon a large display case in the center of the room.  Encased within the glass display, is an abundant supply of magical items that the shopkeeper has recently acquired.  A large sign sits on top of the case. There is one obvious exit: south
+42
+long Standing before you is a swirling gateway of magical powers. The air crackles you can clearly feel it charged with powerful energy. The road that took you here vanishes straight into the portal. Looking towards the east you can see another portal leading into the fabled world of Fantasy. To the north stands a small and worn building which seems to be very well used despite its condition. There are four obvious exits: east, south, north, enter
+41
+long Once a long, narrow meadow stretching along the west side of Pinnacle, it has become a narrow dirt trail pounded flat by the passing feet of generations of adventurers and scoundrels. Large buildings lie to north and west.  Moebius Road lies to the east while the dirt trail continues to the south.
+npc A sign.
+40
+long Jenna says: Welcome to my shop, Guest1. Hundreds of beautiful roses line the shelves of this small shop filling your senses with a joy of life and love.  A small counter rests near the back wall where Jenna does her business.  A small sign has been engraved into the slab of pink marble that makes up the front of the counter. There is one obvious exit: south
+npc A sign.
+39
+npc A shimmering gateway
+38
+long You stand on the edge of a massive and ancient forest.  Below, you can see a beautiful city spread out on the shores of a wide river.  A tall white spire rises from the center of the city.  The forest path continues down the slopes in the same northwestern direction.
+37
+long The well travelled road comes to an abrupt end here in a round clearing deep in the ancient woods that border the city of Pinnacle.  A wrought iron gate stands partially opened across the trail into the forest.  Tall stone walls extend from the gates into the darkness of the forest.
+36
+long A well-travelled road runs north and south here through an awesome and ancient forest.  A small path veers off and down through a slight gap in the trees to the northwest.
+npc An Honorary Statue of Ganzie (undead). The Knight's Board containing 80 messages (80 unread messages).
+35
+long You have entered a clearing at the end of a well-kept gravel path. Towering to the east is a beautiful, airy, alabaster castle.  It is the home of the powerful and wealthy Knight Guild.  To the south a small, elegant chapel blends with the forest in a harmonious way.  This clearing is used by the Knight Guild to advance their members in their real levels and stats.  Non-members may join the guild here if they wish <join knight> or leave the guild <unjoin knights> at a cost of one-half of their total experience.  Both decisions are of great importance and should be carefully weighed before being made.  There is a row of spikes in front of the castle.   Commands: advance [level,str,con,int,wis,dex,cha] cost, tally, required, questansi, list [name -or- # -or- short]  There are four obvious exits: west, south, north, enter
+npc An Honorary Statue of Ganzie (undead). The Knight's Board containing 80 messages (80 unread messages).
+34
+long You step past the hardwood trees and enter a glade of serenity.  A pool of cool, crystal waters gathers to the side from a sparkling waterfall.  Stone benches surround the pool, many filled with your brethren, assisting the folk of Pinnacle by listening to their problems and providing spiritual guidance back to their true paths.
+npc Priest Guild Public Board containing 59 messages (59 unread messages).
+33
+long You have entered a clearing in the hardwood forest at the edge of Pinnacle.  Towering to the east in front of you is a beautiful, gothic cathedral, home to the powerful Priest guild.  To the west a road leads back to Pinnacle.  Non-members may join the guild here if they wish <join priest> or leave the guild <unjoin priest> at a cost of one-half of their total experience. Both decisions are of great importance and should be carefully weighed before being made.  Clerics of old may not enter until they 'recant' their past, a permanent step on the path of faith.  Do not make this decision lightly.  There are three obvious exits: west, south, enter
+npc Priest Guild Public Board containing 59 messages (59 unread messages).
+32
+long A well-travelled road runs north and south here through an awesome and ancient forest.  To the east, through a large gap in the colossal trees, you can see a tall and well built church of some sort.  To the south the road ends in a clearing where another chapel is visible in the tree gloom.
+31
+long A well-travelled road runs north and south through the wonderous and ancient forest.  Colossal trees rear upwards filling you with awe and reverence.  You can hear the sound of church bells to the south.
+30
+long The road ends at a large portal here in the forest.  The portal itself is large and circular, with sprays of color shooting across it, and strange, mystical energy flickering within.  A road into Pinnacle lies to the east, while you can vaguely make out the outlines of a mysterious tower to the west.  There are three obvious exits: east, west, portal
+29
+long You are at the intersection of a small grassy path which goes east to west, and a well travelled road running north to south.  You can see a strange multicolored haze off to the west.  The colossal trees of the ancient forest prevent you from seeing much else of note.
+28
+long You are walking along a small grassy path running west to east through the great ancient forest.  There is a small hut just to your north.  You can hear bells and chants through the trees to the south.  There are three obvious exits: east, west, north
+27
+ways tert
+long The majestic bulk of the Lodestone Building rears towards the strange and mottled sky behind you to the east.  Sorva's Cut, a one-time meadow rendered a narrow dark trail, runs from north to south.  To the west you can see a small path entering a great forest.  There are three obvious exits: west, south, north
+name tert
+npc A Statue of the Founders.
+26
+ways church
+long You have entered the Chapel of the Three Kingdoms.  As you look ahead you see rows and rows of pews that line up both sides of the chapel.  These all eventually lead up to the altar which is located up front.  Where the altar is, stands the Holy Priest. This is the chapel where the holy vows of matrimony are exchanged. Above him is a small sign.  There is one obvious exit: west
+name church
+25
+long You are on a narrow dirt trail which winds its way north, and back to the east along a small village street.  A tidy stone building is visible through the breathtakingly beautiful trees that make up the great western forest of Pinnacle.  An absent-minded wizard stares sightlessly at the odd sky! There are three obvious exits: east, west, north
+24
+long Welcome to the Palisade!!  You are in a wide spacious room dominated by an immense redwood bar at the southern end.  Light reflects off the brightly waxed oaken floors, lovingly maintained by the enigmatic Hey, who nods in your direction from behind the bar.  Tables filled with adventurers of various sorts are packed into the room, along with more private booths along the eastern and western walls.  A spiral staircase made of some odd metal dominates the center of the Palisade.   The old-style western saloon doors that exit to Pinnacle are to the north.  An open door is to your west and there seems to be some sort of humidor set up in the eastern section. There seems to be another exit from the room to the south, behind the bar.  A menu is posted in neon glory above the bar.  There are six obvious exits: east, west, south, north, down, up
+npc Another 3k Top Player List. The 3k Top Player List. Ryft's Pub Crawl Dispenser. The Three-Kingdoms 'Least Wanted' poster.
+23
+long A blast of hot air hits your face as you enter the village Smithy. A large anvil stands directly before you in the center of the room. In the southwest corner of the room, a large rock chimney draws the the smoke from the coal forge, and releases it through a hole in the tile roof.  Hanging beside the forge, is a large wooden bellows and a set of iron tongs.  On either side of the room, running the length of the wall, sits a large bin which has been fastened securely to the clay floor.  The once brightly painted walls, now show signs of age and a sooty residue.  Your eyes begin to burn slightly as you peer through the smokey haze to a sign upon the wall.  =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=- Type: list              to see a list of all items for sale. ('list w': weapons, 'list a': armours.) fix <item/all>    to have items repaired.
+22
+long You are walking along a nice and neat village street which runs east to west.  You can see the side of a large white building to the north.  To the south you hear the sound of metal striking metal coming from a small wooden shed.
+21
+long You are at the intersection of Cletus' Fark, which runs south here down a village street filled with shops, and Bilbo's Bagends, which runs to the west.  A strange, oily smell fills your nostrils, coming most heavily from the east.
+npc Extra the editor for the Pinnacle branch of the NYT.
+20
+long You are in the Pinnacle branch of the NYT, 3k's newspaper. The room is bright and cheery with venetian blinds over the windows. There are many desks here that belong to 3k's many reporters. Maybe you'd like to be one too? To the south is the interview room, where formal (and not so formal) interviews can be conducted. There are two obvious exits: west, south
+npc Extra the editor for the Pinnacle branch of the NYT.
+19
+long You are wandering down Cletus' Fark, an otherwise pleasant village street marred only by the strange soot on the walls and pebblestones.  There are three obvious exits: east, south, north
+18
+long You enter the museum.  Several works of art catch your eye, but the one thing that holds your attention most is the bulletin board at the center of this wide and empty room.  You feel that if you had anything to share in the creative sense, this would be the place to do it.  All poetry, pictures, etc are accepted. No personal insults please.  There are two obvious exits: west, south
+npc The 3k Mass XPer List. A board for the artistically inclined containing 94 messages (94 unread messages).
+17
+long This is the Pinnacle Odds 'n Ends shop. Lots of fun toys are on display here and a smiling sales clerk stands behind the counter. There is a sign listing prices up on the wall. There is one obvious exit: east
+16
+long You are wandering down Cletus' Fark, an otherwise pleasant village street marred only by the strange soot on the walls and pebblestones.  A tall museum-like structure lies to the east.  A small shop lies to the west.  There are four obvious exits: east, west, south, north
+15
+long Cletus's Fark ends its southward run here in what can only be termed the residential area of Pinnacle.  A quiet cul de sac has been carved out of the surrounding woodlands to shelter the homes of 3 Kingdom's wealthy patrons.  Columned southern mansions stand side by side with medieval castles and classic victorian homes.  To have a home in this crime free, exclusive neighborhood is a sign of wealth and success in the realms. There is one obvious exit: north
+14
+long You can vaguely make out the shapes of Pinnacle to the west. A dense smog cloud, laced with strange bursts of dazzling micro-lightning hovers about you.  A smell of ozone is in the air, almost certainly coming from the impressive archway before you.  Made of a strange oily metal, and covered with odd glyphs, it is filled with an inky darkness.
+13
+long You stand in a small quiet forest glen. Trees surround a circular patch of grass. Within the patch are five strange looking hi-tech pillars that stand about as high as your waist. Shining bands of blue-white light burst back and forth around the circle from the tops of the pillars.
+12
+long You are at the intersection of Cletus' Fark, a tarry village street to the north, and Cancer's Curse, a pleasant country lane which starts here and gently inclines to the west.  You are struck by the sharp contrast between the smog-filled vista to the east, and the strange winking archway visible there, and the pleasant fields to the south.  There are five obvious exits: east, west, south, north, southeast
+11
+long You are walking along a pleasant country lane.  You can see the side of a whitewashed shop to the north.  And a small and curiously shaped building to the south.  There are two obvious exits: east, west
+npc A tall street light.
+10
+long You have just entered 'Pinnacle Pizza and Pasta'.  This is where all of Pinnacle's finest adventurers come to feast on fresh Italian cuisine. If you want to view the menu...just type 'menu' or 'list' There is one obvious exit: west
+npc Fireseed Basket containing 72 fireseeds. Mario the cook.
+9
+long This is the Pinnacle Morgue.  You can come here to buy or sell corpses. There is a sign here if you want more information.
+8
+long You are on the narrow pasture path known, affectionately, as Newbie's End!  A dark, glowering building lies to the west, and a strangely shaped fast food joint is set up to the east. But overpowering all your senses is the huge, iron gate that just rears up offering no truck or bargain.  It's enter and take your chances.  Or turn around and go home.  Pinnacle is just to the north, after all.  There are four obvious exits: east, west, south, north
+7
+long You are walking along a pleasant country lane.  You can see the spires of a stately church to your north rising high above the tree tops.  A narrow path cuts through a pasture to the south, ending at a tall and oddly out of place iron gate!
+6
+long You are at the south end of Zetron's Goof, the saintly trail that honors the only one of the Pinnacle wizards to achieve godhood.  To the east you can see a pleasant country lane while to the west you can see a clearing in the great and wild forest that makes Pinnacle's western border.  There are three obvious exits: east, west, north
+5
+ways wpriest
+long You are moving along a pleasant trail running north and south. To the east you can see the stately Pinnacle Chapel, where many of the Realm's most famed citizens are wed.  To the west, in a small clearing, you can make out an odd swirling whirl of flashing lights as they dance across the mottled sky above. You shiver.  To the north is Pinnacle proper.
+name wpriest
+4
+long You are at the start of the saintly trail known as Zetron's Goof.  It runs south along the western border of Pinnacle. You can see the side of the rustic Palisade to the east.  To the west, in a small clearing within the great forest, you can see a long building surrounded by well-tended, if small, fields.
+3
+long You are walking along a nice and neat village street, the bulk of the Lodestone Building blocks the dark and threatening sky to to the north.  A narrow dirt trail and the massive and gloriously beautiful forest are to the west.  A cobblestoned track heads off to the south.
+2
+long You are standing at the intersection of Main Street and Bilbo's Bagends.  Main leads north and Bagends runs to west and east. Just north of here is the center of town.  To the south lies a slightly disreputable looking, noisy, and gin-smelling building with a large garish tankard of ale painted over the door.  There are four obvious exits: east, west, south, north
+1
+long The cobbles give way to a weird, twisting tile that makes your stomach churn uneasily.  This must be Moebius Street. You stand at an intersection where the cobbles of Main Street, which stretches to the south, meet the stomach- wrenching oddity of an undulating tile-covered path that goes left to right.  Just to the north there is a small, unimpressive brick building with a massive iron door.  There are four obvious exits: east, west, south, north
+npc A tall street light.
+0
+long This is the center of Pinnacle.  A well-kept but simple cobbled street runs north and south.  There is a statue of a man here in the middle of the street.  To the east a low-hung whitewashed building buzzes with activity.  A towering and ornately decorated Lodestone edifice looms to the west.  A strange and mottled sky hangs low casting weird shadows which are barely dispelled by the lights on the oddly shaped streetposts.  You shiver.  Hovering far in the air here is a strange looking hemispherical structure.  You could probably jump up to it if you wanted.  In the base of the structure is a huge iron trapdoor.  There are five obvious exits: east, west, south, north, jump
+npc A Statue of Cancer the King. A tall street light.

@@ -1,0 +1,1343 @@
+help§
+allgemeines: wichtiges (JDK, Mac)
+features: enthaltene Funktionen
+syntax: generelle Kommandosyntax
+regexp: Syntax der Syntax ;)
+auswahlsyntax: Syntax zur Auswahl einer Menge von Knoten (z.b. lna, mark)
+grafik: Darstellung der Karte (Legende)
+farben: moegliche Farben im Attribut (color) bei ai
+maus: Mausaktionen
+tasten: Hotkeys (nach Anklicken der Karte)
+ausgaenge: Alle Standardausgaenge
+Q: (Quit) verlassen ohne speichern
+save: abspeichern
+g: (Go) zu Knoten in Map springen
+go: (GoOther) zu Knoten (auch in anderen Karten) springe
+sm: (SwitchMap) Umschalten der Karten
+asp: (AddSpecialExit) Erzeugen spezieller Ausgaenge
+ae: (AddExit) Standardausgaenge erzeugen
+ar: (AddReverse) einfach Ausgang aus Gebaeuden erzeugen/ueberschreiben
+am: (AddMap) neue leere Karte erzeugen
+cgrid: (CreateGrid) Netzstruktur erzeugen
+an: (AddNode) Knoten beliebig erzeugen
+MP: (MovePoint) Knoten(menge) (auch zwischen Karten) verschieben 
+sn: (SplitNode) Knoten aufsplitten (nach Ausgaengen)
+DE: (DeleteExit) Ausgaenge loeschen
+DP: (DeletePoint) Knoten loeschen
+lpc: (LPC-Code) LPC-Code generieren
+opt: (Options) Optionen setzen
+ai: (AddInfo) zu Knoten Informationen hinzufuegen
+si: (ShowInfo) Informationen zu Knoten anzeigen
+lna: (ListNodesbyAttribute) Alle Knoten mit bestimmten Informationen zeigen
+mh: (MakeHouse) Masstab der markierten Knoten halbieren (Gebaeude)
+mv: Ansicht in angegebene Richtung verschieben
+center: Zentrieren um Knoten
+zoom: Zoomen in Map
+unzoom: Herauszoomen aus Map
+history: Abruf schon benutzer Kommandos
+undo: Aktionen rückgängig machen
+sf: Flags der Knoten setzen bzw. anzeigen
+para: Informationen zur Parawelt
+objekte: Objekte im Mapper verwalten (mit Attribut-Wert Infos)
+oi: Objekte anzeigen
+ei: Objekte erzeugen und editieren
+ci: Objekte hardcore (vom Mud) erzeugen
+di: Objekte loeschen
+saveObjects: Objekte speichern
+loadObjects: Objekte laden
+interaktiv: mit Maus Parameter fuer Befehle liefern
+poly: Polygone unter die Karte legen bzw. Anmerkungen in der Karte machen
+aec: Ausgaenge colorieren
+aed: Tueren an Ausgaenge haengen
+aecmd: Kommandos an Ausgaenge haengen
+alb: unlogische Labs zeichnen
+features§
+Karten aus Knoten mit Wegen als Verbindungen mit den Knoten
+man kann die Karten durchwandern (Maus/Richtungen/Keypad)
+3-dimensionale Karten von denen eine Z-Ebene aktuell dargestellt und
+die Verbindungen in andere Z-Ebenen angedeutet werden
+jede Karte==Map wird mit anderen Maps verknuepft, zwischen denen bei
+der Navigation automatische umgeschaltet wird (die Verknuepfung der
+Maps wird am Ende des Ausgangs durch ein gelbes Quadrat visualisiert)
+neue Ausgaenge koennen entwender interaktiv durch Ablaufen oder
+mehrere Ausgaenge des aktuellen Knotens auf einmal durch einen Befehl
+erzeugen
+Ausgaenge die ueber spezielle Kommandos angesprochen werden, koennen
+entweder mit einer Richtung oder einem Map/Zielpunkt eingegeben werden
+(so werden auch die Verknuepfungen zu anderen maps erzeugt)
+Fernsteuerung von tf ueber einen Port (Kommandos)
+Markierung von Knoten (Maus)
+Einbahnstrassenrichtungen sind moeglich
+Zoomstufen (Maus/Tastaur), Verschieben der Map ohne Bewegung des
+aktuellen Knotens, Zentrieren um den aktuellen Punkt
+Loeschen von Knoten und Wegen
+Informationen zu Knoten (wie p_long, p_short, name, knoten im
+Wegesystem, npcs,...), die dann entweder innerhalb der Map
+visualisiert werden bzw. in einem Infobereich angezeigt werden (auch
+von tf aus generierbar)
+22.3.99
+zusaetzlich zu den festgelegten Informationen zu Knoten koennen auch
+eigene Schluesselworte verwendet werden, diese werde auch als Titel in
+der Anzeige benutzt
+die Kommandos DP (deletePoint), DE (deleteExit), ae (addExit)
+arbeiten jetzt auch ueber die markierten Knoten
+das Kommando cgrid erzeugt Netzstrukturen in der Map
+die meisten moeglichen Himmelsrichtungen wurden hinzugefuegt (siehe
+Navigation)
+3.4.99
+mit dem Kommando ar (addReverse) koennen Raeume, die nur einen
+Ausgang oder Zugang haben eine special exit mit dem angegebenen Namen
+ganz einfach erhalten (Praktisch fuer raus, verlasse xxx)
+die Informationen ueber NPCs, Haeuser, Knotennamen, Portale,
+Auftankstellen, Kneipen,Laeden haben jetzt eine grafische
+Repraesentation in der Map
+26.4.99
+Einstellen von Optionen mittels opt (Gitter, Anzeige, Maxlevel)
+Demomaps, die Funktionen demonstrieren
+Verschieben von Knoten in und zwischen Maps mit MP
+6.5.99
+erzeugen von Knoten an beliebigen Koordinaten mit an
+aufspalten eines Knotens in zwei Teilknoten mit sn
+erzwingen des Ueberschreibens von Ausgaengen (mit "!" und des
+Erzeugens von Knoten auf schon belegten Koordinaten ("$"), Angabe der
+Laenge von Wegen mit n* siehe Syntax
+erzeugen und updaten von lpc code mit template files
+Speichern der Optionen und freie Optionen eintragen siehe opt
+16.7.99
+Auflistung von Knoten, die ein bestimmtes Info-Schluesselwort
+enthalten, bzw. Darstellung von Schrittfolgen ueber die gewuenschten
+Knoten
+intern wird auch mit verwaltet, welche Knoten schon (vom Mud aus)
+betreteten worden sind. Diese werden in der Map mit einem Quadrat
+markiert.
+die internen Attribute werden jetzt mit in der coords Datei
+abgespeichert (Markierung, Knoten betreten, Ueberlappende Knoten,...)
+3.8.99
+Hilfe im Mapper mit ?zu allen Kommandos und generell
+History fuer Kommandos des Mappers (mit Pfeil hoch und runter)
+teilweise funktionstuechtige Undo Funktionalitaet mittels undo
+neue Hilfsfunktionen zum Zoomen, Unzoomen, Ansicht verschieben und
+Zentrieren
+Hilfsfunktionen zum Markieren und Demarkieren mit Auswahlsyntax wie
+lna
+Kommando zum Halbieren des Massstabs einer Anzahl Knoten (markierte)
+z.B. fuer Gebaeude mittels mh
+go kann auch benannte Punkte ueber Mapgrenzen anspringen
+bei asp kann der -mmap Parameter weggelassen werden, wenn der bei -p
+angegebene Punkt ein benannter Punkt in einer anderen Map ist.
+save hat jetzt auch den Parameter all, damit werden alle Maps
+gespeichert
+DE loescht jetzt auch benannte Ausgaenge ohne zusaetzliche Parameter
+7.9.99
+ein kurze Einfuehrung fuer die Nutzung des Mappers als lokale
+Applikation
+lna zeigt jetzt auch Knoten an, die einen bestimmten Substring in
+den angegebenen Attributen (nicht) enthalten
+die Flags der Knoten koennen jetzt auch per Hand mit sf gesetzt
+werden, das ist auch fuer eine bestimmte Anzahl Knoten moeglich.
+die Nutzung einer Paralleldimension (z.B. Morgengrauen Parawelt) ist
+moeglich, dazu gibt es eine Option und ein Flag bei den Raeumen, sowie
+den neuen Parameter & bei ae und asp
+opt zeigt jetzt auch die gesetzten Optionen an.
+mit den Attribut color koennen jetzt Knoten mit eigenen Farben zum
+Hervorheben eingefaerbt werden. (englisch Farben)
+8.10.99
+mit poly (Polygon) koennen sowohl farbige Polygone unter die Map
+gelegt werden, als auch Anmerkungen an beliebige Koordinaten plaziert
+werden
+es wurden Objekte eingefuehrt, die in ihrer Funktionlitaet den
+Rauminfos mit ai (AddInfo) entsprechen, also zusammenhaengende
+Schluesselwort-Wert Paare bilden ein Objekt eines Typs mit einer
+eindeutigen Nummer und ggf. einem Namen
+dazu gibt es die Befehle oi (ObjectInfo) zum Anzeigen von Objekten
+weiterhin ei (EditInfo) zum Editieren der Objekte in einem
+Extrafenster
+ci (CreateInfo) zum Erzeugen eines Objekts.
+di (DeleteInfo) zum Loeschen eines Objekts.
+und saveObjects zum Abspeichern der Objekte
+und loadObjects zum Laden der Objekte
+die Objekttypen werden in der Datei default_de.info definiert, wobei
+die enthaltenen Schluessel erweitert werden koennen. Wenn in einem
+Mud-Map Verzeichnis auch eine default_de.info existiert, dann wird
+diese speziellere Version genutzt. Natuerlich gibt es dies auch fuer
+die englische Version als default_en.info.
+einige Befehle koennen durch Mausklicks mit Parametern versorgt
+werden. Dazu gehoeren: poly, an, mp, asp, text, si, center node,
+center screen, center view, center. Es wird versucht, dem Typ des
+Befehls entsprechend, die richtigen Parameter zu uebergeben, bei den
+meisten Befehlen (ausser poly) werden die einmal uebergebenen
+Parameter beim naechsten Klick durch neue ersetzt.
+2.11.99
+lna kann jetzt auch die Knoten markieren, die als Ergebnis einer
+Suche gefunden werden einfach den Parameter -m voranstellen. Also lna
+-m house map markiert alle Knoten der aktuellen Map mit Haeusern. Und
+mit -u werden sie demarkiert.
+dazu passend kann jetzt die Auswahl fuer Regionen auch markierte
+Knoten benutzen einfach als Schluesselwort marked benutzen
+und da ai (AddInfo) jetzt auch ueber die Knoten die entsprechend der
+Auswahlangaben angegeben wurden Attribute setzen kann, ist es einfach
+moeglich markierte Knoten mit einem bestimmten Attribut zu versehen
+7.12.99
+Ausgaenge, die mehr als 20 bzw. 5 Grad von den Normrichtungen
+abweichen werden getrennt dargestellt mit einer Verbindungslinie
+dazwischen. Am Ende der angedeuten Normrichtungsausgaenge ist die
+Nummer des Zielraums sichtbar.
+dass kann z.B. fuer unmoegliche Labyrinthe genutzt werden (die sich
+sonst nur tabellarisch darstellen lassen), dazu gibt es den Befehl alb
+(AddLaB) der ein Raster von Raeumen erzeugt die den doppelten Abstand
+der normalen Raeume haben (wegen der Uebersicht). Nutzung mit alb
+richtung Zielraumnummer
+fuer Ausgaenge gibt es jetzt einige zusaetzliche Infos, in der Map
+wird auch angezeigt, wohin die Umschaltausgaenge fuehren
+mit aec (AddExitColor) koennen Ausgaengen Farben zugeordnet werden,
+mit aed (AddExitDoor) koennen Tore, Portale usw, hinzugefuegt werden,
+dabei sollten die einfach zu oeffnenden Dinge klein und die mit
+speziellen Items zu oeffnenden (Schluessel) gross geschrieben werden.
+mit aecmd (AddExitCommand) werden zusaetzliche Kommandos fuer den
+Ausgang, die vor dem Bewegungsbefehl ausgefuehrt werden muessen
+angegeben.
+die Zusatzinfos werden in der Map durch Kuerzel und bei si
+(ShowInfo) im Detail angezeigt.
+bei Bewegungen von der Kommandozeile des Mappers aus werden, die
+Richtungsbefehle an das TF geschickt, dabei gibt es einen
+vorangestellten Parameter, der zur Zeit meist 0 (fuer automatisch)
+ist.
+geplant:
+Neuberechnung der Map, wenn Unstimmigkeiten innerhalb der Map
+Integration in das Wegesytem, d.h. per Anklicken wandere ich im Mud
+zu dem Punkt
+??Eure Ideen.
+allgemeines§
+Allgemeine Infos:
+* Mac: Alt entspricht Option
+* rechte Maustaste ist auch durch Doppelklick nutzbar (besonders
+fuer Mac)
+* es wird eine Virtual Machine gebraucht, die JDK1.1 unterstuetzt
+(es gibt ein paar Probleme, dass Netscape Implementationen die
+Klasse ActionListener nicht finden.
+
+grafik§
+
+Die grafische Karte
+
+die Karte wird auf der groessten Flaeche des Mappers dargestellt
+
+die Groessen der dargestellten Symbole sind vom Zoomfaktor abhaengig
+
+der aktuelle Punkt ist ein gruenes Quadrat
+
+ueberlappende Knoten sind rot und Knoten deren Masstab halbiert
+(Gebaeude) wurde blau
+
+neben den Knoten werden deren Nummern und ggf. Namen dargestellt
+(oso)
+
+wenn der Knoten (vom Mud aus) schon besucht worden ist, wird er als
+Quadrat dargestellt. Daran soll man erkennen wo man in neuen Gebieten
+noch nicht gewesen ist.
+
+normale Ausgaenge werden mittelgrau, Ausgaenge nach oben heller mit
+einem Plus (nno) , nach unten dunkler mit einem Minus (ssw) und
+Spezialausgaenge rot dargestellt (Spezialausgaenge ohne Richtung enden
+nnw)
+
+Umschaltung zwischen Maps wird durch ein gelbes Quadrat am Ende
+eines Ausgangs angezeigt.
+
+NPCs werden als Strichmaennel rechts unterhalb (sso) des Knotens
+angezeigt, dabei entspricht deren farbstaerke dem Verhaeltnis von
+angegebenen Level zu Level 50, rot sind autoattack NPCs, und ein
+"Schild" halten Blocker (z.B. ai npc Waechter (#A#B#L30) wo Waechter
+der Name des NPCs ist, #A autoattack, #B Blocker, #L30 Level 30
+
+vorhandene Haeuser werden durch ein kleines Haus in Richtung wsw
+dargestellt
+
+das Vorhandensein von Tanken, Kneipen, Laeden im Knoten wird jeweils
+durch die Zeichen TKL (ono) dargestellt
+
+vorhandene Portale/Teleporter werden durch einen Bogen (wnw)
+dargestellt)
+
+ueberlappende Knoten werden rot und versetzt zu dem originalen
+Knoten dargestellt, damit sie auch markierbar sind
+
+Knoten der Parallelwelt werden hellrot dargestellt
+
+Knoten, die ein Attribut namens color haben, werden in der
+angegebenen Farbe dargestellt, die Farbe kann aber auch als Dezimal
+oder Hexadezimalzahl (mit vorangestelltem 0x) angegeben werden.
+
+Die Zusatzinfos, die mittels aec (AddExitColor), aecmd
+(AddExitCommand), aed (AddExitDoor) fuer die Ausgaenge angegeben
+werden koennen, werden in dieser Reihenfolge als Farbe des Ausgangs,
+als + ueber dem Ausgang, und der erste Buchstabe der Tuer (u.a)
+angegeben.
+Wenn ein Ausgang ein MapSwitch ist (siehe asp (AddSpecial), wird in
+der Map auch die Nummer der Zielmap und des Knoten dort angegeben).
+Wenn der Ausgang mehr als 20 Grad von der Normrichtung (z.B. so)
+abweicht oder mehr als 5 Grad von den 4 Haupthimmelsrichtungen, wird
+am Knoten nur die korrekte Himmelsrichtung dargestellt, und am Ende
+diese kurzen Stueckes, steht der Zielraum. Ausserdem fuehrt einen
+duenne rosa Linie zum Zielraum. Wenn der Zielraum, den Rueckweg in den
+aktuellen Raum besitzt, endet diese Linie an desssen Andeutung der
+eigentlichen Richtung, ansonsten direkt am Raum. (siehe auch alb
+(AddLaB)).
+tasten§
+
+Die Tastenkombinationen:
+
+Unmittelbare Tastenkombinationen (die sofort wirken)
+
+!!Die Tasten funktionieren nur, wenn die Zeichenflaeche aktiviert ist,
+wenn das TextField aktiv ist, werden die Zeichen dort eingefuegt.
+Navigation:
+
+wie Keypad 1-sw, 2-s, 3-so, 4-w, 6-o, 7-nw, 8-n, 9-no fuer die
+Himmelsrichtungen, + fuer oben, - fuer unten
+
+View Bewegung:
+
+Ctrl+Naviationstasten: Verschieben der Map in X/Y oder Z-Richtung
+
+Ctrl+z: Zoom
+
+Ctrl+u: Unzoom
+
+Ctrl+c, Ctrl+m: Zentrieren des aktuellen Knotens
+
+Erzeugen:
+
+
+Alt+#
+
+naechster Ausgang wird als Einbahnstrasse erzeugt
+
+
+Alt+$
+
+der naechste Knoten wird auch erzeugt, wenn es auf den Koordinaten
+schon einen Knoten gibt.
+
+
+Alt+Navigationstasten
+
+neuer Ausgang in der angegebenen Richtung (wenn dort schon ein Punkt
+existiert wird eine Verbindung geschaffen, ansonsten wird ein neuer
+Punkt erzeugt)
+
+Markieren:
+
+
+Shift+u
+
+loescht alle Markierungen in der aktuellen Map
+maus§
+
+Mausaktionen
+
+Navigation:
+
+
+rechte Maustaste oder Doppelklick:
+
+es wird zum angeklickten Punkt gesprungen
+
+
+linke Maustaste:
+
+vorgesehen fuer interaktive Kommandos, z.Zt. Ausgabe von
+Bildschirm-/Mapkoordinaten ggf. gefundener Punkt View Bewegung:
+
+
+Ctrl+linke Maustaste ziehen:
+
+Aufziehen eines Zoomfensters (Zoom)
+
+
+Ctrl+rechte Maustaste:
+
+eine Zoomstufe zurueck (Unzoom) Interaktion:
+
+
+Shift+linke Maustaste:
+
+Markieren/Demarkieren von Knoten
+
+
+Shift+linke Maustaste ziehn:
+
+Markieren der Knoten im Rechteck
+
+interaktiv§
+
+interaktive Parameteruebergabe mit der Maus
+
+bei einigen Kommandos koennen Parameter mit der Maus uebergeben
+werden.
+Die Nutzung ist wie folgt: Kommando bis zu den hinzuzufuegenden
+Koordinaten eintippen und dann mit der linken Maustaste auf den
+gewuenschten Punkt klicken. Es wird nur einmal das Kommando erkannt
+und dieses dann bis zum naechsten Befehl bedient!
+Die Besonderheiten bei den einzelnen Kommandos sind im folgenden
+aufgefuehrt:
+* poly es werden x,y,z Koordinatenpaare der Mapkoordinaten
+hintereinandergehaengt, die Koordinaten werden auf Zehntel genau
+genutzt
+* an es wird ein x y z Koordinatenpaar in Mapkoordinaten angehaengt
+und im folgenden ersetzt
+* mp es wird ein x y z Koordinatenpaar in Mapkoordinaten angehaengt
+und im folgenden ersetzt
+* asp es wird im Format -pKnotennummer -mMap die Referenz auf den
+angeklickten Knoten angehaengt und im folgenden ersetzt
+* text noch nicht implementiert
+* si die Knotennummer wird angehaengt und im folgenden ersetzt
+* center node die Knotennummer wird angehaengt und im folgenden
+ersetzt
+* center screen die Bildschirmkoordinaten werden als x y Koordinaten
+uebergeben
+* center view es wird ein x y z Koordinatenpaar in Mapkoordinaten
+angehaengt und im folgenden ersetzt
+* center die Knotennummer wird angehaengt und im folgenden ersetzt
+
+regexp§
+ganz kurz zur Regexp Syntax, weil diese in dieser Anleitung meistens
+etwas abgewandelt genutzt wird
+* ein Wort bzw. ein Klammerausdruck sind ein Ausdruck
+* ein Ausdruck gefolgt von einem ? kann null-mal oder einmal
+auftreten
+* ein Ausdruck gefolgt von einem + kann einmal bis mehrmals
+auftreten
+* manchmal werden aber auch die Modifikatoren (besonders +) in ihrer
+eigentlichen Zeichnbedeutung genutzt, aber das wird aus dem
+Zusammenhang deutlich
+* innerhalb einer Klammer werden mit | Alternativen angegeben
+
+syntax§
+Syntax:
+
+-d((#|x*|$|!|&)+)?(name|id) Richtungsname (s o sw) oder ID
+(besonders 0 fuer richtungslos z.b. Teleports oder ueber mehrere
+Knoten hinweg),
+* bei der Angabe von # wird die Richtung nur in der Hinrichtung
+bearbeitet (ansonsten beide Richtungen) bei -d0 ist das der
+Standard
+* "x*" mit x eine Zahl bewirkt, das der neue Ausgang (nur beim neu
+Erzeugen) x Einheiten lang ist. z.b. -d2*so macht einen 2
+Einheiten langen Weg nach so
+* "!" bewirkt, dass schon vorhandene Ausgaenge in der angegebenen
+Richtung ueberschrieben werden z.b. Ausgang w zu Knoten 5 durch
+Ausgang w zu Knoten 28 ueberschreiben asp -d!w -p28
+* "$" bewirkt, dass auch neue Knoten dort erzeugt werden, wo schon
+ein Knoten ist (Ueberlappungsproblem) der neue Knoten wird
+besonders dargestellt auch bei an anwendbar
+* mit dem Parameter "&" kann erzwungen werden, das aus einem Knoten,
+der in allen Dimensionen existiert, ein Ausgang in einen Raum der
+Dimension geschaffen wird, zu der in dieser Richtung noch keine
+Verbindung besteht. D.h. es muss schon ein Ausgang in einen Raum,
+der nur in einer Dimension sichbar ist bestehen. Dann kann unter
+demselben Namen ein Ausgang in einen Raum der jeweils anderen
+Dimension erzeugt werden. Dieser neu erzeugte Raum erhaelt die
+fuer diese Dimension notwendigen Flags
+
+-m(name|id) Name der Map (ein Wort) oder ID (steht in Titelzeile)
+
+-p(name|id) Name des Knotens (ein Wort) oder ID (wird angezeigt)
+
+wenn ein Punkt auf einer anderen Map angegeben wird, dann muss auch
+-m angegeben werden
+
+fuer richtungslose Spezialausgaenge -d0 ansonsten kann die Richtung
+angegeben werden -dso
+
+wenn ohne die o.a. Optionen mehrere Richtungen bzw. Knoten angegeben
+werden gelten diese nur fuer die aktuelle Map und keine
+SpezialAusgaenge es koennen aber auch dort IDs oder Namen benutzt
+werden
+
+bei den Kommandos ae, DP, DE, MP, lpc kann auch der zur
+Identifikation notwendige Teilstring von marked benutzt werden, um das
+Kommando ueber alle markierten Knoten arbeiten zu lassen
+
+auswahlsyntax§
+Auswahlsyntax fuer mark, unmark,sf, ai und lna
+
+(all|map|level|marked|region dx dy dz|((nodes|named) knotenid/name+)
+
+Optionen:
+Es ist moeglich nur Teilstrings der Bezeichner zu verwenden.(z.B. reg
+fuer region)
+
+all: Alle Maps
+
+map: aktuelle Map
+
+level: aktuelles z-level
+
+marked: markierte Knoten (in der aktuellen Map)
+
+region dx dy dz: die Punkte, deren Abstand zum aktuellen Punkt
+kleiner bzw. gleich der angegebenen Deltas ist. (Also ein Wuerfel mit
+den doppelten Kantenlaengen)
+Beispiel:reg 5 2 2: alle Knoten, die im Wuerfel mit den Seitenlaengen
+(10,4,4) um den aktuellen Knoten liegen
+
+nodes, named knotenbezeichner: die angegebenen Knoten werden fuer
+die Auswahl beruecksichtigt
+Beispiel: named 1 2 turm bruecke
+
+Navigation:
+ausgaenge§
+
+Ausgangsname: n,so,..., bzw. Spezialausgangsnamen (z.B. gehe nach
+osten) Navigation in dieser Richtung
+diese Ausgaenge gibt es:
+sp, sw, ssw, s, sso, so, oso, o, ono, no, nno, n, nnw, nw, wnw, w,
+wsw, ob, u, swu, sswu, su, ssou, sou, osou, ou, onou, nou, nnou, nu,
+nnwu, nwu, wnwu, wu, wswu, swob, sswob, sob, ssoob, soob, osoob, oob,
+onoob, noob, nnoob, nob, nnwob, nwob, wnwob, wob, wswob
+special, suedwesten, suedsuedwesten, sueden, suedsuedosten, suedosten,
+ostsuedosten, osten, ostnordosten, nordosten, nordnordosten, norden,
+nordnordwesten, nordwesten, westnordwesten, westen, westsuedwesten,
+oben, unten, suedwestunten, suedsuedwestunten, suedunten,
+suedsuedostunten, suedostunten, ostsuedostunten, ostunten,
+ostnordostunten, nordostunten, nordnordostunten, nordunten,
+nordnordwestunten, nordwestunten, westnordwestunten, westunten,
+westsuedwestunten, suedwestoben, suedsuedwestoben, suedoben,
+suedsuedostoben, suedostoben, ostsuedostoben, ostoben, ostnordostoben,
+nordostoben, nordnordostoben, nordoben, nordnordwestoben,
+nordwestoben, westnordwestoben, westoben, westsuedwestoben
+g§
+
+
+g (Punktname|id)
+
+(Go) Springt zu dem angegebenen Punkt
+go§
+
+
+go Punktname/id
+
+(GoOther) Springt zum angegebenen Punkt, wenn der (benannte) Punkt
+nicht in der aktuellen Map zu finden ist, werden alle Maps durchsucht.
+sm§
+
+
+sm (mapname|id)
+
+(SwitchMap) schaltet zur angegebenen Map um. Es wird zum zuletzt
+aktiven Punkt in der Map gesprungen. Erzeugen:
+asp§
+
+
+asp -d(&|#|x*|$|!)?(Richtungsid|-name|0) ((-m(Mapid|-name))? -p(Punktid|-name))
+? (Name des Ausgangs)?
+
+(AddSPecial) Hinzufuegen des speziellen Ausgangs in der Richtung [wenn
+Richtung 0 zum Punkt Map/Punkt] mit dem angegebenen Namen, geht auch
+fuer Verbindungen zu Knoten, die mehr als eine Einheit weg liegen (asp
+-drichtung -ppunktid)
+ae§
+
+
+ae (((&|#|x*|$|!)?(Richtungsid|-name)|marked) )
+(AddExit) in den angegebenen Richtungen werden Ausgaenge erzeugt, ggf.
+mit Knoten verbunden oder neue Knoten erzeugt, bei der Angabe von
+marked zwischen allen markierten Knoten Verbindungen erzeugt, wobei
+aber ein Knoten in einer Richtung nur einen Ausgang haben darf. Fuer
+das (#|x*|$|!) siehe Syntax
+ar§
+
+
+ar special exit name
+
+(AddReverse)wenn der aktuelle raum nur einen Ausgang bzw. einen Zugang
+hat, wird ein/der Ausgang mit dem angegebenen Spezialausgang
+erzeugt/ueberschrieben (praktisch fuer: raus, verlasse xxx)
+
+alb§
+alb richtung raumnummer
+(AddLaB) dieser Befehl soll Unterstuetzung zum Mappen von unlogischen
+Labyrithen geben. Wenn man diese z.B. mit dem Ablegen von Muenzen
+mappt, kann man den Befehl sehr einfach nutzen, indem man eine neue
+Map anlegt und dann als Raumnummern einfach die Muenzenanzahl in den
+Raeumen nimmt. Die Raeume werden im doppelten Abstand der normalen
+Befehle angelegt, weil das die Uebersichtlichkeit erhoeht. Weil in
+diesen Labs Hin- und Rueckwege nicht uebereinstimmen, werden die
+meisten Ausgaenge wohl getrennt dargestellt. Es wird immer nur der
+Hinweg zum angegebenen Raum erzeugt, falls der Raum noch nicht
+exisitiert wird er in der angegebenen Richtung erzeugt, also aufpassen
+wenn dort schon ein Raum vorhanden ist, dann muss der Zielraum mit an
+(AddNode) z.b. mit der interaktiven Mausunterstuetzung woanders
+erzeugt werden.
+am§
+
+
+am mapname
+
+(AddMap) es wird eine neue Map mit dem angegebenen Namen erzeugt, wenn
+dieser noch nicht existiert. Diese enthaelt schon den Punkt 0.
+cgrid§
+
+
+cgrid xpos ypos -sx Breite (-sy Hoehe)? (-di)?
+
+(CreateGRID) Erzeugt ein Netz in der Map, in dem der aktuelle Punkt
+die Position (xpos,ypos) hat (z.B. (0,0) links unten oder
+(Breite-1,Hoehe-1) rechts oben). Wenn die Hoehe nicht angegeben wird,
+wird ein quadratisches Netz erzeugt. Mit der Angabe von -di werden
+auch die Diagonalen erzeugt.
+an§
+
+
+an (-r(knotenid|name)) x y? z? $?
+
+(AddNode) Erzeugt einen neuen Knoten
+* -r gibt an, das die Koordinaten ein Delta relativ zum angegebenen
+Knoten, oder wenn keiner angegeben wurde zum aktuellen Knoten
+sind, ansonsten sind die Koordinaten absolute Koordinaten (!!!
+vielfache von 2)
+* x y? z? Koordinaten oder Delta, wenn kein y,z angegeben werden,
+sind diese mit sinnvollen Werten vorbelegt
+* $ erzwingt die Erzeugung eines neuen Knoten, wenn auf den
+Koordinaten auch schon einer existiert
+
+Veraendern:
+MP§
+
+
+MP (-a(Knotenid/-name)?|-r((x*)richtungsname|id)?)? (x|dx) (y|dy)? (z|dz)? (-m(
+mapid|name))? marked?
+
+(MovePoint) Verschiebt die angegebenen Knoten:
+* der erste parameter gibt an, ob die Verschiebung relativ (-r) oder
+absolut (-a) erfolgen soll. bei einer absoluten Verschiebung, muss
+der Knoten angegeben werden, dessen neuen Koordinaten die
+angegebenen Koordinaten sind (wenn keiner, dann der aktuelle
+Knoten)
+* wenn bei -r eine Richtung mit Laenge angegeben wurde, wird diese
+genommen
+* dann kommen die neuen Koordinaten bzw. Verschiebeneinheiten
+(nettes Wort) also wohin, bzw. um wieviel werden die Knoten
+verschoben, der erste Wert ist fuer die x Richtung, die anderen
+koenne auch weggelassen werden, sie werden dann auf (hoffentlich)
+vernuenftige Werte gesetzt, fast alle Knoten der Maps haben
+Koordinaten von 2*n, das Gitter kann mit opt grid eingeschaltet
+werden
+* falls eine map angegeben wird, werden die Knoten dorthin kopiert
+und in der aktuellen Map geloescht, die Verbindungen zu diesen
+Knoten werden automatisch als Map-Umschalter definiert.
+* wenn ein Teilstring von marked angegeben wird, werden die
+markierten Knoten, ansonsten der aktuelle Knoten verschoben.
+* Beispiele:
++ MP -r2*so : verschiebt den aktuellen Knoten um 2 Einheiten
+nach so
++ MP -a 6 2 : verschiebt den aktuellen Knoten zu den
+Koordinaten 6 2 aktuelle z ebene
++ MP -a0 10 4 8 marked : verschiebt die markierten Punke so,
+dass der Knoten 0 auf den Koordinaten 10 4 8 liegt und der
+Rest relativ dazu verschoben wird
++ MP -r 4 2 marked : die markierten Knoten werden um 4x und 2y
+Einheiten verschoben
++ MP -a 2 2 -mtest marked : die markierten Knoten werden in die
+Map "test" verschoben, so dass der aktuelle Knoten die
+Koordinaten 2 2 und einen z-Wert der dem zuletzt in der Map
+"test" genutzten aufweist.
+
+sn§
+
+
+sn ((richtungsid|name) )
+(SplitNode) splittet vom aktuellen Knoten einen neuen Knoten ab, der
+die angegebenen Ausgaenge vom vorherigen Knoten uebernimmt.
+Diese Funktionalitaet ist dann von Bedeutung, wenn die Neuberechnung
+der Maps implementiert ist.
+
+
+mh knotenname/id
+
+(MakeHouse) Mit diesem Kommando wird der Massstab aller markierten
+Knoten halbiert und zwar so, dass die Position des angegebenen Knotens
+unverändert bleibt. Damit kann z.B. das Innere eines kleinen Gebaeudes
+dargestellt werden, ohne das es Ueberschneidungen gibt. Die Knoten
+erhalten ein zusätzliches Flag, das im Info als "Gebaeude" dargestellt
+wird. Von diesen Knoten aus werden Ausgaenge auch mit dem halben
+Masstab erzeugt, so das es keine Ueberschneidungen mit aeusseren Wegen
+gibt. Wenn man einen dieser inneren Knoten mit einem aeusseren
+verbinden will, musss man es mitasp -drichtung -pknotennummer/id
+machen. Die so modifzierten Knoten erscheinen in der Karte blau.
+Loeschen:
+DE§
+
+
+DE  ((-d#?(Richtungsid|-name|0) ((-m(Mapid|-name))? -p(Punktid|-name))? (Name d
+es Ausgangs)?)|((#?(Richtungsid|-name)|marked) )+)
+
+(DeleteExit) loescht die Ausgaenge in den angegebenen Richtungen. Wenn
+ein # vor der Richtung steht, dann wird nur der Ausgang in Hinrichtung
+geloescht. Die Angabe von marked bewirkt das Entfernen aller
+Verbindungen zwischen den markierten Knoten
+Beispiele:
+* DE n s o : loescht die Ausgaenge n s o
+* DE marked : loescht die Verbindungen zwischen allen markierten
+Knoten
+* DE -ds : loescht den Ausgang nach so
+* DE -d0 springe : loescht den SpezialAusgang springe
+* DE -ds -m1: loescht den Ausgang nach s, der zu einer anderen Map
+schaltet
+* DE -d0 -m1 teleportiere: loescht den Spezialausgang teleportiere,
+der zur Map 1 schaltet
+* DE schreie: loescht den Ausgang schreie
+* die ZielKnoten koennen angegeben werden, muessen aber nicht, aber
+sie muessen korrekt sein.
+
+dp§
+
+
+DP ((PunktId/-name|marked) )?
+
+(DeletePoint) loescht die angegebenen Knoten, wenn keiner angeben dann
+den aktuellen Punkt, und bei marked alle markierten Knoten, alle Wege
+die von ihm weg- und zu ihm hinfuehren (in allen Maps). Die
+Punktnummer kann spaeter beim Erzeugen neuer Knoten wiederverwendet
+werden. Sonstiges:
+Q§
+
+
+Q
+
+Verlassen ohne speichern (Vorher abspeichern)
+save§
+
+
+save ((map )+|all)?
+
+Speichert die Map in Dateien fuer Koordinaten, Ausgaenge und Infos ab.
+Wenn nichts angegeben wird, wird die aktuelle Karte, sonst die
+angegebenen Karten bzw. bei all alle Karten abgespeichert.
+lpc§
+
+
+lpc (marked|map)?
+
+(makeLPC) erzeugt bzw. aktualisiert die LPC-Files fuer die angegebenen
+Knoten (markierte, ganze Map, wenn nichts angegeben fuer den akutellen
+Knoten)
+
+dazu wird ein template file verwendet, welches entweder speziell
+fuer eine Map als mapmapid_template.c (z.B. map0_template.c) oder fuer
+das mud insgesamt als template.c im mud Verzeichnis oder fuer alle
+muds in maps Verzeichnis. Die Template Dateien werden in der
+angegebenen Reihenfolge gesucht.
+
+die Namenskonventionen fuer die LPC Dateien sind
+mapname/mapname_knotenid|name.c (z.B. furghud/furghud_1.c oder
+town/town_center.c)
+
+zur Zeit werden die short, long gesetzt
+
+als Beispiel mit short d.h. /*short* bis */ wird kopiert,
+enkommentiert, ein // $short$ vor der Aenderung eingefuegt und dann
+#short# durch die short ersetzt
+
+die exits werden mit AddExit aus den Verbindungen erzeugt, die
+Referenzdateien werden als "../mapdir/maplpcfile.c" erstellt.
+
+wenn die Datei fuer den Knoten schon vorhanden ist, wird sie nur
+aktualisiert.
+
+dabei werden die Bereiche zwischen // $short$ und /*short* geloescht
+und dann wieder neu erzeugt. Deshalb muessen Aenderungen nach
+ausserhalb des Bereichs kopiert werden.
+
+wenn im template File andere schluessel auftauchen und diese auch
+mit ai im Knoten vorhanden sind, werden sie genauso ersetzt.
+
+wenn die Schluessel mit f_ beginnen wird in den Optionen nach einer
+Option gleichen Namens gesucht, die dann vor den Schluessel
+geschrieben wird. Damit kann z.B. ein absoluter Pfad in den Optionen
+abgelegt werden und in den Schluesseln der Knoten muessen nur noch die
+Dateinamen enthalten sein. (z.B. f_bsx = "wache.bsx" Option f_bsx =
+/d/wunderland/mesirii/bsx/ -> /d/wunderland/mesirii/bsx/wache.bsx wird
+in dem File bei#f_bsx# eingefuegt.
+poly§
+*
+poly [von_level]<[bis_level] farbe koordinatenpaare [-tText]
+(Polygon) zeichnet Polygone, die innerhalb der angegebenen Level
+oder ueberall sichtbar sind, in der angegebenen Farbe und plaziert
+den ggf. vorhandenen Text im Schwerpunkt des Polygons
+Nutzbar ist das z.B. fuer die Darstellung von Gebieten wie Berge,
+Waelder, Ebenen usw.
+Parameter:
++ [von_level]<[bis_level] schraenkt die Sichtbarkeit des
+Polygons auf die angegebenen Level ein, es kann eines oder
+beide Level weggelassen werden, dann ist das Polygon ab bzw.
+bis zu den angegebenen Leveln oder ueberall sichtbar
++ farbe eine Farbe aus map_colors_de oder wie hier angegeben.
++ Koordinatenpaare sind Koordinaten des
+Kartenkoordinatensystems im Format x,y[,z] wobei die
+Z-Koordinate ignoriert wird. Sie koennen auch interaktiv mit
+der Maus eingegeben werden
++ -tText der Text der im Schwerpunkt (Durchschitt der
+Eckkoordinaten) des Polygons angezeigt werden soll.
++ mit nur einem Koordinatenpaar und einem Text kann man eine
+Anmerkung (ohne Polygon) in die Karte setzen
++ die Polygone sind als Objekte abgelegt, sie sind mittels oi
+(ObjectInfo) auflistbar und mittels ei (EditInfo) editierbar.
+Beispiele:
++ poly < 0,0 weiss -tTesttext legt eine Anmerkung auf die
+Koordinaten 0,0, die ueberall zu sehen ist (keine
+Levelbeschraenkung)
++ poly 0<10 hellgruen 0,0 5,0 5,5 0,5 -tein Quadrat erzeugt ein
+quadratisches Polygon, das vom Level 0 bis zum Level 10
+sichtbar ist und setzt den Text "ein Quadrat" in die Mitte
+opt§
+*
+opt ((para (0|1)?|numbers|grid|vgrid|level maxlevel)|schluesselwort wert?)
+(Options) setzt bzw. schaltet die Optionen (es koennen eindeutige
+teilstrings benutzt werden (z.B. opt num)):
++ wenn keine Parameter angegeben werden, werden die aktuell
+gesetzten Optionen angezeigt.
++ para aktuelle Dimension, wenn kein expliziter Wert dahinter
+angegeben wird, wird der aktuelle Wert invertiert
++ number Anzeigen der Knotennummern
++ grid Anzeigen des Koordinatensystems der Map (die Knoten
+befinden sich auf Koordinaten die Vielfache von 2 sind
+(ausser bei Richtungen wie ssw, ono,...)
++ vgrid Anzeigen des Koordinatensystems des Bildschirms
++ level maxlevel Neusetzen des maximalen Levels fuer die
+Berechnung der NPC Farbe (z.b. opt lev 100)
++ es koennen auch eigene Schluesselworte gesetzt werden, wenn
+wert angegeben ist, wird er gesetzt bzw. initialisiert und
+wenn nicht, wird der Wert geloescht. Diese Schluesselworte
+werden z.B. von lpc verwendet.
++ die Optionen des Muds werden beim Verlassen der Applikations
+mit Q in der Datei map.opts gespeichert, das ist ein
+Textfile, was einfach editiert werden kann.
+ai§
+ai (color|name|short|long|exa|ways|npc|house|port|tport|tank|pub|shop|Schluesse
+lwort) (text) (-r (all|map|level|region dx dy dz|marked|((nodes|named) knotenid
+/name+))?
+(AddInfo) fuegt dem aktuellen Punkt oder den durch die
+Auswahlsyntax angegebenen Knoten die angegebenen Informationen
+hinzu, der Text wird direkt als String fuer die Anzeige
+uebernommen. Wenn kein Text angegeben wird, dann wird der aktuelle
+Wert des Attributs geloescht. Die benannten Schluesselworte werden
+auch noch anderweitig ausgewertet, bei selbstgewaehlten
+Schluesselworten (beliebig viele) ist das nicht der Fall.
+Beispiele:
++ ai pub Goldener Anker : fuegt das Info hinzu das dieser
+Knoten die Kneipe Goldener Anker ist
++ ai pub : Loescht das Info wieder
++ ai color rot -r marked: Gibt allen markierten Knoten die
+Farbe rot
++ ai exa ja -r level: Setzt bei alle Knoten des aktuellen Levels
+das Attribut exa (Raumdetails komplett untersucht) auf ja
+
+vorgegebene Schluesselworte:
+short,Kurzbeschreibung
+long,Langbeschreibung
+npc,NPCs
+name,Name
+ways,WegeKnoten
+exa,komplett untersucht
+house,Haeuser
+tport,Teleporter
+port,Hafen
+shop,Laden
+pub,Kneipe
+tank,Tanke
+color,Farbe des Knotens in Anzeige
+si§
+*
+si (Punktname|-id)?
+(ShowInfo) Zeigt das Info des angebenen bzw. des aktuellen Knotens
+an.
+lna§
+lna (-m|u )?Schluesselwort (all|map|level|region dx dy dz)((task)|!?(suchstring
+))?
+(ListNodeswithAttribute) Es werden alle Knoten aufgelistet die das
+angegebene Schluesselwort enthalten und die zugehoerigen Inhalte,
+sofern sie innerhalb der angegebenen Region liegen.
+Wenn der Parameter -m angegeben wird, werden die gefundenen Knoten
+markiert. Bei -u werden sie demarkiert.
+Regionseinschraenkungen:
++ all Alle Maps
++ map aktuelle Map
++ level aktuelles z-level
++ region dx dy dz die Punkte, deren Abstand zum aktuellen Punkt
+kleiner bzw. gleich der angegebenen Deltas ist. (Also ein
+Wuerfel mit den doppelten Kantenlaengen)
+Wenn task angegeben wurde, dann werden in den Knoten die
+Schluesselworte gesucht, die das angegebene Schluesselwort als
+Praefix haben und danach von einer Zahl gefolgt werden. Der Inhalt
+dieser Schluessel wird in der Reihenfolge dieser Zahlen
+dargestellt, wobei die Punkte und ggf. Maps dahinter erwaehnt
+werden. Wenn eine Zahl doppelt auftaucht, wird sie nur einmal
+beruecksichtigt
+Wenn statt dem Schluesselwort task ein Suchstring angegeben wurde,
+werden nur die Knoten angezeigt, die diesen Suchstring im
+angegebenen Attribut enthalten. Dabei wird die
+Gross-/Kleinschreibung ignoriert. Wenn dem Suchstring ein !
+(Ausrufungszeichen) vorangestellt wird, werden alle Knoten
+angezeigt, die im angegebenen Attribut den String nicht enthalten.
+Beispiel:
++ lna house map: alle Knoten mit Haeusern der aktuellen Map
++ lna item reg 5 2 2: alle Knoten die das Schluesselwort item
+enthalten und die im Wuerfel mit den Seitenlaengen (10,4,4)
+um den aktuellen Knoten liegen
++ lna quest all task: alle Knoten des Muds in denen Attribute
+quest1..questxx stehen, in der Reihenfolge der Postfix-Zahlen
+mit den Knoten und Mapinfos
++ lna house map Strohalm: alle Knoten der map, die im Attribut
+house den Suchstring "strohalm" enthalten. (also der Knoten
+mit dem Haus von Stroh* ;)
++ lna npc level !killed: alle Knoten des levels, die im
+Attribut npc nicht den String "killed" enthalten (also alle
+noch nicht getoeteten NPCS)
+sf§
+*
+sf ((+|-)?flagname (all|map|level|marked|region dx dy dz|((nodes|named) knotenid/name)?)?
+(SetFlag) SetFlag setzt bzw. loescht Flags eines oder mehrerer
+Knoten bzw. zeigt die Flags des aktuellen Knoten an.
+Parameter:
++ ohne Parameter zeigt sf die Flags des aktuellen Knoten an
++ wenn der Name des Flags ohne vorangestellte Opertatoren
+angegeben wird, wird der Wert des angegeben Flags invertiert.
++ der Operator "+" setzt und "-" loescht das Flag
++ die folgenden Parameter dienen zur Auswahl mehrerer Knoten
+Flags:
++ mark (1) zeigt an, ob der Knoten markiert ist
++ overlap (8) zeigt an, ob dieser Knoten diesselben Koordinaten
+wie ein zweiter Knoten hat
++ visited (32) zeigt an, ob der Knoten (mittels tf) schon
+einmal besucht wurde (oder wenn info Eintraege vorhanden
+sind)
++ building (64) zeigt an, das dieser Knoten mit halben Massstab
+betrachtet wird
++ para (256) wenn para gesetzt ist und nopara nicht gesetzt
+ist, ist dieser Knoten der Parallelwelt zugeordnet
++ nopara (512) wenn nopara gesetzt und para nicht gesetzt ist,
+ist der Knoten ausschliesslich der Normalwelt zugeordnet,
+wenn para und nopara denselben wert haben (0 oder 1) ist der
+Knoten in beiden Dimensionen sichtbar
+Beispiele:
++ sf: zeigt die Flags des aktuellen Knoten an
++ sf +para level sowie sf -nopara level: befoerdert das ganze
+level in die Paralleldimension
++ sf visited reg 1 1 1: kehrt die visited Flags in einem
+Wuerfel mit der Kantenlaenge 2 um den aktuellen Punkt um
+*
+? [schluesselwort]
+Zeigt ein Hilfefenster an, in dem entweder die allgemeine
+Hilfeuebersicht angezeigt wird oder der Hilfetext zu dem
+jeweiligen Schluesselwort
+history§
+*
+Pfeil hoch und Pfeil runter
+Liefert die zuletzt verwendeten Befehle (ohne Richtungskommandos),
+die verwendet wurden. Dabei werden die Befehle nur einmal
+gespeichert, wenn derselbe Befehl noch einmal verwendet wird, wird
+nur die aktuellste Referenz gehalten. Es gibt keine Grenze fuer
+die Historygroesse.
+undo§
+*
+undo (anzahl)?
+die Undo Funktion nimm die Aktionen de(r) letzten (anzahl)
+Befehl(e) zurueck. Dies ist so implementiert, dass die
+Gegenbefehle zum letzen Befehl in der Undoliste gespeichert werden
+und dann bei der Ruecknahme ausgefuehrt werden. Das ist
+speicherschonender als das Sichern der kompletten Daten bei jedem
+Schritt. Leider ist es auch komplizierter, die Gegenbefehle zu
+erzeugen. Deshalb ist diese Funktion noch mit Vorsicht zu
+geniessen, sollte aber unbedingt getestet werden, damit ich die
+Fehler, die dabei auftreten schnell beheben, kann. Bei Fehlern
+bitte genaue Aktionsfolge vor der Ruecknahme, am besten eine Kopie
+der Ausschriften des Mappers auf der Konsole an mich senden, so
+dass ich die Fehler nachvollziehen kann.
+zoom§
+*
+zoom [stufen]
+Zoomt die angegebene Zahl von Stufen in die Map rein
+unzoom§
+*
+unzoom [stufen]
+Zoomt die angegebene Zahl von Stufen aus der Map raus
+mv§
+*
+moveview anzahl*richtung oder mv anzahl*richtung
+Verschiebt die Ansicht um die angegebene Anzahl in die Richtung,
+dabei sind alle Richtungen moeglich z.B. mv 5*wob oder moveview
+13*sswob ,)), der aktuelle Knoten bleibt bestehen
+center§
+*
+center (node knotenname/id|view x (y (z)?)?|screen x (y (z)?)?)?
+Zentrieren der Ansicht:
++ wenn nichts angegeben um den aktuellen Knoten
++ node knotenname/id: zentriert um den angegebenen Knoten, es
+kann auch ein eindeutig benannter Knoten einer anderen Map
+sein
++ view x (y (z)?)?: Zentriert um die angegebenen Koordinaten
+(Koordinatensystem der Knoten), die weggelassenen Koordinaten
+bleiben unveraendert
++ screen x (y (z)?)?: Zentriert um die angegebenen Koordinaten
+(Bildschirmkoordinaten ausser z), die weggelassenen
+Koordinaten bleiben unveraendert
+para§
+* Infos zum Nutzen der Paralleldimension
++ die Paralleldimension soll eine Welt darstellen die sich mit
+der Normaalwelt an bestimmten Stellen ueberschneidet
++ es gibt Knoten, die nur auf die Parallelwelt oder die
+Normalwelt begrenzt sind und auch Knoten die in beiden Welten
+sichtbar sind
++ die Sichtbarkeit der Knoten wird durch die Flags para und
+nopara gesteuert. Wenn para gesetzt und nopara nicht gesetzt
+ist, befindet sich der Knoten in der Paralleldimension im
+umgekehrten Fall in der Normalwelt, wenn beide Flags
+denselben Wert haben, ist der Knoten in beiden Dimensionen
+sichtbar.
++ die aktuelle Dimension wird durch die globale Option para
+gesteuert. Wenn die Option para auf 1 gesetzt ist bedeutet
+das Paralleldimension bei 0 Normalwelt.
++ da ein Knoten der in beiden Welten sichbar ist, einen Ausgang
+mit demselben Namen haben kann, der aber in Knoten
+verschiedener Dimensionen fuehrt, ist es moeglich mit dem
+Parameter & zu erzwingen, dass der neue Ausgang in die
+jeweils andere Dimension fuehrt.
++ also wenn ein Knoten der ueberall sichbar ist, schon einen
+Ausgang in einen Raum hat, der nur in der Normalwelt sichtbar
+ist, kann ihm ein Ausgang in derselben Richtung aber in die
+Parallelwelt mit dem Parameter & aufgezwungen werden. Falls
+man sich gerade in der Normaldimension befindet, ist dieser
+neue Ausgang/Knoten natuerlich nicht sichtbar.
++ Voraussetzung ist aber, dass der schon vorhandene Ausgang in
+einen Raum fuehrt, bei dem nur eines der beiden
+Dimensionsflags gesetzt ist
++ der neu erzeugte Raum erhaelt dann das entgegengesetzte
+Muster der Flags
++ von einem Raum aus, in dem nur ein Flag der Dimensionen
+gesetzt ist, werden auch nur Ausgaenge erzeugt, die ebenfalls
+in dieser Dimension enden. Falls ein Ausgang in einen Raum
+der ueberall sichtbar ist erzeugt werden soll, muss in diesem
+Raum das entsprechende Flag geloescht werden.
++ die Raeume der Paralleldimension werden in der Kartenansicht
+hellrot gekennzeichnet Beispiel: ein Raum soll einen Ausgang
+in Richtung osten erhalten, der jeweils in die beiden
+Dimensionen fuehrt
+o opt para 0 (Normalwelt)
+o sf -para
+o sf -nopara (Knoten ist in allen Dimensionen sichtbar)
+o ae o (einfachen Ausgang erzeugen)
+o o
+o sf +nopara (Raum nur in Normalwelt sichtbar)
+o w
+o opt para 1 (Parallelwelt, der eben erzeugte Raum wird
+unsichtbar)
+o ae &o (Parallelweltraum wird erzeugt, dieser ist
+sichtbar)
+o opt para 0 (Parallelweltraum wird unsichtbar und der
+Normalweltraum wird sichtbar)
+objects§
+
+(Pseudo) Objekte im Mapper
+o das Prinzip das bei den Raeumen mit Schluesselwort-Wert
+Informationen begonnen wurde, ist jetzt auf beliebige
+Objekte ausgeweitet worden. So koennen auch zu anderen
+Objekten des Muds (NPCs, Waffen, Items, usw) bzw. zu
+Objekten des Mappers selbst, Informationen zu den
+vorhandenen oder selbst erstellten Schluesselworten
+gespeichert werden.
+o die Definition der Objekttypen erfolgt in der Datei
+default_de.info, wobei die enthaltenen Schluessel dort
+erweitert werden koennen. Wenn in einem Mud-Map
+Verzeichnis auch eine default_de.info existiert, dann
+wird diese speziellere Version genutzt. Natuerlich gibt
+es dies auch fuer die englische Version als
+default_en.info. Natuerlich sind die Objekte nicht auf
+die vorgegebenen Schluesselworte beschraenkt, sondern
+koennen auf einer individuellen Basis erweitert werden.
+o Den Objekten ist einer der in der o.a. Datei angegebenen
+Objekttypen zugeordnet. Jedes Objekt erhaelt eine
+eineindeutige Nummer, die auch beim Loeschen nicht
+wieder vergeben wird. Ausserdem kann jedes Objekt einen
+Namen erhalten, es koennen auch zwei Objekte desselben
+Typs denselben Namen tragen, diese werden dann anhand
+ihrer Nummer unterschieden
+o das Erstellen eines Objekts erfolgt mit dessen ersten
+Editieren mittels des Kommandos ei (EditInfo) oder durch
+Erstellung aus dem Mud heraus (oder Kommandozeile, was
+aber nicht anzuraten ist) mittels ci (CreateInfo)
+o das Speichern und Laden der Objekte erfolgt mittels
+saveObjects bzw. loadObjects
+o mit di (DeleteInfo) koennen Objekte geloescht werden,
+wobei deren Nummer in der Zukunft nicht wieder vergeben
+wird.
+o auf Objekte sollte man sich in den Informationen des
+Raumes oder in denen anderer Objekte mittels der
+Objektnummer in eckigen Klammern (z.B. [15324])
+beziehen. Davor koennen noch der Objekttyp und der
+Objektname genannt werden.
+o in Zukunft ist vorgesehen auch die Rauminformationen in
+diese Objekthierarchie einzuordnen, sowie verschiedene
+Objekte des Mappers (z.B. Polygone in diesem Format
+abzulegen.
+ei§
+ei ($typ name|nummer|typ|typ beginn_des_namens)
+(EditInfo) Parameter:
+o $typ name: erzeugt ein Objekt des angegebenen Typs mit
+dem angegebenen Namen
+o nummer: Nummer des vorhandenen Objekts
+o typ: das eine bzw. das erste Objekt dieses Typs wird
+editiert
+o typ beginn_des_namens: das Objekt des angegebenen Typs,
+dessen Name entweder mit dem Namen uebereinstimmt, oder
+das welches die laengste Uebereinstimmung hat, wird
+editiert
+Editierfenster:
+o das Editieren erfolgt in einem externen Fenster
+o in der Titelzeile steht der Typ, der Name und die Nummer
+des Objektes
+o die Attribute sind in einer Combobox aufgelistet,
+belegte Attribute sind mit einem "*" versehen
+o zu vorhandenen Attributen wird ein Wert hinzugefuegt,
+indem dieser in das grosse Textfeld eingetragen wird
+o neue, nicht vorhandene Attribute werden erzeugt, indem
+im kleinen Textfeld der Name des Attributs eingetragen
+wird, im grossen Textfeld dessen Wert und dann die
+Schaltflaeche "Hinzufuegen" betaetigt wird
+o beim Wechsel des ausgewaehlten Attributs und beim
+Schliessen des Fensters werden die eingegebenen Inhalten
+den Schluesselworten zugeordnet
+Beispiele:
+o ei 124: das Objekt mit der Nummer 124 wird editiert
+o ei NPC: das erste Objekt des Typs NPC wird editiert
+o ei NPC Wae:das am besten mit Wae beginnende Objekt des
+Typs NPC (z.B. Waechter oder auch Waerter) wird editiert
+o ei $NPC Hund: erzeugt das noch leere Objekt Hund des
+Typs NPC und zeigt dieses zum Editieren an
+ci§
+ci §§ typ name(§attribut wert)(CreateInfo)
+dient zum Erzeugen eines Objekts aus dem Mud heraus bzw. fuer
+ganz harte aus der Kommandozeile ;)
+
+Parameter:
+nach den ersten zwei Paragraphenzeichen folgt ein
+Leerzeichen, dann der _exisitierende_ Typ und der Name des
+Objekts, danach folgen durch Paragraphenzeichen getrennt
+Schluesselworte und deren Inhalte
+Beispiel:
+ci §§ NPC Waechter§hp 125§level 20§weapon Schwert[637]
+erzeugt das Objekt Waechter des Typs NPC mit den angegebenen
+Attributen. die [637] weisst darauf hin, das es fuer das
+Schwert auch ein Objekt mit genau dieser Nummer gibt.
+oi§
+oi (nummer|typ|typ beginn_des_namens)?
+(ObjectInfo)
+Zeigt Informationen ueber die gefundenen Objekte an.
+
+Parameter:
+o nichts: es werden alle Typen aufgelistet mit der Anzahl
+der pro Typ existierenden Objekte
+o nummer: es wird die ausfuehrliche Auflistung der
+Attribute des Objekts angezeigt
+o typ: es werden alle Objekte dieses Typs mit Namen und
+Nummer aufgelistet, wenn nur ein Objekt vorhanden ist,
+wird es komplett gezeigt
+o typ beginn_des_namens: es werden alle Objekte des Typs
+auf Uebereinstimmung mit dem Namen ueberprueft. Jedes
+Objekt dessen Name mit dem angegebenen Suchstring
+beginnt, wird in Kurzform angezeigt. Dabei werden die
+Objekte deren Name mit dem Suchstring uebereinstimmt am
+Anfang gezeigt.
+o Ueber die Nummer kann auf jeden Fall die ausfuehrliche
+Darstellung jedes Objekts abgerufen werden.
+di§
+di (nummer|typ|typ beginn_des_namens)
+(DeleteInfo)
+Loescht das angegebene Objekt
+Die Parameter entsprechen denen von ei (EditInfo). Vor dem
+Loeschen wird das Objekt noch einmal im Infobereich
+dargestellt. Es ist sinnvoll zum Loeschen die Nummer des
+Objekts zu benutzen, um Fehler zu vermeiden. Parameter:
+o nummer: Nummer des zu loeschenden Objekts
+o typ: das eine bzw. das erste Objekt dieses Typs wird
+geloescht
+o typ beginn_des_namens: das Objekt des angegebenen Typs,
+dessen Name entweder mit dem Namen uebereinstimmt, oder
+das welches die laengste Uebereinstimmung hat, wird
+geloescht.
+saveObjects§
+saveObjects
+Speichert alle im Mapper vorhandenen Objekte ab. Die
+entstehende Datei kann z.b. so aussehen. Beim Verlassen des
+Mappers wird nicht gespeichtert!
+loadObjects§
+loadObjects
+Laedt die Objekte aus der Datei map.info im Mudverzeichnis.
+Beim Start des Mappers werden diese auch geladen.
+aec§
+aec #?richtung (farbe)?
+(AddExitColor) weisst dem Ausgang in der angegebenen Richtung
+(wenn # nicht angegeben wird auch in der Rueckrichtung) die
+angegebene Farbe zu. Ohne Farbangabe wird die Farbe wieder
+geloescht. Der Ausgang wird in der entsprechenden Farbe
+dargestellt.
+aecmd§
+aecmd #?richtung (kommandos)?
+(AddExitCommand) weisst dem Ausgang in der angegebenen Richtung
+(wenn # nicht angegeben wird, auch in der Rueckrichtung) die
+angegebenen Kommandos zu. Ohne Kommandostrings werden die
+vorhandenen Kommandos geloescht. Die Kommandos werden bei si
+(ShowInfo) hinter dem Ausgang angezeigt und in der Map durch ein +
+symbolisiert. Der Nutzen liegt im Notieren der noetigen Kommandos
+und ausserdem werden diese Kommandos vor dem Bewegungsbefehl vom
+Mapper ans tf geschickt, wenn man sich im Mapper bewegt.
+aed§
+aecmd richtung (tuerbezeichnung)?
+(AddExitDoor) weisst dem Ausgang in der angegebenen Richtung den
+uebergebenen Bezeichner fuer einen Verschluss (Tor, Portal, Luke
+usw.) zu. Dabei sollten grossgeschriebene Begriffe fuer fest
+verschlossene Dinge (nur mit Schluessel zu oeffnen) und
+Kleingeschriebenes fuer einfach zu oeffnende Verschluesse genutzt
+werden. Ohne Bezeichnung wird die ggf. vorhandene geloescht. Der
+Bezeichner wird bei si (ShowInfo) hinter dem Ausgang angezeigt und
+in der Map durch den ersten Buchstaben symbolisiert.
+farben§
+mittleres Altgold: 0xFDF5E6
+Altrosa: 0xFFE4E1
+Aquamarinblau: 0x66CDAA
+grobes Aquamarinblau: 0x7FFFD4
+Beige: 0xF5F5DC
+Blassgruen: 0x98FB98
+Blaugruen: 0x00FFFF
+Blauviolett: 0x8A2BE2
+Blau: 0x0000FF
+Bluetenweiss: 0xFFFAF0
+Braun: 0xDEB887
+rosiges Braun: 0xBC8F8F
+mitteleres Braun: 0xA52A2A
+Chiffongelb: 0xFFFACD
+Diestel: 0xD8BFD8
+Dodger-Blau: 0x1E90FF
+Dunkelblau: 0x00008B
+Dunkelgrau: 0xA9A9A9
+Dunkelgruen: 0x006400
+Dunkelrot: 0x8B0000
+Elfenbein: 0xFFFFF0
+Entenbraun: 0x008080
+Fruehlingsgruen: 0x00FA9A
+blasse Fruehlingsgruen: 0x00FF7F
+Fuchsie: 0xFF00FF
+Gainsboro: 0xDCDCDC
+Geisterweiss: 0xF8F8FF
+Gelbbraun: 0xD2B48C
+Gelbgruen: 0x32CD32
+Gelbgruen: 0x9ACD32
+Gelb: 0xFFFF00
+Goldrutenfarbe: 0xEEE8AA
+dunkle Goldrutenfarbe: 0xB8860B
+helles Goldrutengelb: 0xFAFAD2
+mattes Goldrute: 0xDAA520
+Gold: 0xFFD700
+Grau: 0x696969
+olivfarbiges Graubraun: 0x6B8E23
+helles Grau: 0x808080
+Gruengelb: 0xADFF2F
+Gruen: 0x008000
+Hellblau: 0xADD8E6
+Hellgelb: 0xFFFFE0
+Hellgrau: 0xD3D3D3
+Hellgruen: 0x7FFF00
+Hellgruen: 0x90EE90
+Hellrosa: 0xFFB6C1
+Himmelblau: 0x87CEFA
+tiefes Himmelblau: 0xBFFFFF
+dunkles Himmelblau: 0x87CEEB
+Himmelblau: 0xF0FFFF
+Honigmelone: 0xF0FFF0
+Indigo: 0x4B0082
+Indischrot: 0xCD5C5C
+Kadettblau: 0x5F9EA0
+Karmesinrot: 0xDC143C
+Kastanienbraun: 0x800000
+Khaki: 0xBDB76B
+helles Khaki: 0xF0E68C
+Koenigsblau: 0x041690
+Korallenrot: 0xF08080
+dunkle Koralle: 0xFF7F50
+Kornblumenblau: 0x6495ED
+Lachsfarbe: 0xE9967A
+helle Lachsfarbe: 0xFFA07A
+rosige Lachs: 0xFA8072
+Lavendelfarbe: 0xFFF0F5
+dunkles Lavendelfarbe: 0xE6E6FA
+Leinenfarbe: 0xFAF0E6
+Magentarot: 0x8B008B
+dunkles Magentarot: 0xFF00FF
+Mais: 0xFFF8DC
+Mandelweiss: 0xFFEBCD
+Marineblau: 0x000080
+Mittelblau: 0x0000CD
+Mitternachtsblau: 0x191970
+Muschel: 0xFFF5EE
+Navajoweiss: 0xFFDEAD
+Ocker: 0xA0522D
+Olivgruen: 0x556B2F
+dunkles Olivgruen: 0x808000
+Orange: 0xFF8C00
+dunkle Orangerot: 0xFF4500
+Orange: 0xFFA500
+Orchideenfarbe: 0x9932CC
+mittlere Orchideenfarbe: 0xBA55D3
+cremiges Orchidee: 0xDA70D6
+Papaya: 0xFFEFD5
+cremige Peru: 0xCD853F
+Pfefferminzfarbe: 0xF5FFFA
+leuchtendes Pfirsich: 0xFFDAB9
+Pflaume: 0xDDA0DD
+Rosa: 0xFF69B4
+dunkles Rosa: 0xFFC0CB
+Rot: 0xFF0000
+Sandbraun: 0xF4A460
+Sattelbraun: 0x8B4513
+Schieferblau: 0x483D8B
+mittleres Schieferblau: 0x7B68EE
+dunkles Schieferblau: 0x6A5ACD
+Schiefergrau: 0x2F4F4F
+helles Schiefergrau: 0x778899
+dunkles Schiefergrau: 0x708090
+Schneeweiss: 0xFFFAFA
+Schokolade: 0xD2691E
+Schwarz: 0x000000
+Seegruen: 0x8FBC8F
+helles Seegruen: 0x20B2AA
+mittleres Seegruen: 0x3CB371
+helles Seegruen: 0x2E8B57
+Silber: 0xC0C0C0
+Stahlblau: 0xB0C4DE
+blasses Stahlblau: 0x4682B4
+Taubenblau: 0xB0E0E6
+Tiefrosa: 0xFF1493
+Tomatencreme: 0xFFE4C4
+Tomatenrot: 0xFF6347
+Tuerkis: 0xAFEEEE
+dunkles Tuerkis: 0x00CED1
+mittleres Tuerkis: 0x48D1CC
+dunkles Tuerkis: 0x40E0D0
+Violett: 0x9400D3
+mittleres Violett: 0x9370DB
+mittleres Violett-Rot: 0xC71585
+blasses Violettrot: 0xDB7093b
+Aliceblau Violett: 0x800080
+Violett: 0xEE82EE
+Waldgruen: 0x228B22
+Weiss: 0xA0CE00
+antikes Weiss: 0xFAEBD7
+rauchiges Weiss: 0xF5F5F5
+Weizen: 0xF5DEB3
+Ziegelfarbe: 0xB22222
+Zitronengelb: 0x00FF00
+Zyanblau: 0x008B8B
+helles Zyanblau: 0xE0FFFF
+Zyanblau: 0x00FFFF
+
