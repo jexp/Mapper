@@ -1,0 +1,80 @@
+<html>
+<head>
+<title>Manual for installing and starting the MAPPER</title>
+<body>
+<h3>Manual for installing and starting the MAPPER</h3>
+<H4>Installation</H4>
+<ul>
+<li>extract the file <a href="../makros/mapper.tgz">mapper.tgz</a> in a directory of your choice e.g. <code>/home/mh14/mak</code> (this is the example directory to which I refer in this manual)
+<li>if not installed you have to install Java for your platform, as the applet is not able to store anything due to security restrictions
+<li>the <a href="../makros/icons.zip">icons</a> should be extracted to the same directory
+<li>there are startfiles for Linux (<code>startMapper</code>) and Windows (<code>startMapper.bat</code>), there you have to adapt the path where to find the java executable, if it is contained in your PATH environment variable you may even remove the prepended path
+<li>to point the Mapper to the location of the maps you have to <strong>copy</strong> the <strong>single line</strong> fromt he file <code>mapper.def</code> that reads <code>url=file://localhost/home/mh14/mak/maps</code> to your own configuration file named <code>mapper.ini</code>
+<li>then you must adapt this URL to the correct location (the installation directory or the directory where the subdirectory <code>maps</code> can be found)
+<li>to start with mapping a MUD you have to <strong>copy</strong> the directory named <code>default</code> in the <code>maps</code> Directory to another name (e.g the name of your MUD (e.g. <code>yourmud.org</code>)
+<li><strong>installation is done</strong>
+<H4>Tips for starting</H4>
+<li>Run:
+<li>Linux: startMapper demo_en
+<li>Windows: startMapper.bat demo_en
+<li>the parameter <code>demo_en</code> refers to the directory name where the maps for the wanted MUD are located (e.g. <code>yourmud.org</code>)
+<li>the Mapper listens on port 2000 (default) at localhost
+<li>all commands that are sent there are, executed as if the were typed in the command line
+<H4>Usage</H4>
+<li>the Mapper is operated by using the menus, the buttons or the command line
+<li>Help can be requested by typing "?" or by using the "Help" menu
+<li>or your look at the <a href="Mapper_en.html">documentation page</a> where an almost (!!) complete documentation can be found
+<li>for the beginning some commands are listed here:
+<ul>
+<li><code>ae n e se</code>: create exits
+<li><code>se</code>: move in that direction
+<li><code>g 5</code>: jump to node number five (names are also possible)
+<li><code>
+am Cave
+</code>
+: create a new map with this name
+<li><code>
+sm Cave
+</code>
+: switch to the given map
+<li><code>
+ai short A dark room
+</code>
+: save the given text for a key word (e.g. short) for the actual node
+<li><code>
+zoom nodes 5
+</code>
+: zoom that at least 5 nodes are visible
+<li><code>
+click with the right mouse button or twice with the left one
+</code>
+: jump to the clicked node
+<li><code>
+shift and click left or shift and drag
+</code>
+: mark nodes
+<li><code>
+ctrl and click left or ctrl and drag
+</code>
+: zoom in, ctrl and right click zooms out (or use the zoom button)
+<li>the mapper <strong>won't save automatically!</strong> therefore use <code>
+save
+</code>
+<li>quit with <code>
+Q
+</code>
+<li>.... look in the help, there you can find almost everything (or at the <a href="Mapper_de.html">web page</a>)
+<H4>Using with TF</H4>
+<li>If my tf <a href="../index.html">packages</a> are used, the file  <a href="../expert/source/mapper.tf">mapper.tf</a> does the connection to the mapper (by sending commands to the mapper port), otherwise you find there the examples to build your own mapper-connection
+<li>the packages support the mapper themselves (walk along, jump to way-node (don't forget give the nodes in the mapper the same name like in the routing system using <code>ai ways knotenname</code> the same
+ denselben Namen wie im Wegesystem verpassen), draw while walking, saving of information)
+<li>for initializing the connection <code>/init_mapper</code> has to be called, there a world for the mapper is created and connected to
+<li>the variable <code>mapper</code> is set to <code>1</code>, if you want to suppress sending information to the mapper temporarily you may set it to <code>0</code>
+</ul>
+<hr>
+If you encounter any bug or missing localization or if you have ideas for easing the use of the mapper or extending its functionality send me an e-mail. Please attach a log of the java-console when refering to bugs.
+<address>
+<a href="mailto:mh14@inf.tu-dresden.de">Michael Hunger</a>
+</address>
+</body>
+</html>

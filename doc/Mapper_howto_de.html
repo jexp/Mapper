@@ -1,0 +1,352 @@
+<html>
+<head>
+<title>Mini-Howto und Newsletter</title>
+<body>
+<h1>Mini-Howto und Newsletter</h1>
+<ul>
+<li><H3>Newsletter, d.h. Texte die ich an die Mails gehaengt habe, die die Tester mit Updates bekamen :)</H3>
+<li><a href="#1">Drag Karte, Package, Internationalisierung</a>
+<li><a href="#2">DeleteMap (dm), rename (Map)</a>
+<li><a href="#3">Landschafts- und Symboltypen, Landschaften eintragen, Infos bzw. Flags ueber mehrere Knoten setzen, Symbole/Icons fuer einzelne Knoten</a>
+<li><a href="#4">globaler Zoom, Polygone mit Bildern, Anzeige, Editieren von Polygonen,</a>
+<li><a href="#6">MG-Demokarte, RandomPicture, URL-Icons,TiledPicture</a>
+<li><a href="#8">ZMud Anbindung, generelle Anforderung an Mud-Client Anbindung</a>
+<li><a href="#9">Demokarte MG, Icons,<br>
+ GUI (ButtonBar, Icon-,Color-Chooser),<br>
+ Uebernehmen von Parametern durch Klicken in Karte,<br>
+ kein Zoom-Out mehr beim Anlegen neuer Knoten, Caching von Fonts,<br>
+ Fuer welche Info-Attribute eines Knotens erscheinen symbolische Icons in der Karte (z.B. Kneipe)<br>
+ Groessen der Symbole in der Karte einstellbar,<br>
+ verschiedene Info-Attribute in Menue (Knoten), TODO
+ </a>
+<li><a href="#10">Vorschlag: HOWTO</a>
+<li><H3>HOWTOs</H3>
+</ul>
+<hr><a name="1"><H4>19.02.01</H4></a><pre>
+english (Internationalisierung, 18n) sollte jetzt komplett funzen
+
+man kann jetzt per maus die karte bewegen, danke an sahadoom fuer die
+idee, einfach klicken und ziehen
+
+und noch nen paar kleine interne aenderungen (z.b. eigene package und
+java-klassen in nem zipfile)
+
+Mesi
+
+</pre><hr><a name="2"><H4>21.02.01</H4></a><pre>
+On Tue, 20 Feb 2001 sahadoom@mg.mud.de wrote:
+
+> Hi,
+>
+> mir is da vorhin was aufgefallen. Nehmen wir mal folgendes an:
+> Ich erstell mir ne Karte mittels AddMap und vertipp mich im Namen.
+> Gibts schon ne Moeglichkeit, den Kartennamen zu aendern, ohne den Karteninhalt
+> zu "belangen"? Entweder bin ich etwas erblindet (wie ja so oft *g*) oder ich
+> such an der falschen Stelle oder die Funktion gibts net :)
+>
+> Gruss Saha, sich leider immer gern vertippend.
+>
+
+Hallo Du,
+
+gibt sowas noch nich is aber einfach :)
+(Kartennamen aendern, löschen)
+Die stehen in einem file namens map, da kann man die einfach aendern, aber
+ich bau das mal zusammen mit clearmap ein :)
+
+clearmap (dm) macht sowas wie Löschen, nur dass es die karte nich ganz loescht,
+das waere ziemlich aufwaendig wenn man die ganzen referenzen umbasteln
+muss von allen kartenreferenzen, da sich ja dann die numerierung geaendert hat,
+sondern loescht alle knoten bis auf einen :)
+So dass man die Map weiterverwenden kann.
+
+rename old new benennte eine Karte um
+
+</pre><hr><a name="3"><H4>27.02.01</H4></a><pre>
+
+also pass auf
+guck in die mapper.ini und trag dir nen paar sachen nach :)
+
+neue types:
+node, background, akt, house, up, down, visited, mapswitch, pub, port,
+shop, post, tank, ways, tport, npc, path, road, plain, cave, dungeon,
+house, castle, mountain, hill, river, beach, desert, sea, ice, snow,
+forest
+
+
+so du kannst jetzt bei den knoten wo das visisted flag gesetzt ist (d.h.
+die normal schon richtig als knoten sichtbar sind (z.b. rechtecke))
+
+ai type forest
+
+z.b. machen und dann malt er das hin, was in der mapper.ini als foresttype
+eingetragen ist
+zB.
+foresttype=Picture tree1.gif
+
+an der stelle seien mal die Zusatzparameter von ai erwaehnt
+
+damit kann man kleine waelder anlegen :)
+
+ai type forest -r map
+ai type forest -r level
+ai type forest -r marked
+ai type forest -r region 10 10 0
+ai type forest -r nodes 0-100
+
+setzt fuer die angegebenen knoten das info attribut type auf forest
+
+geht natuerlich auch mit allen andern attributen, die man so setzen kann
+:)
+
+ausserdem ist vielleicht
+sf interessant
+
+sv +visited
+sf +visited marked
+sf +visited map
+sf +visited level
+...
+
+sf setzt die flags der knoten
+
+siehe ? visited
+
+und ? auswahlsyntax
+
+ausserdem kann man jetzt einzelnen Knoten nen typ zuordnen
+
+mit
+ai icon FilledCircle
+oder
+ai icon Picture zauberer.gif
+
+z.b. fuer die zaubigilde
+
+Mesi
+</pre><hr><a name="4"><H4>05.03.01</H4></a><pre>
+So da isse:
+
+diese Version kann jetzt mit den verschiedenen landschaftstypen umgehen,
+typen siehe mapper.ini
+
+folgende neue Sachen:
+
+der von Olli gewuenschte globale Zoom, d.h. alle karten haben jetzt
+denselben zoom
+
+Polygone koennen jetzt auch Bilder enthalten, diese werden 1. gekaechelt
+und 2. vom Inversen des Polygons wieder mit der Hintergrundfarbe
+uebermalt.
+
+Eintragen ist noch nich so einfach :)
+
+oi polygon
+zeigt alle polygone an
+
+oi nummer zeigt die details jedes polygons an
+
+und
+ei nummer erlaubt es, das polygon zu editieren,
+
+dazu bei image/Bild
+den dateinamen eintragen z.b.
+tree1.gif
+
+Dann sollte es gehen, leider unterstuetzt das jkd. bzw. die motif
+implementation kein clippen auf beliebige polygone sonst waer das nicht so
+aufwaendig geworden.
+
+Bis denne
+
+Micha
+PS: 
+ep <coord>, dann in Karte klicken und Enter fuehrt auch zum Editdialog fuer Polygone (auch in Buttonbar zu finden)
+</pre><hr><a name="6"><H4>08.03.01</H4></a><pre>
+So da isse:
+
+p.s.
+Ihr koennt euch ja mal Gedanken machen, wie wir das mit der Demo-Karte
+fuer die MG-Homepage machen wollen, sie sollte halt sehr grafiklastig und
+huebsch sein :)
+Vielleicht kann man sich ja irgendwie die Arbeit teilen.
+
+diese Version kann jetzt mit den verschiedenen landschaftstypen umgehen,
+typen siehe neue mapper.ini
+
+!!! ausserdem kann man jetzt auch RandomPictures angeben, siehe mapper.ini
+d.h. nen typ der random aber pro knoten fest, eines von n bildern zum
+anzeigen auswaehlt.
+
+macht sich z.b. praktisch fuer die landschaftstypen damit es nich so
+langweilig aussieht :)
+
+Wer die Icons noch nicht hat, ich leg sie mit auf den Uniserver.
+
+http://emw.inf.tu-dresden.de/~mh14/tf/makros/icons.zip
+
+
+btw. allgemeines Kacheln von Bildern macht TiledPicture (das kann z.b.
+auch fuer den Hintergrund angegeben werden)
+</pre><hr><a name="8"><H4>10.03.01</H4></a><pre>
+Hallo Du,
+
+ich hatte Dich ja schonmal gefragt, wegen der zmud-Anbindung vom Mapper.
+
+Ich weiss ja das das ZMud nen eigenen Mapper hat, aber wer meinen z.b.
+unter windoof und linux nehmen will oder ihn einfach mal testen moechte,
+sollte das auch vom zmud aus machen koennen.
+
+Prinzipiell macht der Mapper lokal nen Port auf (default 2000), an den man
+dann die ganz normalen bewegungsbefehle bzw. mapperkommandos schicken
+kann.
+
+also die scripte muessten folgendes koennen:
+
+1. verbindung aufbauen
+2. bewegungsbefehle (s,so...) rausfinden und an den mapper schicken
+3. nen befehl z.b. map haben, der die parameter an den mapper schickt
+z.b.
+map springe ueber bach
+oder
+map ae n o no (addexit)
+
+3. alternativ kann der befehl map ja auch noch z.b. mit nem
+vorangestellten zeichen gemacht werden
+z.b. *springe ueber bach
+
+damit der Mapper nicht alle kommandos, die man ans mud schickt parsen muss
+(ausserdem gibts da diverse probleme mit aliasen usw.)
+
+4. ne automapper funktionalitaet, d.h.
+ich setzte ne variable und er schickt pro erfolgreichen bewegungsbefehl
+ein
+ae richtung
+und
+richtung
+an den mapper
+z.b.
+
+ae no
+no
+
+5. Moeglichkeiten um infos aus dem mud zu uebertragen
+
+in tf hab ich bis jetzt p_short (mit kschau aus williburg), ausgaenge,
+p_long, magier (rohrhoere), npcs (ueber knuddel parsen :)
+
+Dabei sind punkte 4 und 5 erstmal nich so wichtig.
+
+Was denkst du ist das machbar?
+
+Micha
+</pre><hr><a name="9"><H4>12.03.01</H4></a><pre>
+Hallo Leute,
+
+hier gibts ne neue Version bei der sich einiges getan hat:
+1. Demokarte vom MG ist mit dabei, dafuer solltet ihr aber die Icons
+im Startverzeichnis entpackt haben
+http://emw.inf.tu-dresden.de/~mh14/tf/makros/icons.zip
+Die Karte muss aber noch von Muadib fuer offiziell erlaubt erklaert werden
+:)
+
+2. GUI:
+links unten entweder graphisch oder wie immer siehe mapper.ini (jetzt mapper.def :)
+oben: Button Bar ist selber in der Mapper.ini erzeugbar
+(das hinter dem : ist fuer die rechte maustaste)
+(und das hinter dem ? fuer die Hilfe, die in der Statuszeile erscheint)
+rechts unten und im editwindow: Zugriff auf die Icons/Farben ueber nen
+dialog
+
+3. Mausbedieung, wenn man diversen kommandos mit der Maus parameter
+verpasst (knoten, koordinaten usw), werden die angeklickten Punkte jetzt
+auch markiert (hat mich selber genervt)
+
+ausserdem erkennt das teil selber diverse Patterns in nem Kommandostring
+und liefert die Daten dann genau fuer dieses Pattern:
+
+<coords.> 	Viele Koordinatentripel auf 0.1 genau
+<coords>  	Viele Koordinatentripel auf 1 genau
+<coord.> 	Ein Koordinatentripel auf 0.1 genau
+<coord> 	Ein Koordinatentripel
+<node>		Einen Knoten
+<nodes>		Viele Knoten
+-p<pnode> -m<map> Zielpunkt mit ZielKarte
+
+4. bugs
+doofes zoom bei knoten anlegen ist raus
+
+5. geschwindigkeit
+sollte jetzt nen bisschen besser werden, da ich jetzt noch mehr
+polygondaten vorverarbeite und die fonts gecached werden
+
+6. mapper.ini (eigene Einstellungen) (default: mapper.def)
+
+Zusaetzlich eintraege, fuer die Attribute eines Knotens die als Icon
+automatisch in der Map erscheinen sollen
+
+icon_attribs
+und jeweils
+*type
+
+z.B:
+icon_attribs=type ways tank tport house pub port shop post npc
+
+housetype=Picture house.gif
+pubtype=Picture beer.gif
+porttype=Picture anchor.gif
+
+Groessen von allen moeglichen Dingen sind jetzt einstellbar
+
+*size
+
+Hmm hatte ich den Typ RandomPicture letztens schon erwaehnt?
+
+Das macht zufaellig ein Icon aus n.
+
+
+7. Menue
+Bei Knoten sind jetzt die wichtigsten Info-Typen dazugekommen
+
+
+8. Todo
+Gemalte Ausgaenge (sniper)
+editieren von polygonen per 1-click (tm) (jetzt mittels: ep <coord>)
+editieren von daten fuer knoten/ausgaenge ueber dialog
+...
+
+Micha
+
+</pre><hr><a name="10"><H4>10.03.01</H4></a><pre>
+Da ich langsam feststelle, dass es wohl nix mehr bringt, die ellenlange
+Doku zum Mapper noch laenger zu machen, wollte ich mal Eure Meinung
+hoeren:
+
+Ich dachte mir, dass es vielleicht sinnvoller waere, howtos zu schreiben
+und zwar nicht unbedingt aus meiner Perspektive als Progger sondern eher
+aus Nutzersicht. Die sollten dann halt ziemlich kurz aber praegnant sein,
+und nich so technisch :)
+
+Was denkt ihr darueber.
+
+Als Themen hab ich mir gedacht:
+
+* Wie fange ich an (Sniper@mg.mud.de)
+* Wie bediene ich die Oberflaeche (Sniper)
+* Infos eintragen (Strohalm@mg.mud.de)
+* Hantieren mit mehreren Karten (Olli@mg.mud.de)
+* spezielle Ausgaenge 
+* Farben, Icons usw.
+* persoenliche Vorlieben (Einstellungen)
+
+weiss nicht, ob die so recht passen oder wieder zu technisch sind, oder ob
+man das eher als ne Art FAQ machen sollte.
+
+Sagt mal bitte Eure Meinung
+
+Mesi
+</pre>
+<address>
+<a href="mailto:mh14@inf.tu-dresden.de">Michael Hunger</a>
+</address>
+</html>

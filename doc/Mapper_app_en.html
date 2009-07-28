@@ -1,0 +1,49 @@
+<html>
+<head>
+<title>Information for Mapper Application</title>
+<body>
+<h1>Information for Mapper Application</h1>
+This page is supposed to be used for private testing only.<br>
+Information described is subject to change.<br>
+
+Application parameters:
+<pre>
+java Mapper path_to_maps maps_dir lang
+ex: java Mapper /home/mh14/mapper/maps mg.mud.de de
+ex: java Mapper /home/mh14/mapper/maps 3k.org en
+</pre>
+Tree Structure:
+<pre>
+path_to_maps
+    ->maps_dir
+          ->map 
+	  contains the number of all maps, and for each map id and name
+
+# is replaced by the id of the map
+path_to_maps
+    ->maps_dir
+          ->map#.coord 
+	  contains the number of nodes, each node and the coordinates
+path_to_maps
+    ->maps_dir
+          ->map#.exits 
+	  contains the number of exits, for each exit from and to node 
+	  (if map switch is to node -node-1 and map is given) and 
+	  if existing the name of the special exit
+path_to_maps
+    ->maps_dir
+          ->map#.info 
+	    contains the node and for each info attribute the value
+   At first use copy the path_to_maps/default to the new mapname you want to use.
+</pre>
+<h4>Application commands</h4>
+<li>save (mapid|-name)+: saves the current Map (or the given maps)!
+<p>
+<h4>TF support</h4><br>
+<a href="http://www.inf.tu-dresden.de/~mh14/tf/expert/mapper.tf.html">mapper.tf</a> contains functions for remote control of the mapper<br>
+support is already included in <a href="http://www.inf.tu-dresden.de/~mh14/tf/expert/way.tf.html">way.tf</a><br>
+ <a href="http://www.inf.tu-dresden.de/~mh14/tf/makros/mapper.tgz">Download</a><br>
+<address>
+<a href="mailto:mh14@inf.tu-dresden.de">Michael Hunger</a>
+</address>
+</html>

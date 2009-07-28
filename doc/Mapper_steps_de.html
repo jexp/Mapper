@@ -1,0 +1,80 @@
+<html>
+<head>
+<title>Schrittfolge fuer Installation/Start des MAPPERs</title>
+<body>
+<h3>Schrittfolge fuer Installation/Start des MAPPERs</h3>
+<H4>Installation</H4>
+<ul>
+<li>die Datei <a href="../makros/mapper.tgz">mapper.tgz</a> in ein Verzeichnis Eurer Wahl entpacken z.B. <code>/home/mh14/mak</code> (das ist das Beispielverzeichnis, auf das ich mich im folgenden beziehen werde)
+<li>falls nicht vorhanden Java installieren, weil das Applet nichts speichern kann
+<li>die <a href="../makros/icons.zip">Icons</a> sollten, wenn gewünscht, im selben Verzeichnis entpackt werden
+<li>für Linux (<code>startMapper</code>) und Windows (<code>startMapper.bat</code>) liegen Startdateien vor, in denen ggf. der Pfad der Java Installion angepasst werden sollte, oder die Pfadangabe rausnehmen falls das Java im PATH steht
+<li>damit der Mapper weiss, wo seine Karten liegen, solltet Ihr aus der Datei <code>mapper.def</code> die <strong>eine</strong> Zeile mit <code>url=file://localhost/home/mh14/mak/maps</code> in Eure eigene Konfigurationsdatei <code>mapper.ini</code> <strong>kopieren</strong>
+<li> die URL muss auf das Installationsverzeichnis (bzw. das Verzeichnis wo die Karten (Unterverzeichnis <code>maps</code>) liegen) <strong>angepasst</strong> werden.
+<li>um mit einer Karte für ein Mud neu zu beginnen, das Verzeichnis <code>default</code> im Verzeichnis <code>maps</code> unter einem anderen Namen <strong>kopieren</strong> (z.B. <code>mg.mud.de</code>)
+<li><strong>Installation fertig</strong>
+<H4>Starthinweise</H4>
+<li>Aufruf:
+<li>Linux: startMapper demo_de
+<li>Windows: startMapper.bat demo_de
+<li>der Parameter <code>demo_de</code> entspricht dem Verzeichnis wo die Karten für das entsprechende Mud liegen (z.B. <code>mg.mud.de</code>)
+<li>der Mapper lauscht auf Port 2000 auf localhost
+<li>also werden alle Befehle, die man dorthin schickt wie die aus der Kommandozeile behandelt
+<H4>Bedienung</H4>
+<li>entweder über die Menüs, die Buttons oder die Kommandozeile
+<li>Hilfe im Mapper gibts mit "?" oder Menü
+<li>alternativ ist auf der <a href="Mapper_de.html">Doku-Seite</a> eine fast vollständige Dokumentation zu finden
+<li>die einfachsten Befehle fuer den Anfang:
+<ul>
+<li><code>ae n o so</code>: Ausgaenge erzeugen
+<li><code>so</code>: in Richtung bewegen
+<li><code>g 5</code>: zu Knoten 5 springen (auch namen moeglich)
+<li><code>
+am Hochebene
+</code>
+: neue Map mit angegebenen Namen erzeugen
+<li><code>
+sm Hochebene
+</code>
+: zu angegebener Map umschalten
+<li><code>
+ai short Ein Raum mit Baum
+</code>
+: Text zu Schluesselwort (z.B. short) fuer Raum speichern
+<li><code>
+zoom nodes 5
+</code>
+: so zoomen das maximal 5 Knoten sichtbar sind
+<li><code>
+Mausklick rechts oder doppelt
+</code>
+: zu Punkt springen
+<li><code>
+Shift und Mausklick, bzw. aufziehen
+</code>
+: Knoten markieren
+<li>der Mapper speichert nicht selber ab! also <code>
+save
+</code>
+ benutzen
+<li>verlassen mit <code>
+Q
+</code>
+ wie quit
+<li>.... in die Hilfe gucken da steht alles drin (dasselbe wie auf der <a href="Mapper_de.html">Webseite</a>)
+<H4>Nutzung mit TF</H4>
+<li>Wer meine tf <a href="../index.html">Pakete</a> nutzt, kann die Datei <a href="../expert/source/mapper.tf">mapper.tf</a> laden, ansonsten finden sich darin Beispiele wie den Mapper von tf aus nutzen kann.
+<li>die Pakete enthalten Unterstuetzung fuer den Mapper (mitlaufen, springen zu Knotenpunkten (dabei wichtig den Knoten mit <code>
+ai ways knotenname
+</code>
+ denselben Namen wie im Wegesystem verpassen), mitmappen, speichern von infos (mapper.tf)
+<li>zum Initialisieren der Verbindung /init_mapper aufrufen, dabei wird eine World fuer den Mapper erzeugt und die Variable mapper auf 1 gesetzt, wenn man die Verbindung temporaer unterbrechen will, reicht es, die Variable auf 0 zu setzen.
+</ul>
+<hr>
+Wenn Ihr einen Fehler findet, oder Ideen für eine einfachere Benutzung oder Erweiterung des Mappers habt, schickt mir einfach eine E-Mail. Bei Fehlern wär ein Log der Ausgaben des Mappers sehr hilfreich.
+<address>
+<a href="mailto:mh14@inf.tu-dresden.de">Michael Hunger</a>
+</address>
+</body>
+</html>
+

@@ -1,0 +1,100 @@
+Tester fuer einen (Nicht-Auto)Mapper gesucht.
+
+Ich habe angefangen, ein Java-Programm zum Zeichnen von Karten von Muds zu schreiben, leider habe ich dafuer bisher kaum Tester. Deshalb mein Bitte an Euch: schaut es Euch einmal an und schreibt mir, ob so etwas prinzipiell sinnvoll ist, bzw. die von Euch gefundenen Fehler oder neue Ideen.
+Der Mapper kann von Spielern und Programmierern genutzt werden (siehe Funktionalitaet)
+Den Mapper gibt es als deutsche und englische Version
+unter http://www.inf.tu-dresden.de/~mh14/tf
+dort auf Mapper klicken und ihr seid da.
+
+Michael Hunger (Mesirii@mg.mud.de)
+
+Fue diejenigen, die es interessiert, kommt hier nochmal ne Uebersicht der
+Funktionalitaet:
+
+* Karten aus Knoten mit Wegen als Verbindungen mit den Knoten
+* man kann die Karten durchwandern (Maus/Richtungen/Keypad)
+* 3-dimensionale Karten von denen eine Z-Ebene aktuell dargestellt und
+  die Verbindungen in andere Z-Ebenen angedeutet werden
+* jede Karte==Map wird mit anderen Maps verknuepft, zwischen denen bei
+  der Navigation automatische umgeschaltet wird (die Verknuepfung der
+  Maps wird am Ende des Ausgangs durch ein gelbes Quadrat visualisiert)
+* neue Ausgaenge koennen entwender interaktiv durch Ablaufen oder
+  mehrere Ausgaenge des aktuellen Knotens auf einmal durch einen Befehl
+  erzeugen
+* Ausgaenge die ueber spezielle Kommandos angesprochen werden, koennen
+  entweder mit einer Richtung oder einem Map/Zielpunkt eingegeben werden
+  (so werden auch die Verknuepfungen zu anderen maps erzeugt)
+* Fernsteuerung von tf ueber einen Port (Kommandos)
+* Markierung von Knoten (Maus)
+* Einbahnstrassenrichtungen sind moeglich
+* Zoomstufen (Maus/Tastaur), Verschieben der Map ohne Bewegung des
+  aktuellen Knotens, Zentrieren um den aktuellen Punkt
+* Loeschen von Knoten und Wegen
+* Informationen zu Knoten (wie p_long, p_short, name, knoten im
+  Wegesystem, npcs,...), die dann entweder innerhalb der Map
+  visualisiert werden bzw. in einem Infobereich angezeigt werden (auch
+  von tf aus generierbar)
+* 22.3.99
+* zusaetzlich zu den festgelegten Informationen zu Knoten koennen auch
+  eigene Schluesselworte verwendet werden, diese werde auch als Titel in
+  der Anzeige benutzt
+* die Kommandos DP (deletePoint), DE (deleteExit), ae (addExit)
+  arbeiten jetzt auch ueber die markierten Knoten
+* das Kommando cgrid erzeugt Netzstrukturen in der Map
+* die meisten moeglichen Himmelsrichtungen wurden hinzugefuegt (siehe
+  Navigation)
+* 3.4.99
+* mit dem Kommando ar (addReverse) koennen Raeume, die nur einen
+  Ausgang oder Zugang haben eine special exit mit dem angegebenen Namen
+  ganz einfach erhalten (Praktisch fuer raus, verlasse xxx)
+* die Informationen ueber NPCs, Haeuser, Knotennamen, Portale,
+  Auftankstellen, Kneipen,Laeden haben jetzt eine grafische
+  Repraesentation in der Map
+* 26.4.99
+* Einstellen von Optionen mittels opt (Gitter, Anzeige, Maxlevel)
+* Demomaps, die Funktionen demonstrieren
+* Verschieben von Knoten in und zwischen Maps mit MP
+* 6.5.99
+* erzeugen von Knoten an beliebigen Koordinaten mit an
+* aufspalten eines Knotens in zwei Teilknoten mit sn
+* erzwingen des Ueberschreibens von Ausgaengen (mit "!" und des
+  Erzeugens von Knoten auf schon belegten Koordinaten ("$"), Angabe der
+  Laenge von Wegen mit n* siehe Syntax
+* erzeugen und updaten von lpc code mit template files
+* Speichern der Optionen und freie Optionen eintragen siehe opt
+* 16.7.99
+* Auflistung von Knoten, die ein bestimmtes Info-Schluesselwort
+  enthalten, bzw. Darstellung von Schrittfolgen ueber die gewuenschten
+  Knoten
+* intern wird auch mit verwaltet, welche Knoten schon (vom Mud aus)
+  betreteten worden sind. Diese werden in der Map mit einem Quadrat
+  markiert.
+* die internen Attribute werden jetzt mit in der coords Datei
+  abgespeichert (Markierung, Knoten betreten, Ueberlappende Knoten,...)
+* 3.8.99
+* Hilfe im Mapper mit ? zu allen Kommandos und generell
+* History fuer Kommandos des Mappers (mit Pfeil hoch und runter)
+* teilweise funktionstuechtige Undo Funktionalitaet mittels undo
+* neue Hilfsfunktionen zum Zoomen, Unzoomen, Ansicht verschieben und
+  Zentrieren
+* Hilfsfunktionen zum Markieren und Demarkieren mit Auswahlsyntax wie
+  lna
+* Kommando zum Halbieren des Massstabs einer Anzahl Knoten (markierte)
+  z.B. fuer Gebaeude mittels mh
+* go kann auch benannte Punkte ueber Mapgrenzen anspringen
+* bei asp kann der -mmap Parameter weggelassen werden, wenn der bei -p
+  angegebene Punkt ein benannter Punkt in einer anderen Map ist.
+* save hat jetzt auch den Parameter all, damit werden alle Maps
+  gespeichert
+* DE loescht jetzt auch benannte Ausgaenge ohne zusaetzliche Parameter
+
+geplant:
+* farbige Polygone unterlegen die Maps
+* Anmerkungen irgendwo in der Map
+* Neuberechnung der Map, wenn Unstimmigkeiten innerhalb der Map
+* Integration in das Wegesytem, d.h. per Anklicken wandere ich im Mud
+  zu dem Punkt
+
+
+
+.

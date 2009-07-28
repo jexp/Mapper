@@ -1,0 +1,353 @@
+<html>
+<head>
+<title>Mini-Howto and Newsletter</title>
+<body>
+<h1>Mini-Howto and Newsletter</h1>
+<ul>
+<li><H3>Newsletters (i.e. e-mails I attached when sending updates to the testing people :)</H3>
+<li><a href="#1">Dragging Map, Java-Package, Internationalization</a>
+<li><a href="#2">DeleteMap (dm), rename (Map)</a>
+<li><a href="#3">landscape- and map-element types, set landscapes, set attributes and flags for multiple nodes, special symbols/icons for single nodes</a>
+<li><a href="#4">global zoom, polygons with pictures, listing, editing polygons</a>
+<li><a href="#6">demonstration map MUD Morgengrauen, RandomPicture, URL-Icons,TiledPicture</a>
+<li><a href="#8">connecting ZMud, general requirements for connecting to mud clients</a>
+<li><a href="#9">demonstration map MUD Morgengrauen, Icons,<br>
+ GUI (ButtonBar, Icon-,Color-Chooser),<br>
+ Take parameters by clicking in map,<br>
+ no zoom out anymore when adding nodes, caching of fonts,<br>
+ How can be set for which node attributes symbolic icons can appear in the map (e.g. pub)<br>
+ sizes of elements in the map,<br>
+ different node attributes in menu (nodes), TODO
+ </a>
+<li><a href="#10">Suggestion: HOWTO</a>
+<li><H3>HOWTOs</H3>
+</ul>
+<hr><a name="1"><H4>19.02.01</H4></a><pre>
+english (18n) should work everywhere by now
+
+the map can be dragged using the mouse, just click an drag 
+(thanks to sahadoom@mg.mud.de)
+
+some internal changes (own java package, all java classes in a single zip file)
+
+Mesi
+
+</pre><hr><a name="2"><H4>21.02.01</H4></a><pre>
+On Tue, 20 Feb 2001 sahadoom@mg.mud.de wrote:
+
+> Hi,
+>
+is there a possibility to rename a map or to delete it?
+
+Hi there,
+
+by now its not possible but easy to implement
+
+The map names are kept in a file named map, either they are changed there
+or I implement it :)
+
+
+deletemap (dm) is like removing a map but it just removes all nodes contained in the map except one
+
+removing a map would be very complicated as all references (map numbers)
+must be updated,
+by just removing the nodes from the map it can be reused
+
+rename oldname newname renames a map
+
+</pre><hr><a name="3"><H4>27.02.01</H4></a><pre>
+
+
+new types:
+general info-attribute-types:
+node, background, akt, house, up, down, visited, mapswitch, pub, port,
+shop, post, tank, ways, tport, npc, 
+
+landscape types:
+path, road, plain, cave, dungeon,
+house, castle, mountain, hill, river, beach, desert, sea, ice, snow,
+forest
+
+at any node that ist set to be visited (visited by mud client) (there the 
+visited flag is set, manually by sf +visited)
+
+do
+
+ai type forest
+
+then the type is diplayed that is defined as foresttype in the mapper.def 
+file
+
+e.g.
+foresttype=Picture tree1.gif
+
+let me direct your attention to the addtional parameters of ai (AddInfo)
+little woods can be created with ease that way :)
+
+ai type forest -r map
+ai type forest -r level
+ai type forest -r marked
+ai type forest -r region 10 10 0
+ai type forest -r nodes 0-100
+
+setzt for the given nodes the node attribute "type" to "forest"
+
+this works for all attributes a node can contain (e.g. color,short)
+
+sf (SetFlag) may also be interesting
+
+sv +visited
+sf +visited marked
+sf +visited map
+sf +visited level
+...
+
+sf sets the flags of the nodes
+
+see ? visited
+
+see ? selection syntax
+
+each single node can be given a special type (symbol/icon)
+
+e.g.
+ai icon FilledCircle
+or
+ai icon Picture wizard.gif
+
+e.g. for a mage guild
+
+Mesi
+</pre><hr><a name="4"><H4>05.03.01</H4></a><pre>
+Here it is:
+
+this version now uses the different landscape types
+types see mapper.def (mapper.ini for personal preferences)
+
+other new things:
+
+the global zoom suggested by Olli@mg.mud.de is implemented, just one zoom
+for all maps
+
+polygons may contain images as background these are first tiled and then
+painted with the invers polygones to the border of the original one
+(as setClip(polygon) does not work for Motif (at least)
+
+Using this _was_ not that easy
+now you can just click the polygon button in the button bar, then click
+inside a polygon on the map and press return (command: ep <node> 
+(for EditPolygon)
+
+old way of doing this:
+
+oi polygon (Object Info)
+lists all polygons
+
+oi number lists the details of each polygon
+
+and
+ei number shows an edit dialog for the polygon
+
+there can the image-filename can be set at the attribute "image"
+e.g.
+tree1.gif
+
+See you
+
+Micha
+PS: 
+ep <coord>, then clicking the map and return also shows up the edit 
+dialog (also to be found in the button bar)
+</pre><hr><a name="6"><H4>08.03.01</H4></a><pre>
+Here it is:
+
+P.S.
+the type RandomPicture uses one (random per node) image of n for displaying
+
+this is quite useful for not so boring landscapes
+
+The needed icons can be downloaded from
+
+http://emw.inf.tu-dresden.de/~mh14/tf/makros/icons.zip
+
+and should be unpacked in the installation directory
+
+btw. general tiling of images is done by the Type TiledPicture 
+(this one can be used with a wallpaper for the background)
+</pre><hr><a name="8"><H4>10.03.01</H4></a><pre>
+Hi There (to lurchi@mg.mud.de),
+
+i already asked you for doing the connection zmud to mapper
+
+I know that ZMud has its own mapper, but the people who want to use or 
+try mine on linux or windows shoul be enabled to do this from zmud as well
+
+Generally the Mapper opens a local port (default 2000) to which the normal
+movement or mapper commands can be sent
+
+the script should be able to do the following
+
+1. open a connection
+2. catch movement commands (s,se...) and send them to the mapper
+3. contain a command which sends its parameters to the mapper 
+e.g.
+map jump over the river
+or
+map ae n e ne (addexit)
+
+3. alternatively the command can be implemented with a prefix character-sign
+e.g. *jump over the river
+
+that the mapper doesn't have to parse all commands send to the mud
+(for instance there will be problems with aliases)
+
+4. a automapper functionality, i.e.
+I set a variable and the script sends per successful movement command
+a
+ae direction
+and
+direction
+to the mapper
+e.g.
+
+ae ne
+ne
+
+5. Possibilities to transfer information from the mud/client to the mapper
+
+in tf I did this for the MUD Morgengrauen for the following attributes:
+P_SHORT,
+P_LONG,
+author,
+npcs,
+exits
+
+
+Do you think this is possible?
+
+Micha
+</pre><hr><a name="9"><H4>12.03.01</H4></a><pre>
+Hi folks,
+
+here you get a new version with a lot of changes
+
+1. Demonstration map of the MUD Morgengrauen is included for really using
+ this you should have the icons extracted into the installation directory
+http://emw.inf.tu-dresden.de/~mh14/tf/makros/icons.zip
+
+2. GUI:
+the compass in the lower left corner may either use the image or buttons 
+(set in mapper.ini (copied from mapper.de)
+
+at the upper edge the button bar visible can be created by anyone customizing the mapper.ini
+(the command after the color : is needed for the right mouse button)
+(the text after the (question mark) ? appears as help text in the status line)
+the color- and icon-choosers appear in the lower right corner an in the
+edit window for objects (polygons by now)
+
+3. Using the mouse: a lot of commands can be supplied with parameters 
+(nodes, coordinates) by clicking with the mouse in the map, the clicked
+coordinates are marked by the marker-type
+
+the mapper recognizes different pattern in the command string and replaces
+them with the correct data needed when clicking in the map
+
+Pattern         Data
+
+<coords.> 	Many coordinate-pairs with 0.1 precision
+<coords>  	Many coordinate-pairs with 1 precision
+<coord.> 	One coordinate-pair with 0.1 precision
+<coord> 	One coordinate-pair with 
+<node>		One node
+<nodes>		Many nodes
+-p<pnode> -m<map> Destination node with map
+
+4. bugs
+the stupid zooming out when adding nodes was removed
+
+5. speed
+should be increased as even more polygon data is preparsed and the fonts
+are cached
+
+6. mapper.ini (personal preferences) (default: mapper.def)
+
+Additional entries for the node attributes that should appear automatically
+as symbolic icons in the map
+
+icon_attribs
+and each
+*type
+
+e.g.:
+icon_attribs=type ways tank tport house pub port shop post npc
+
+housetype=Picture house.gif
+pubtype=Picture beer.gif
+porttype=Picture anchor.gif
+
+Sizes of anything may be set now
+
+*size
+
+
+
+7. Menu
+The most important node attributes were added to the nodes menu
+
+8. Todo
+drawn exits (sniper)
+editing polygons by 1-click (tm) (jetzt mittels: ep <coord>)
+editing of data for nodes/exits by using a dialogue
+...
+
+Micha
+
+</pre><hr><a name="10"><H4>10.03.01</H4></a><pre>
+As I recognize that the already very long documentation of the mapper
+does not contribute to its ease of use, I wanted to listen to your
+suggestions:
+
+I thougth it would be more sensible to write little howto's not from my
+perspective as programmer but from a user's perspective.
+These should be short but nonetheless exact and not that technically :)
+
+What do you think ?
+
+I thought about the following ones:
+
+* How to start (Sniper@mg.mud.de)
+* How to use the GUI (Sniper)
+* Adding node attributes/information (Strohalm@mg.mud.de)
+* Handle multiple maps (Olli@mg.mud.de)
+* special exits 
+* Colors, Icons etc.
+* personal preferences
+
+I don't know if these are sufficient or to technically again :) or if a FAQ would be even better
+
+
+Mesi
+</pre>
+<address>
+<a href="mailto:mh14@inf.tu-dresden.de">Michael Hunger</a>
+</address>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,55 @@
+<html>
+<head>
+<title>Informationen ueber die Mapper Applikation</title>
+<body>
+<h2>Informationen ueber die Mapper Applikation</h2>
+Diese Seite ist nur fuer private Tester gedacht.<br>
+Die Informationen koennen sich ohne Ankuendigung aendern.<br>
+
+Application parameter:
+<pre>
+java Mapper pfad_zu_maps map_dir sprache
+z.B.: java Mapper /home/mh14/mapper/maps mg.mud.de de
+z.B.: java Mapper /home/mh14/mapper/maps 3k.org en
+</pre>
+Baumstruktur:
+<pre>
+pfad_zu_maps
+    ->map_dir
+          ->map 
+	  enthaelt die Anzahl der Maps und zu jeder Map name und id
+
+# ist ein Platzhalter fuer die Id der Map
+pfad_zu_maps
+    ->map_dir
+          ->map#.coord 
+	  enthaelt anzahl der Knoten, alle Knoten und deren Koordinaten
+pfad_zu_maps
+    ->map_dir
+          ->map#.exits 
+	  enthaelt anzahl der Ausgaenge, fuer jeden Ausgang Beginn- und Endknoten
+	  (wenn der ausgang eine Map-Umschaltung beinhaltet ist der Endknoten als -knodenid-1 und eine ZielMap angegeben
+	  wenn es einen gibt, der Name des special exit
+
+pfad_zu_maps
+    ->map_dir
+          ->map#.info 
+	  enthaelt knoten und fuer jedes vergebene info schluesselwort den wert
+
+Bei Erstbenutzung eine Kopie von pfad_zu_maps/default zum mapnamen machen
+</pre>
+<h4>Application Kommandos</h4>
+<li>save (mapid|-name)+: speichert die aktuelle map oder die angegebenen Maps
+<p>
+<h4>TF support</h4><br>
+<a href="http://www.inf.tu-dresden.de/~mh14/tf/expert/mapper.tf.html">mapper.tf</a> enthaelt Funktionen fuer die Fernsteuerung des Mappers von tf aus<br>
+Unterstuetzung ist auch eingebaut in <a href="http://www.inf.tu-dresden.de/~mh14/tf/expert/way.tf.html">way.tf</a><br>
+ <a href="http://www.inf.tu-dresden.de/~mh14/tf/makros/mapper.tgz">Download</a><br>
+<address>
+<a href="mailto:mh14@inf.tu-dresden.de">Michael Hunger</a>
+</address>
+</html>
+
+
+
+
