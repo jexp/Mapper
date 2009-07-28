@@ -1,0 +1,4 @@
+git clone git://github.com/jexp/Mapper.git
+cd Mapper/bin
+vi mapper.ini -> pfad anpassen
+./startMapper
