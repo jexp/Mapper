@@ -1,0 +1,168 @@
+[main]
+lang=de
+url=file://localhost/home/mh14/projekte/mesirii/mapper/maps
+#url=file://localhost/home/mh14/mak/maps
+# fuer windoof
+#url=file://localhost/c:/users/mh14/maps
+#oder
+#url=file://localhost/c:/Programme/Mapper/maps
+port=2000
+map=demo_de
+
+[GUI]
+gui_mode=icon
+#gui_mode=button
+color_chooser=paint2.gif
+icon_chooser=painting.gif
+mode_icon_walk=walk.gif
+mode_icon_draw=draw.gif
+mode_icon_pan=pan.gif
+mode_icon_drawwalk=drawwalk.gif
+mode_icon_delete=eraser.gif
+compass_image=compass.gif
+
+#Toolbar, selbst konfigurierbar
+button_bar_1=eraser.gif dp <node>?Angegebenen Knoten löschen
+#button_bar_2=draw.gif an <coord>
+button_bar_2=draw.gif sm 2;g 5
+button_bar_3=map.gif zoom map
+button_bar_4=lupe.gif zoom:unzoom
+button_bar_5=hexagone.gif ep <coord>:poly - <color> <coords.> -t <text>
+
+[colors]
+down=0.1,0.1,0.1
+invalid=1,0.9,0.9
+exitString=0,0,1
+up=0.6,0.6,0.6
+special=1,0,0
+level=0.3,0.3,0.3
+lines=0.7,0.7,0
+selected=0.3,0.3,1
+marker=1,0,0
+akt=0,0.7,0
+overlap=1,0,0
+para=1,0.3,0.3
+house=1,1,1
+background=1,1,1
+grid=0.9,0.9,0.9
+gridtext=0.5,0.5,0.5
+gridcenter=1,0.7,0.7
+node=0,0,0
+nodetext=0,0,0
+infotext=0,1,0
+default_poly=#a0a0a0
+visited=(helles khaki)
+
+[sizes]
+line_size=2
+visited_size=8
+icon_size=16
+unvisited_size=5
+marker_size=6
+selected_size=8
+akt_size=18
+info_size=8
+text_size=8
+exittext_size=8
+mapswitch_size=3
+up_size=4
+down_size=4
+
+[types]
+
+#*type=[dx [dy]] [(color)] type [params]
+
+#akttype=10 (0,0.7,0) FilledRectangle3D
+#akttype=30 15 (gruen) Circle
+
+akttype=20 Picture knight01.gif
+backgroundtype=FilledRectangle
+#housetype=Picture file://localhost/home/mh14/mak/house.gif
+#housetype=Picture icons/house.gif
+
+uptype=Plus
+markertype=FilledRectangle3D
+selectedtype=Circle3D
+downtype=Minus
+visitedtype=FilledCircle3D
+unvisitedtype=5 FilledRectangle3D
+mapswitchtype=FilledRectangle
+
+#icon_attribs=type ways tank tport house pub port shop post npc aliane plotin
+icon_attribs=type ways tank tport house pub port shop post npc exa pflanze fp
+
+#alianetype=Picture icons/npc/fwoman2.gif
+#plotintype=10 (blau) FilledRectangle3D
+
+waystype=Picture signpost.gif
+tanktype=Picture tank.gif
+tporttype=Picture tport.gif
+housetype=Picture house.gif
+pubtype=Picture beer.gif
+porttype=Picture anchor.gif
+shoptype=Picture shop.gif
+posttype=Picture post.gif
+npctype=Picture knight01.gif
+
+exatype=(stahlblau) FilledCircle3D
+pflanzetype=Picture icons/other/flower/SEAWEED.gif
+fptype=Picture icons/other/wisdom/magnify0b.gif
+
+castletype=abc
+#Picture castle.gif
+#foresttype=Picture tree1.gif
+#foresttype=30 (gelb) FilledRectangle3D
+foresttype=Picture tree1.gif
+
+#foresttype=RandomPicture icons/landscape/forest/ ICON_086.GIF TREE00D.gif TREE02K.gif TREE5.gif XTREE01H.gif ICON_087.GIF TREE01A.gif TREE02L.gif TREE8.gif forest.gif ICON_154.GIF TREE02A.gif TREE03A.gif TREED00A.gif tree.gif 
+
+roadtype=Picture wall.gif
+
+# Picture, Rectangle, FilledRectangle, Rectangle3D, FilledRectangle3D, Circle, FilledCircle, FilledCircle3D, Circle3D, FilledHouse, Plus, Minus, NPCSketch, Text, TiledPicture, RandomPicture
+
+# bisherige Typen und Standardwerte dafuer
+# Types by now and default values
+#nodetype=FilledRectangle3D
+#backgroundtype=FilledRectangle
+#akttype=FilledRectangle3D
+#housetype=FilledHouse
+#uptype=FilledRect
+#downtype=FilledRect
+#visitedtype=FilledRectangle3D
+#mapswitchtype=FilledRectangle3D
+#pubtype=Text K
+#porttype=Text H
+#shoptype=Text S
+#posttype=Text M
+#tanktype=Text T
+#waystype=Text W
+#tporttype=Circle3D
+#npctype=NPCSketch
+
+#direkt fuer Aussehen der Knoten
+#types for the nodes themselves 
+pathtype=(sandbraun) FilledRectangle
+#roadtype=FilledCircle3D
+#plaintype=FilledCircle3D
+#cavetype=FilledCircle3D
+#dungeontype=FilledCircle3D
+#housetype=FilledCircle3D
+#castletype=FilledCircle3D
+#mountaintype=FilledCircle3D
+#hilltype=FilledCircle3D
+#rivertype=FilledCircle3D
+#beachtype=FilledCircle3D
+#deserttype=FilledCircle3D
+seatype=(blau) FilledCircle3D
+snowtype=(rauchiges weiss) FilledCircle3D
+icetype=(rauchiges weiss) FilledRectangle3D
+#foresttype=FilledCircle3D
+#oasistype=FilledCircle3D
+
+
+
+
+
+
+
+

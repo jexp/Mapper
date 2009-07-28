@@ -1,0 +1,2 @@
+export CLASSPATH=../build:mapper.zip:.:$CLASSPATH
+java de.mesirii.mapper.Mapper $*
