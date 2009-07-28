@@ -1,2 +1,2 @@
-export CLASSPATH=../build:mapper.zip:.:$CLASSPATH
+export CLASSPATH=../build:.:mapper.zip:icons.zip:$CLASSPATH
 java de.mesirii.mapper.Mapper $*
